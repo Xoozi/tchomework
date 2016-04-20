@@ -1,0 +1,17 @@
+# IPython log file
+
+from scipy import stats
+
+x = array([19, 21, 24, 27, 29, 31, 34, 38, 43])
+y = array([22, 23, 25, 28, 31, 28, 32, 34, 39])
+
+slope, intercept, r_value, p_value, slope_std_error = stats.linregress(x, y)
+
+pylab.plot(x, y, 'o')
+
+predict_y = intercept + slope * x
+pred_error = y - predict_y
+degrees_of_freedom = len(x) - 2
+residual_std_error = sqrt(sum(pred_error**2)/degrees_of_freedom)
+
+plot(x, predict_y, 'k-')
