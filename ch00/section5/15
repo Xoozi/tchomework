@@ -1,0 +1,13 @@
+利用和角公式导出
+(a)cos(x - pi/2) = sinx
+	if a = pi/2
+	cos(x - pi/2) = cos(x - b) = cos(x)*cos(-b) - sin(x)*sin(-b)
+	cos(-pi/2) = 0
+	sin(-pi/2) = -1
+	=>cos(x - pi/2) = sin(x)
+
+(b)cos(A - B) = cos(A)*cos(B) + sin(A)*sin(B)
+	cos(A+(-B)) = cos(A)*cos(-B) - sin(A)*sin(-B)
+	cos(-B) = cos(B)
+	sin(-B) = -sin(B)
+	=>cos(A - B) = cos(A)*cos(B) + sin(A)*sin(B)

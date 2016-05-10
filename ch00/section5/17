@@ -1,0 +1,3 @@
+如果在cos(A-B) = cos(A)*cos(B) + sin(A)*sin(B), 中取A=B， 结果是什么？
+	结果左边是cos(A-B) = cos(0) = 1
+	右边是cos(A)*cos(A) + sin(A)*sin(A) = 1	
