@@ -1,0 +1,55 @@
+从参数方程球直角坐标方程
+1. x = cos(t), y = sin(t), 0<=t<=pi
+-1<=x<=1
+0<=y<=1
+x**2 + y**2 = 1
+y = sqrt(1 - x**2)
+
+3. x = sin(2*pi*t) y = cos(2*pi*t), 0<=t<=1
+0<=x<=1
+-1<=y<=1
+x**2 + y**2 = 1
+y = sqrt(1-x**2) 0<=t<=0.25
+y = -sqrt(1-x**2) 0.25<t<0.75
+y = sqrt(1-x**2) 0.75<=t<=1
+
+5. x = 4*cos(t) y = 2*sin(t) 0 <= t <= 2*pi
+-4<=x<=4
+-2<=y<=2
+x**2/16 + y**2/4 = 1
+y = sqrt(4 - x**2/4) 0<=t<=pi
+y = -sqrt(4 - x**2/4) pi<t<=2*pi
+
+7. x = 3*t, y = 9*t**2, t ∈ R
+y = x**2
+
+9. x = t, y = sqrt(t), t>=0
+y = sqrt(x) x >= 0
+
+11. x = -sec(t), y = tan(t), -pi/2 < t < pi/2
+x∈ (-∞, -1]
+y∈ (-∞, +∞)
+x**2 = 1 + y**2
+
+y = -sqrt(x**2 - 1) x∈ (-∞, -1]
+y = sqrt(x**2 - 1) x∈ [-1, -∞)
+
+15. x = t, y = sqrt(1-t**2), -1<=t<=0
+-1<=x<=0
+
+0<=y<=1
+y = sqrt(1-x**2)
+
+
+xoozi  我感觉我没推错啊， 怎么和答案对不上
+17. x = e**t + e**(-t), y = e**t - e**(-t), t ∈ R
+
+x+y = 2*e**t
+	ln(x+y) = ln2 + ln(e**t) = ln2 + t
+x-y = 2*e**(-t)
+	ln(x-y) = ln2 - t
+ln(x+y) + ln(x-y) = 2*ln2 = ln4
+ln((x+y)/(x-y)) = ln4
+(x+y)/(x-y) = 4
+x+y = 4x - 4y
+y = 3x / 5
