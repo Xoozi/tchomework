@@ -1,0 +1,27 @@
+对图示的函数, 下列陈述是否正确?
+
+xoozi  注意, 做此题发现我对单侧极限的概念还没完全掌握 再仔细观察图1.20可破
+
+(a)lim(x->-1+)f(x) = 1      true
+
+(b)lim(x->0-)f(x) = 0       false 跳跃          xoozi 这是对的, 符合单侧极限的定义
+
+(c)lim(x->0-)f(x) = 1       false 
+
+(d)lim(x->0-)f(x) = lim(x->0+)f(x)  false 跳跃  xoozi 这是对的, 
+
+(e)lim(x->0)f(x) 存在       false 跳跃          xoozi 这是对的因为双侧极限都存在且相等
+
+(f)lim(x->0)f(x) = 0        false 两个单侧极限都不存在  xoozi 对的, 因为(e)
+
+(g)lim(x->0)f(x) = 1        false
+
+(h)lim(x->1)f(x) = 1        false 跳跃
+
+(i)lim(x->1)f(x) = 0        false 跳跃
+
+(j)lim(x->2-)f(x) = 2       false 明显是0啊
+
+(k)lim(x->-1-)f(x) 不存在   true
+
+(l)lim(x->2+)f(x) = 0       false 不存在
