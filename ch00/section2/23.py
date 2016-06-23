@@ -8,6 +8,7 @@ def f(x):
     else:
         return 3.0*x/2.0 + 3.0/2.0
 
+#xoozi 转换分段函数
 ff = frompyfunc(f, 1, 1)
 x = linspace(-10, 10, 100)
 y = ff(x)
