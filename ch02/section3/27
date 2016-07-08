@@ -1,0 +1,16 @@
+推广积法则
+
+积法则, 对x的两个可微函数u(x), v(x)
+d(uv)/dx = v*du/dx + u*dv/dx
+
+(a)x的三个可微函数的积uvw的类似公式是什么
+d(uvw)/dx 	= w*d(uv)/dx + u*v*dw/dx
+		= w*(v*du/dx + u*dv/dx) + u*v*dw/dx
+		= w*v*du/dx + w*u*dv/dx + u*v*dw/dx
+
+(b)x的四个可微函数的积u1u2u3u4的导数公式是什么
+d(u1*u2*u3*u4)/dx	= u1*d(u2*u3*u4)/dx + u2*u3*u4*d(u1)/dx
+			= u1*u2*u3*d(u4)/dx + u1*u3*u4*d(u2)/dx + u1*u2*u4*d(u3)/dx + u1*u2*u3*d(u4)/dx + u2*u3*u4*d(u1)/dx
+
+(c)x的有限数目n个可微函数的积u1,u2,u3,...,un的导数公式是什么
+d(u1*u2*...*un)/dx 	= u2*...*un*d(u1)/dx + u1*u3*...*un*d(u2)/dx + ... + u1*u2*u3*...*u(n-1)*d(un)/dx
