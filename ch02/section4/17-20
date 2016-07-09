@@ -1,0 +1,10 @@
+求dr/dx
+
+17. r       = 4 - x**2*sin(x)
+    dr/dx   = -(2*x*sin(x) + x**2*cos(x))
+
+19. r       = sec(x) * csc(x)
+    dr/dx   = sec(x)*tan(x)*csc(x) - sec(x)*csc(x)*cot(x)
+            = 1/cos(x) * sin(x)/cos(x) * 1/sin(x) - 1/cos(x) * 1/sin(x) * cos(x)/sin(x)
+            = 1/cos(x)**2 - 1/sin(x)**2
+            = sec(x)**2 - csc(x)**2

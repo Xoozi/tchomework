@@ -1,0 +1,9 @@
+求dp/dq
+
+21. p       = 5 + 1/cot(q)
+    p       = 5 + tan(q)
+    dp/dq   = sec(q)**2
+
+23. p       = (sin(q) + cos(q)) / cos(q)
+            = tan(q) + 1
+

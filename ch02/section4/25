@@ -1,0 +1,11 @@
+求二阶导数
+
+(a)f(x)     = csc(x)
+   fd1(x)   = -csc(x)*cot(x)
+   fd2(x)   = -(csc(x)*cot(x)*cot(x) - csc(x)*csc(x)**2)
+            = -(csc(x)*cot(x)**2 - csc(x)**3))
+
+(b)f(x)     = sec(x)
+   fd1(x)   = sec(x)*tan(x)
+   fd2(x)   = sec(x)*tan(x)*tan(x) + sec(x)*sec(x)**2
+            = sec(x)*(tan(x)**2 + sec(x)**2)
