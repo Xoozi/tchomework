@@ -1,0 +1,5 @@
+简谐运动
+s = 2 - 2*sin(t)
+v = -2*cos(t)
+a = 2*sin(t)
+j = 2*cos(t)
