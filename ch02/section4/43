@@ -1,0 +1,14 @@
+求d**999/dx**999(cos(x))
+
+d(cos(x))/dx = -sin(x)
+d**2(cos(x))/dx**2 = -cos(x)
+d**3(cos(x))/dx**3 = sin(x)
+d**4(cos(x))/dx**4 = cos(x)
+
+=>  d**(4*n + 0)(cos(x))/dx**(4*n + 0) = cos(x)
+    d**(4*n + 1)(cos(x))/dx**(4*n + 1) = -sin(x)
+    d**(4*n + 2)(cos(x))/dx**(4*n + 2) = -cos(x)
+    d**(4*n + 3)(cos(x))/dx**(4*n + 3) = sin(x)
+
+=>d**999(cos(x))/dx**999 = sin(x)
+
