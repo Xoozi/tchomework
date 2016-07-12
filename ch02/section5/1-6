@@ -1,0 +1,10 @@
+给定y=f(u) 和 u = g(x), 求dy/dx=fd(gx)*gd(x)
+
+1. y = 6*u - 9, 	u = 1/2*x**4
+	dy/dx = 6*2*x**3 = 12*x**3
+
+3. y = sin(u),		u = 3*x+1
+	dy/dx = cos(3*x+1)*3
+
+5. y = tan(u),		u = 10*x - 5
+	dy/dx = sec(10*x - 5)**2 * 10
