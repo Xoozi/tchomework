@@ -1,0 +1,27 @@
+13.	q	= (2*r - r**2)**(1/2)
+        dq/dr	= (2*r - r**2)**(-1/2)*(1 - r)
+
+15.	r	= (csc(x) + cot(x))**-1
+	dr/dx	= -1*(csc(x) + cot(x)) * (-csc(x)*cot(x) - csc(x)**2)
+		=csc(x)*(csc(x) + cot(x))**2
+
+17.	y	= x**2 * sin(x)**4 + x * cos(x)**-2
+	dy/dx   = 2*x*sin(x)**4 + x**2 * 4*sin(x)**3 * cos(x) + cos(x)**-2 * x + x * -2 * cos(x)**-3 * -sin(x)
+		= 2*x*sin(x)**4 + 4*x**2*sin(x)**3*cos(x) + x*cos(x)**(-2) + 6*x*cos(x)**-3*sin(x)
+
+19.	y	= 1/21 * (3*x - 2)**7 + (4 - 1/(2*x**2))**-1
+	dy/dx	= 1/21 * 7 * (3*x - 2)**6 * 3 + -1*(4 - 1/2 * x**-2)**-2*x**-3
+		= (3*x - 2)**6 + (4 - 1/2 * x**(-2))**-2 * x**-3
+
+21.	h	= x*tan(2*x**(1/2)) + 7
+	dh/dx	= tan(2*x**(1/2)) + x*sec(2*x**(1/2))**2*x**(-1/2)
+		= tan(2*x**(1/2)) + x**(1/2)*sec(2*x**(1/2))**2
+
+23.	f(x)	= (sin(x)/(1+cos(x)))**2
+	df/dx	= 2*(sin(x)/(1+cos(x)))*(-csc(x)*cot(x) + csc(x)**2)
+		= 2*(csc(x) - cot(x))*csc(x)*(csc(x) - cot(x))
+		= 2*csc(x)*(csc(x) - cot(x))**2 
+
+25.	r	= sec(sqrt(x)) * tan(1/x)
+		= sec(x**(1/2)) * tan(x**-1)
+	dr/dx	= sec(x**(1/x)) * tan(x**(1/2) * 1/2 * x**(-1/2) * tan(x**-1) + sec(x**(1/2))*sec(x**-1)**2*-1*x**-2
