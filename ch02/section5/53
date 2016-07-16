@@ -1,0 +1,4 @@
+如果s = cos(x) 而dx/dt = 5, 求当x = 3*pi/2的 ds/dt
+
+ds/dt = ds/dx*dx/dt = -sin(x)*5 = -sin(3*pi/2)*5 = 5
+
