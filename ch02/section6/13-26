@@ -1,0 +1,36 @@
+隐函数微分法
+
+13.	x**2*y + x*y**2 = 6
+	2*x*y + x**2*dy/dx + y**2 + x*2*y*dy/dx = 0
+	dy/dx * (x**2 + 2*x*y) = -2*x*y - y**2
+	dy/dx = (-2*x*y - y**2)/(x**2 + 2*x*y)
+
+15.	x**3 - x*y + y**3 = 1
+	3*x**2 - y - x*dy/dx + 3*y**2*dy/dx = 0
+	dy/dx * (3*y**2 - x) = y - 3*x**2
+	dy/dx = (y - 3*x**2)/(3*y**2 - x)
+
+17.	y**2 = (x - 1)/(x + 1)
+	2*y*dy/dx = ((x + 1) - (x - 1))/(x + 1)**2
+	    dy/dx = 1/(y * (x + 1)**2)
+
+19.	x = tan(y)
+	1 = sec(y)**2*dy/dx
+	dy/dx = cos(y)**2
+
+21.	y * sin(1/y) = 1 - x*y
+	dy/dx * sin(1/y) + y * cos(1/y) * -1 * y**-2 * dy/dx = -y - x*dy/dx
+	dy/dx * (sin(1/y) - 1/y*cos(1/y) + x) = -y
+	dy/dx = -y/(sin(1/y) - 1/y * cos(1/y) + x)
+
+23.	x**1/2 + y**1/2 = 1
+	1/2*x**-1/2 + 1/2*y**-1/2*dy/dx = 0
+	dy/dx = (-1/2*x**-1/2) / (1/2*y**-1/2)
+	      = -x**-1/2 / y**-1/2
+	      = -y**1/2/x**1/2
+
+25.	sin(y*x) = 1/2
+	cos(y*x) * (dy/dx*x + y) = 0
+	dy/dx * x * cos(y*x) = - y*cos(y*x)
+	dy/dx = -y/x
+	xoozi 注意, 这里本来有cos(y*x)!=0的限制条件, 后续变形隐去了, 需要最后注明
