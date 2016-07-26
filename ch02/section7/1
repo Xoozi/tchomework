@@ -1,0 +1,4 @@
+面积
+假设圆的半径r和面积A = pi*r**2 是t的可微函数. 写出联系dA/dt和dr/dt的方程
+
+dA/dt = 2*pi*r*dr/dt

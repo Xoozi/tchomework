@@ -1,0 +1,10 @@
+体积
+直圆柱的半径r 和 高h与直圆柱的体积之间关系由公式V = pi*r**2*h给出
+(a)如果r是常数, dV/dt和dh/dt的关系是什么
+dV/dt = pi*r**2*dh/dt
+
+(b)如果h是常数, dV/dt和dr/dt的关系是什么
+dV/dt = pi*h*2*r*dr/dt
+
+(c)如果r和h都不是常数, dV/dt和dr/dt以及dh/dt的关系如何
+dV/dt = pi*(2*r*h*dr/dt + r**2*dh/dt)

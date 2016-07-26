@@ -1,0 +1,11 @@
+面积
+边长为a,b,以及这两条边夹角为x的三角形面积A为: A = 1/2 * a * b * sin(x)
+
+(a)如果a, b都是常数, dA/dt, dx/dt关系如何
+	dA/dt = 1/2 * a * b * cos(x)*dx/dt
+
+(b)如果只有b是常数, dA/dt, dx/dt, da/dt之间关系如何
+	dA/dt = 1/2 * b * (sin(x) * da/dt + a * cos(x) * dx/dt)
+
+(c)如果a, b, x都不是常数, dA/dt, dx/dt, da/dt, db/dt之间关系如何
+	dA/dt = 1/2 * (b*sin(x)*da/dt + a*sin(x)*db/dt + a*b*cos(x)*dx/dt)
