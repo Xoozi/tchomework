@@ -1,0 +1,19 @@
+检验公式
+(a) ∫ x*sin(x) dx = x**2/2 * sin(x) + C
+    对右边求导
+    d/dx (1/2*x**2 * sin(x) + C)
+        = x * sin(x) + 1/2*x**2 * cos(x)
+    所以该公式不正确
+
+(b) ∫x*sin(x) dx = -x*cos(x) + C
+    对右边求导
+    d/dx (-x*cos(x) + C)
+        = -cos(x) + x*sin(x)
+    所以该公式也不对
+
+(c) ∫x*sin(x) dx = -x*cos(x) + sin(x) + C
+    对右边求导
+    d/dx (-x*cos(x) + sin(x))
+        = -cos(x) + x*sin(x) + cos(x)
+        =x*sin(x)
+    这个对了
