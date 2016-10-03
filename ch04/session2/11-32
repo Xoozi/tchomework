@@ -102,8 +102,5 @@
 
 
     2*∫cos(u) / sin(u)**2 du 
-
-    = 2*∫cos(u) / ( 1 - cos(u)**2) du
-    令w = cos(u)
-        dw = -s
-        留着
+        =2*∫cot(u) * csc(u) du
+        =-2*csc(u) + C

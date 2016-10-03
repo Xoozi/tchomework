@@ -1,0 +1,14 @@
+质点运动
+在直线上向前和向后运动的质点的速度是v = ds/dt = 6*sin(2*t)
+如果当t = 0 时s = 0, 求当t = pi/2时s的值
+
+    s(t) =∫ ds/dt dt = ∫ 6*sin(2*t) dt
+    令u = 2*t du = 2 dt dt = 1/2du
+    ∫3*sin(u) du
+    = -3*cos(u) + C
+    = -3*cos(2*t) + C
+    s(0) = -3 + C = 0
+    C = 3
+    s(t) = -3*cos(2*t) + 3
+
+    s(pi/2) = 3+3 = 6

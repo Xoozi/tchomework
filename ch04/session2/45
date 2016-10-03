@@ -1,0 +1,22 @@
+用不同的替换
+看起来我们可以用三种不同的方式对于x积分 2*sin(x)*cos(x)
+
+(a)∫2*sin(x)*cos(x)dx 
+    令u = sin(x)
+        du = cos(x) dx
+    ∫2*sin(x)*cos(x) dx
+    =∫2*u du
+    = u**2 + C = sin(x)**2 + C
+
+(b)∫2*sin(x)*cos(x)dx
+    令u = cos(x)
+        du = -sin(x)dx
+        -du = sin(x)dx
+
+    ∫-2*u du
+    = -1*u**2 + C
+    = -cos(x)**2 + C
+
+(c)∫2*sin(x)*cos(x) dx = 
+    ∫sin(2*x) dx
+    =-cos(2*x)/2 + C
