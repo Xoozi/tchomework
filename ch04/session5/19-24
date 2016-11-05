@@ -1,0 +1,18 @@
+求dy/dx
+
+19. y = ∫(0, x) (1+t**2)**(1/2) dt
+    dy/dx = d/dx ∫(0, x) (1+t**2)**(1/2) dt = (1 + x**2)**(1/2)
+
+
+21. y = ∫(x**(1/2), 0) sin(t**2) dt
+    -dy/dx = d/dx ∫(0, x**(1/2)) sin(t**2) dt = sin(x)
+
+    令u = x**(1/2) du/dx = 1/2*x**(-1/2)
+    d/du ∫(0, u) sin(t**2) dt = sin(u**2) =sin(x)
+
+    d/dx ∫(0, x**(1/2)) sin(t**2) dt = du/dx * d/du ∫(0, u) sin(t**2) dt =sin(x) * 1/2*x**(-1/2)
+
+    dy/dx = -sin(x)*1/2*x**(-1/2)
+
+
+23. y = ∫(0, sin(x)) 1/(1-t**2)**(1/2) dt,  |x| < pi/2
