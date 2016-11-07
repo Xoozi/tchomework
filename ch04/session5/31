@@ -1,0 +1,3 @@
+初值问题
+31 dy/dx = cos(x)**2 sin(x), y(0) = -1
+	y(x) = ∫(0, x) cos(x)**2 * sin(x) dx - 1
