@@ -1,0 +1,9 @@
+初值问题
+
+dy/dt = 1/t**2 * sec(pi/t)**2,   y(4) = 2/pi
+
+d/dt tan(pi/t) = -pi/t**2 * sec(pi/t)**2 = -pi*dy/dt
+=> y = -1/pi * tan(pi/t) + C
+y(4) = -1/pi * 1 + C = 2/pi
+=>C = 3/pi
+y(t) = 1/pi * (3 - tan(pi/t))
