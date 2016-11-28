@@ -1,0 +1,20 @@
+求指定区域绕指定直线旋转一周产生的立体体积
+
+指定区域是第一像限, 其上方是直线y = sqrt(2), 下方是曲线y = sec(x)*tan(x), 并且其左边是y轴
+绕直线y=sqrt(2)旋转
+
+	R(x) = sqrt(2) - sec(x)*tan(x)
+	A(x) = pi*(sqrt(2) - sec(x)*tan(x))**2
+
+	求积分限sqrt(2) = tan(x)*sec(x) = sin(x)/cos(x) * 1/cos(x) = sin(x)/(1-sin(x)**2)
+	=>sqrt(2)*sin(x)**2 + sinx - sqrt(2) = 0
+	sin(x) = sqrt(2)/2
+	x = pi/4
+	积分限为0 <= x <= pi/4
+
+	V 	= ∫(0, pi/4) A(x) dx 
+		= pi*∫(0, pi/4) 2 - 2*sqrt(2)*sec(x)*tan(x) + sec(x)**2 * tan(x)**2 dx
+		= pi* 2*pi/4 - pi*2*sqrt(2)*(sec(pi/4) - sec(0)) + pi*(tan(pi/4)**3/3)
+		= pi*(pi/2 - 2*sqrt(2)*(sqrt(2)-1) + 1/3)
+
+
