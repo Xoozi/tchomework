@@ -1,0 +1,12 @@
+由y=1和y=sqrt(cos(x)), -pi/2 <= x <= pi/2之间的区域绕x轴旋转所成旋转体的体积
+
+R(x) = 1
+r(x) = sqrt(cos(x))
+A(x) = pi*(R(x)**2 - r(x)**2) = pi*(1 - cos(x))
+
+V	= ∫(-pi/2, pi/2) A(x) dx = pi*∫(-pi/2, pi/2) (1 - cos(x)) dx
+	F(x) = x - sin(x)
+	= pi*(F(pi/2) - F(-pi/2))
+	= pi*(pi/2 - 1 - (-pi/2 +1))
+	= pi*(pi - 2)
+
