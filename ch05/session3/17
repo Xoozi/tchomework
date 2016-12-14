@@ -1,0 +1,9 @@
+是否存在一条光滑曲线, 其在区间0 <= x <= a上的长度总是sqrt(2)*a?
+
+	L 	= ∫(0, a) sqrt(1 + (dy/dx)**2) dx = sqrt(2)*a
+		如果∫ sqrt(1 + (dy/dx)**2) dx = sqrt(2) 
+		则题目成立
+		此时(dy/dx)**2 = 1
+		故 y = x和 y = -x都成立
+
+		xoozi 这里应是y = ±x + C才完美
