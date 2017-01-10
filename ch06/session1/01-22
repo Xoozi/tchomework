@@ -1,0 +1,57 @@
+对数的导数
+
+1 y 	= ln 3*x
+  dy/dx = 3/(3*x) = 1/x
+
+3 y 	= ln 3/x, 令 u = 3/x
+  dy/dx = dy/du * du/dx = x/3 * -3*/x**2 = -1/x
+
+
+5 y 	= ln x**3
+  dy/dx = 1/x**3 * 3*x**2 = 3/x
+
+7 y 	= t*(ln t)**2
+  dy/dx = (ln t)**2 + t * 1/t * ln t + t * ln t * 1/t
+  	= (ln t)**2 + 2 * ln t
+
+9 y	= x**4/4 * ln x - x**4/16
+	= x**4/4 * (ln x - 1/4)
+  dy/dx = x**3 * (ln x - 1/4) + x**3/4
+  	= x**3 * ln x
+
+11 y	= (1 + ln t)/t
+  dy/dx = (1/t *t - 1 - ln t)/ t**2
+  	= -ln t / t**2
+
+13 y 	= x * ln x / (1 + ln x)
+  dy/dx = ((ln x + x * 1/x)*(1 + ln x) - x * ln x * 1/x) / (1 + ln x)**2
+  	= ((1 + ln x)**2 - ln x) / (1 + ln x)**2
+
+15 y	= ln(ln(ln x))
+  	令 	u(x) = ln x
+		v(u) = ln u
+		w(v) = ln v
+   y 	= w(v(u(x)))
+   dy/dx = dy/dw * dw/dv * dv/du * du/dx
+   	 = 1 * 1/v * 1/u * 1/x
+	 = 1/(ln(ln x) * ln x * x)
+
+17 y	= ln(sec x + tan x)
+  dy/dx = 1/(sec x + tan x) * (sec x * tan x + sec x * sec x)
+  	= 1/(sec x + tan x) * sec x * (sec x + tan x)
+	= sec x
+
+19 y	= (1 +  ln t) / (1 - ln t)
+  dy/dx = (1/t)*(1 - ln t) + (1/t)*(1 + ln t) / (1 - ln t)**2
+	= (1/t)*(1 - ln t + 1 + ln t) / (1 - ln t)**2
+	= 2/(t*(1- ln t)**2)
+
+
+21 y	= ln(sec(ln x))
+	令 u(x) = ln x
+	   v(u) = sec u
+	   w(v) = ln v
+  dy/dx = dy/dw * dw/dv * dv/du * du/dx
+  	= 1 * 1/v * sec u * tan u * 1/x
+	= 1/sec(ln x) * sec(ln x) * tan(ln x) * 1/x
+     	= tan(ln x) / x	
