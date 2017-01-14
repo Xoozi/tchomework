@@ -1,0 +1,108 @@
+积分
+
+25 ∫(-3, -2) 1/x dx
+	= ln |-2| - ln |-3|
+	= ln 2 - ln 3
+	= ln 2/3
+
+27 ∫ 2y/(y**2 - 25) dy
+	令 u = y**2 - 25
+	du/dy= 2*y
+	= ∫ 1/u du
+	= ln |y**2 - 25| + C
+
+29 ∫(0, pi) sin t / (2 - cos t) dt
+	令 2 - cos t = u
+	du/dt = sin t
+	= ∫(1, 3) 1/u du
+	= ln |3| - ln |1|
+	= ln 3
+
+31 ∫(1, 2) (2*ln x)/x dx
+	令 u = ln x
+	du/dx = 1/x
+	du = 1/x dx
+	原式
+	= ∫(ln 1, ln 2) 2*u du
+	= u**2 |(0, ln 2)
+	= (ln 2)**2
+
+32 ∫(2, 4) 1/(x * ln x) dx
+	令u = ln x
+	du/dx = 1/x
+	du = 1/x dx
+	原式
+	= ∫(ln 2, ln 4) 1/u du
+	= ln u | (ln 2, ln 4)
+	= ln (ln 4) - ln (ln 2)
+	= ln (ln 4 / ln 2)
+	= ln (ln 2**2 / ln 2)
+	= ln (2 * ln 2 / ln 2)
+	= ln 2
+
+	xoozi 这个套路和这个化简很6
+
+33 ∫(2, 4) 1/(x * (ln x)**2) dx
+	令u = ln x
+	du/dx = 1/x
+	du = 1/x dx
+	原式
+	= ∫(ln 2, ln 4) u**(-2) du
+	= -1/u |(ln 2, ln 4)
+	= -1/ln 4 + 1 / ln 2
+	= 1/ln 2 - 1/(2*ln 2)
+	= 1/ln 4
+
+35 ∫ 3*(sec t)**2 / ( 6 + 3*tan t) dt
+	令u = 6 + 3*tan t
+	du/dt = 3*(sec t)**2
+	du = 3*(sec t)**2 dt
+	原式
+	= ∫ 1/u du
+	= ln | 6 + 3*tan t| + C
+
+37 ∫(0, pi/2) tan x/2 dx
+	令 u = x/2
+	du = 1/2 dx
+	2*∫(0, pi/4) tan u du
+	= 2*(ln sec u)|(0, pi/4)
+	= 2*(ln sqrt(2) - ln 1)
+	= 2 * ln sqrt(2)
+	= ln sqrt(2)**2
+	= ln 2
+
+39 ∫(pi/2, pi) 2 * cot t/3 dt
+	令 u = t/3
+	du = 1/3 dt
+	6 * ∫(pi/6, pi/3) cot u du
+	= 6 * -(ln |csc u|)|(pi/6, pi/3)
+	= -6 * (ln 2/sqrt(3) - ln 2)
+	= -6 * ln 1/sqrt(3)
+	= ln (1/sqrt(3))**-6
+	= ln 27
+
+41 ∫ 1/(2*sqrt(x) + 2*x) dx
+	= ∫ (1/x**(1/2)) / (2 + 2*x**(1/2)) dx
+	令u = 2 + 2*x**(1/2)
+	du/dx = 1/x**(1/2)
+	原式
+	= ∫ 1/u du
+	= ln (2 + 2*x**(1/2) + C1
+	= ln 2*(1 + x**(1/2) + C1
+	= ln (1 + x**(1/2)) + C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

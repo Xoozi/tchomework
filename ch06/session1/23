@@ -1,0 +1,13 @@
+用Leibniz法则求y对于x的导数
+
+y = ∫(x**2/2, x**2) ln (t**(1/2)) dt
+
+令 v(x) = x**2, u(x) = x**2/2
+
+d/dx ∫(u(x), v(x)) ln (t**(1/2)) dt 
+= ln (v(x)**(1/2)) * dv/dx - ln (u(x)**(1/2)) * du/dx
+= ln (|x|) * 2*x - ln (|x|/sqrt(2)) * x
+= ln (|x|) * 2*x - ln (|x|) * x + ln(sqrt(2) * x
+= ln (|x|) * x + ln(sqrt(2)) * x
+= (ln (|x|) + ln(sqrt(2))) * x
+= ln (|x|*sqrt(2)) * x
