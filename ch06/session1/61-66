@@ -1,0 +1,17 @@
+其他底的对数
+求导数
+
+61 y    = log(2, 5*t)
+        = ln 5*t / ln 2
+   dy/dt= 1/ln 2 * 5 * 1/t
+        = 5 / (ln 2 * t)
+
+
+63 y    = log(2, r) * log(4, r)
+        = (ln r / ln 2) * (ln r / ln 4)
+        = (ln r)**2 / (2 * ln 2 * ln 2)
+   dy/dr= 1/(ln 2 * ln 2) * ln r * 1/r
+
+65 y    = t * sin(log(7, t))
+        = t * sin(ln t / ln 7)
+   dy/dt= sin(ln t / ln 7) + cos(ln t / ln 7) * 1/ln 7

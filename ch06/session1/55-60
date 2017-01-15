@@ -1,0 +1,32 @@
+其他底的对数
+
+55 ∫ log(10, x)/x) dx
+    =   ∫ (ln x / ln 10)/x dx
+    = 1/ln 10 * ∫ lnx/x dx
+        令u = ln x
+        du/dx = 1/x
+        du = 1/x dx
+    = 1/ln 10 * ∫ u du
+    = 1/ln 10 * 1/2 * u**2 + C
+    = 1/1n 10 * 1/2 * (ln x)**2 + C
+
+
+
+57 ∫(0, 2) log(2, (x + 2))/(x + 2) dx
+    = ln 2 * ∫(0, 2) ln (x + 2) / (x + 2) dx
+        令u = ln (x + 2)
+        du  = 1/(x + 2) dx
+    = ln 2 * ∫(ln 2, ln 4) u du
+    = ln 2 * 1/2 * (u**2)|(ln 2, ln 4)
+    = ln 2 * 1/2 * (ln 4 * ln 4 - ln 2 * ln 2)
+    = ln 2 * 1/2 * (4 * ln 2 * ln 2 - ln 2 * ln 2)
+    = ln 2 * 1/2 * (3 * ln 2 * ln 2)
+    = 3 * ln 2 **3 / 2
+
+59 ∫ 1/(x * log(10, x)) dx
+    = ∫ 1/(x * ln x / ln 10) dx
+    = ln 10 * ∫ 1/ (x * ln x) dx
+        令 u = ln x
+        du = 1/x dx
+    = ln 10 * ∫ 1/u du
+    = ln 10 * ln |ln x| + C
