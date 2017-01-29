@@ -1,0 +1,38 @@
+包含一般指数的导数
+
+33 y    = 2**x
+   y    = e**(x * ln 2)
+   dy/dx= e**(x * ln 2) * ln 2
+
+   xoozi还可以继续化简
+        = e**(ln 2**x) * ln 2
+        = 2**x * ln 2
+
+35 y    = x**pi
+   dy/dx= pi*x**(pi-1)
+
+37 y    = 7**(sec(t)) * ln 7
+   y    = e**(sec(t) * ln7) * ln 7
+   dy/dt= e**(sec(t) * ln 7) * ln 7 * sec(t) * tan(t) * ln 7
+
+   xoozi 同33可以继续化简
+        = e**(ln 7**(sec(t))) * (ln 7)**2 * sec(t) * tan(t)
+        = 7**(sec(t)) * (ln 7)**2 * sec(t) * tan(t)
+
+39 y    = t**(1 - e)
+   dy/dt= (1 - e) * t**(-e)
+
+41 y    = log(3, ((x + 1)/(x - 1))**(ln 3))
+        = ln ((x + 1)/(x - 1))**(ln 3) / ln 3
+        = ln 3 * ln ((x + 1)/(x - 1)) / ln 3
+        = ln ((x + 1)/(x - 1))
+        = ln (x + 1) - ln (x - 1)
+   dy/dx= 1/(x + 1) - 1/(x - 1)
+        = (x - 1 - x - 1)/(x + 1)*(x - 1)
+        = -2/(x + 1)*(x - 1)
+
+43 y    = log(7, (sin(t) * cos(t) / e**t * 2**t))
+        = ln (sin(t)*cos(t)/(e**t * 2**t)) / ln 7
+        = ln sin(t) + ln cos(t) - ln e**t - ln 2**t / ln 7
+        = (ln sin(t) + ln cos(t) - t - ln 2**t)/ ln 7
+   dy/dx= (1/sin(t) + 1/cos(t) - 1 - 2**(-t))/ ln 7
