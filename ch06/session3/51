@@ -1,0 +1,12 @@
+旋转体体积
+
+曲线y = 1/sqrt(1 + x**2),      -sqrt(3)/3 < x < sqrt(3)
+绕x轴所成旋转体
+
+用圆盘法
+R = 1/sqrt(1 + x**2)
+A = pi*R**2 = pi/(1 + x**2)
+V = ∫(-sqrt(3)/3, sqrt(3)) pi/(1 + x**2) dx
+  = pi * arctan(x)|(-sqrt(3)/3, sqrt(3))
+  = pi*(pi/3 - -pi/6)
+  = pi*pi/2

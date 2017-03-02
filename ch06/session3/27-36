@@ -1,0 +1,25 @@
+求积分
+
+27 ∫ dx/sqrt(-x**2 + 4*x - 3)
+	= ∫ dx/sqrt(1 - (x**2 - 4*x + 4))
+	= ∫ dx/sqrt(1 - (x - 2)**2)
+	= arcsin(x - 2) + C
+
+29 ∫ dy/(y**2 - 2*y + 5)
+	= ∫ dy/(4 + (y - 1)**2)
+	= 1/2 * arctan((y-1)/2) + C
+
+31 ∫ dx/((x + 1) * sqrt(x**2 + 2*x))
+	= ∫ dx/((x + 1) * sqrt((x + 1)**2 - 1))
+	= arcsec(abs(x+1)) + C
+
+33 ∫ e**(arcsin x) / sqrt(1 - x**2) dx
+	令 u = e**(arcsin x), du = e**(arcsin x) / sqrt(1 - x**2) dx
+	= ∫ du
+	= e**(arcsin x) + C
+
+35 ∫ dy/(arctan(y) * (1 + y**2))
+	令 u = arctan y, du = dy/(1 + y**2)
+	= ∫ 1/u du
+	= ln u + C
+	= ln(arctan y) + C

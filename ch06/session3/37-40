@@ -1,0 +1,15 @@
+验证积分公式
+
+37 ∫ arctan(x)/x**2 dx = ln x - 1/2*ln(1 + x**2) - arctan(x)/x + C
+	右边求导:
+	1/x - 1/2*1/(1 + x**2)*2*x - (x/(1 + x**2) - arctan(x))/x**2
+	= 1/x - x/(1 + x**2) - 1/(x*(1 + x**2)) + arctan(x)/x**2
+	= (1 + x**2 - x**2 - 1)/(x*(1+x**2)) + arctan(x)/x**2
+	= arctan(x)/x**2
+
+39 ∫ (arcsin x)**2 dx = x * (arcsin x)**2 - 2*x + 2*sqrt(1 - x**2)*arcsin(x) + C
+	右边求导:
+
+(arcsinx)**2 + 2*x*arcsinx/sqrt(1-x**2)-2 + 2*(1/2*-2x*arcsinx/sqrt(1-x**2) + sqrt(1-x**2)/sqrt(1-x**2))
+=(arcsinx)**2 + 2*x*arcsinx/sqrt(1-x**2) - 2*x*arcsinx/sqrt(1-x**2)
+=(arcsinx)**2

@@ -1,0 +1,12 @@
+初值问题
+
+41 dy/dx = 1/sqrt(1 - x**2), y(0) = 0
+	y(x) = arcsin(x) + C
+	y(0) = 0=>C = 0
+	y(x) = arcsin(x)
+
+43 dy/dx = 1/(x*sqrt(x**2 - 1)), x > 1; y(2) = pi
+	y(x) = arcsec(x) + C
+	y(2) = pi/3 + C = pi
+	=>C = 2*pi/3
+	=>y(x) = arcsec(x) + 2*pi/3
