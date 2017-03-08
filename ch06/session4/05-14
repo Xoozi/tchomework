@@ -1,0 +1,45 @@
+可分离变量的方程
+
+5 2*sqrt(x*y) dy/dx = 1,   x,y > 0
+
+	2*y**(1/2) dy= x**(-1/2) dx
+	2*2/3*y**(3/2) = 2*x**(1/2) + C
+	  y**(3/2) = 3/2*x**(1/2) + C
+
+
+7 dy/dx = e**(x-y)
+
+	dy/dx = e**x/e**y
+	e**y dy = e**x dx
+	e**y    = e**x + C
+	y = ln (e**x + C)
+
+9 dy/dx = y**(1/2) cos(y**(1/2))**2
+	令 u = y**(1/2)
+	   du = 1/2*y**(-1/2) dy
+
+	 原式:
+	 y**(-1/2)/cos(y**(1/2))**2 dy = dx
+	 2/cos(u) du = dx
+	 2*sec(u) du = dx
+	 2 ln|sec(u) + tan(u)| = x + C
+
+	 xoozi 想复杂了
+	 y**(-1/2) * sec(y**(1/2))**2 dy = dx
+	 tan(y**(1/x)) = x + C
+
+11 x**(1/2) dy/dx = e**(y+x**(1/2)), x > 0
+	e**(-y) dy = e**(x**(1/2)) / x**(1/2) dx
+	-e**(-y) = e**(x**(1/2)) + C
+	y = ln(e**(x**(1/2)) + C)
+
+13 dy/dx = 2*x * sqrt(1-y**2), -1 < y < 1
+	1/sqrt(1-y**2) dy = 2*x dx
+
+	arcsin(y) = x**2
+	y = sin(x**2)
+
+	xoozi 这里应为
+	arcsin(y) = x**2 + C
+	y = sin(x**2 + C)
+
