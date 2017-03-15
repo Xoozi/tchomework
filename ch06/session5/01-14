@@ -1,0 +1,105 @@
+线性一阶方程
+
+1 x dy/dx + y = e**x, x > 0
+
+	dy/dx + y/x = e**x / x ；      P(x) = 1/x,  Q(x) = e**x / x
+
+	v(x) 	= e**(∫ P(x) dx) = e**(ln(x)) = x
+
+	y 	= 1/v(x) * ∫ v(x)*Q(x) dx
+
+		= 1/x * ∫e**x dx
+		= 1/x * (e**x + C)
+
+
+3 x*dy/dx + 3*y = sin(x)/x**2, x > 0
+
+	dy/dx + 3*y/x = sin(x)/x**3;	P(x) = 1/x, Q(x) = sin(x)/x**3
+
+	v(x) 	= e**(∫ P(x) dx) = e**(ln(x)) = x
+
+	y	= 1/v(x) * ∫ v(x) * Q(x) dx = 1/x * ∫ sin(x)/x**2 dx
+	xoozi这你妈根本坑爹好吗 ∫sin(x)/x**2 dx = Ci(x) - sin(x)/x + C
+	复数
+	我怀疑原题就是
+	3 x*dy/dx + 3*y = sin(x) , x > 0
+
+
+5 x*dy/dx + 2*y = 1 - 1/x, x > 0
+	
+	dy/dx + 2/x * y = 1/x - 1/x**2;	P(x) = 2/x, Q(x) = 1/x - 1/x**2
+
+	v(x) 	= e**(∫ P(x) dx) = e**(2*ln(x)) = e**(ln(x**2)) = x**2
+
+	y	= 1/v(x) *∫ v(x) * Q(x) dx = 1/x**2 * ∫ x - 1 dx = 1/x**2 * (x**2/2 - x + C)
+		
+		= 1/2 - 1/x + C/x**2
+	
+7 2*dy/dx = e**(x/2) + y
+	
+	dy/dx - y/2 = 1/2 * e**(x/2) ; P(x) = -1/2, Q(x) = 1/2 * e**(x/2)
+
+	v(x)	= e**(∫ P(x) dx) = e**(∫ - 1/2 dx) = e**(-x/2)
+
+	y	= 1/v(x) * ∫ v(x) * Q(x) dx = e**(x/2) * ∫ e**(-x/2) * 1/2 * e**(x/2) dx
+		= e**(x/2) * ∫ e**(0) 1/2 dx
+		= e**(x/2) * (x/2 + C)
+
+9 x*dy/dx - y = 2*x*ln(x)
+
+	dy/dx - y/x = 2*ln(x);	P(x) = -1/x, Q(x) = 2*ln(x)
+
+	v(x)	= e**(∫ P(x) dx) = e**(-ln(x)) = e**(ln(1/x)) = 1/x
+
+	y	= x * 2 * ∫ 1/x * ln(x) dx
+		令 u = ln(x) du/dx = 1/x du = 1/x dx
+		= x * 2 * ∫ u du
+		= x * 2 * (1/2 * u**2 + C)
+		= x*ln(x)**2 + C*x
+
+11 (t - 1)**3 ds/dt + 4*(t - 1)**2 s = t + 1, t > 1
+
+	ds/dt + 4*s/(t - 1) = (t + 1)/(t - 1)**3; P(t) = 4/(t - 1), Q(t) = (t + 1)/(t - 1)**3
+
+	v(t)	= e**(∫ P(t) dt) = e**(4*ln(t-1)) = e**(ln((t-1)**4)) = (t - 1)**4
+
+	y	= 1/(t - 1)**4 * ∫ (t - 1)**4 * (t + 1) / (t - 1)**3 dt
+		= 1/(t - 1)**4 * ∫ t**2 - 1 dt
+		= 1/(t - 1)**4 * (t**3 - t + C)
+		= (t**3 - t + C)/(t - 1)**4
+
+13 sin(x) dy/dx + cos(x) y = tan(x), 0 < x < pi/2
+	
+	dy/dx + cot(x)*y = sec(x); P(x) = cot(x) , Q(x) = sec(x)
+
+
+	v(x)	= e**(∫ P(x) dx) = e**(-ln(csc(x))) = e**(ln(sin(x))) = sin(x)
+
+	y	= 1/sin(x) * ∫ sin(x) * sec(x) dx
+		= 1/sin(x) * ∫ tan(x) dx
+		= 1/sin(x) * (ln(sec(x)) + C)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
