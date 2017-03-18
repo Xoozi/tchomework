@@ -1,0 +1,21 @@
+合闸后的RL电路中的电流
+RL电路的开关合闸后多少秒电流i达到它稳态值的一半
+
+L*di/dt + R*i = V
+
+di/dt + R/L * i = V/L
+
+=>i(t) 	= V/R + C*e**(-R/L * t)
+  i(0)	= V/R + C = 0
+  C	= -V/R
+  i(t)	= V/R - V/R*e**(-R/L * t)
+
+  lim(t->∞) i(t) = V/R
+
+  设i(th)	= V/R * 1/2
+   V/(2*R)	= V/R - V/R * e**(-R/L * th)
+   1/2		= 1 - e**(-R/L * th)
+   e**(-th*R/L)	= 1/2
+   -th*R/L	= ln(1/2)
+   th*R/L	= ln(2)
+   th		= L/R * ln(2)
