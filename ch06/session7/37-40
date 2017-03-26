@@ -1,0 +1,25 @@
+验证积分公式
+
+37 (a)∫ sech(x) dx = atan(sinh(x)) + C
+	对右边求导
+	d/dx(atan(sinh(x)))
+	= 1/(1 + sinh²(x)) * cosh(x)
+		cosh²(x) - sin²(x) = 1
+		1 + sin²(x) = cosh²(x)
+	= 1/cosh(x)
+	= sech(x)
+
+   (b)∫ sech(x) dx = asin(tanh(x)) + C
+   	对右边求导
+	d/dx(asin(tanh(x)))
+	=1/sqrt(1 - tanh²(x)) * sech²(x)
+		1 - tanh²(x) = 1 - sinh²(x)/cosh²(x) = (cos²(x) - sinh²(x))/cosh²(x) = 1/cosh²(x)
+	=sech²(x)/sqrt(sech²(x)) 
+	=|sech(x)|
+
+
+39 ∫ x * acoth(x) dx = (x² - 1)/2 * acoth(x) + x/2 + C
+	对右边求导
+	= x * acoth(x) + (x² - 1)/2 * 1/(1 - x²) + 1/2
+	= x * acoth(x) - (1 - x²)/2 * 1/(1 - x²) + 1/2
+	= x * acoth(x)

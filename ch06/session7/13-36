@@ -1,0 +1,64 @@
+求y对于适当变量的导数
+
+13 	y 	= 6*sinh(x/3)
+	dy/dx 	= 6*cosh(x/3)*1/3 = 2*cosh(x/3)
+
+15	y	= 2 * t**(1/2) * tanh(t**(1/2))
+	dy/dt	= 2 * (1/2 * t**(-1/2) * tanh(t**(1/2)) + t**(1/2) * sech²(t**(1/2)) * 1/2*t**(-1/2))
+		= t**(-1/2)*tanh(t**(1/2)) + sech²(t**(1/2))
+
+17	y	= ln(sinh(z))
+	dy/dz	= cosh(z)/sinh(z) = coth(z)
+
+19	y	= sech(x) * (1 - ln(sech(x)))
+	dy/dx	= -tanh(x)*sech(x)*(1 - ln(sech(x))) + sech(x) * -1/(sech(x)) * -tanh(x)*sech(x)
+		= -tanh(x)*sech(x)*(1 - ln(sech(x))) + tanh(x)*sech(x)
+		= tanh(x)*sech(x)*ln(sech(x))
+
+21	y	= ln(cosh(v)) - 1/2 * tanh²(v)
+	dy/dx	= tanh(v) - tanh(v) * sech²(v)
+		= tanh(v) * (1 - sech²(v))
+		= tanh(v)**3
+
+23	y	= (x² + 1) * sech(ln(x))
+		= (x² + 1) * 2/(e**(ln(x)) + e**(-ln(x)))
+		= (x² + 1) * 2/(x + 1/x)
+		= (x² + 1) * 2*x/(x²+1)
+		= 2*x
+	dy/dx	= 2
+
+25	y	= asinh(x**(1/2))
+		= 1/(x + 1)**(1/2) * 1/(2 * x**(1/2))
+		= 1/(2 * sqrt(x² + x))
+
+27	y 	= (1 - x) * atanh(x)
+	dy/dx	= -atanh(x) + (1 - x)*1/(1 - x²)
+		= 1/(1 + x) - atanh(x)
+
+29	y	= (1 - t) * acoth(sqrt(t))
+	dy/dx	= -acoth(sqrt(t)) + (1 - t) * 1/(1 - t)
+		= 1 - acoth(sqrt(t))
+
+31	y	= acos(x) - x*asech(x)
+	dy/dx	= -1/sqrt(1 - x²) - asech(x) + x * 1/(x * sqrt(1 - x**2))
+		= 
+
+	果然是题目印刷错误, 应该是acosh
+	y	= acosh(x) - x*asech(x)
+	dy/dx	= 1/sqrt(x² - 1) - asech(x) + x/(x * sqrt(1 - x²))
+		为使得sqrt(x² - 1) 和 sqrt(1 - x²)同时有意义, 在实数范围内只能是x² = 1
+		= -asech(x)
+
+33	y	= acsch((1/2)**x)
+		(1/2)**x = e**(x*ln(1/2))
+	dy/dx	= -1/((1/2)**x * sqrt(1 + (1/2)**(2*x))) * (1/2)**x * ln(1/2)
+		= ln(2)/sqrt(1 + (1/2)**(2*x))
+
+35	y	= asinh(tan(x))
+	dy/dx	= 1/sqrt(1 + tan²(x)) * sec²(x)
+		= sec²(x)/sqrt(sec²(x))
+		= sec(x)
+	xoozi 此处应有绝对值
+		= |sec(x)|
+
+

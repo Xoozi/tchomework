@@ -1,0 +1,13 @@
+5 2*cosh(ln x)
+	= e**(ln x) + e**(-ln x)
+	= x + 1/x
+
+7 cosh 5x + sinh 5x
+	= (e**(5x) + e**(-5x) + e**(5x) - e**(-5x))/2
+	= e**(5x)
+
+9 (sinh x + cosh x)**4
+	= (e**(x))**4
+	= e**(4x)
+
+

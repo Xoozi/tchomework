@@ -1,0 +1,22 @@
+利用恒等式求其他五个双曲函数值
+
+1 sinh x = -3/4
+  cosh x = -sqrt(1 + sinh² x) = -sqrt(1 + 9/16) = -sqrt(25/16) = -5/4
+  tanh x = 3/5
+  coth x = 5/3
+  sech x = -4/5
+  csch x = -4/3
+  xoozi 我傻逼了, 这里cosh是偶函数
+  cosh x = sqrt(1 + sinh² x) = sqrt(1 + 9/16) = sqrt(25/16) = 5/4
+  tanh x = -3/5
+  coth x = -5/3
+  sech x = 4/5
+  csch x = -4/3
+
+3 cosh x = 17/15, x > 0
+  sinh x = sqrt(cosh² x - 1) = sqrt(64/225) = 8/15
+  tanh x = 8/17
+  coth x = 17/8
+  sech x = 15/17
+  csch x = 15/8
+
