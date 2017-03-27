@@ -1,0 +1,16 @@
+求积分
+
+41 ∫ sinh(2x) dx
+	= cosh(2x)/2 + C
+
+43 ∫ 6*cosh(x/2 - ln(3)) dx
+	= 12*sinh(x/2 - ln(3)) + C
+
+45 ∫ tanh(x/7) dx
+	= 7*ln(cosh(x/7)) + C
+
+47 ∫ sech²(x - 1/2) dx
+	= tanh(x - 1/2) + C
+
+49 ∫ (csch(ln(t)) * coth(ln(t)))/t dt
+	= -csch(ln(t)) + C
