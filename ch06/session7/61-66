@@ -4,4 +4,19 @@ asinh(x) = ln(x + sqrt(x² + 1))
 acosh(x) = ln(x + sqrt(x² - 1)), x >= 1
 atanh(x) = 1/2 * ln((1 + x)/(1 - x)), |x| < 1
 acoth(x) = 1/2 * ln((1 + x)/(1 - x)), |x| > 1
+asech(x) = ln((1 + sqrt(1 - x²))/x), 0 < x <= 1
+acsch(x) = ln(1/x + sqrt(1 + x²)/|x|), 	x != 0
 
+61 asinh(-5/12)
+	= ln(-5/12 + sqrt(25/144 + 1))
+	= ln(-5/12 + sqrt(169/144))
+	= ln(-5/12 + 13/12)
+	= ln(8/12)
+
+63 atanh(-1/2)
+	= 1/2 * ln((1-1/2)/(1+1/2))
+	= 1/2 * ln(1/3)
+
+65 asech(3/5)
+	= ln((1 + 5*sqrt(1 - 9/25)/3)
+	= ln(1 + 4/3)

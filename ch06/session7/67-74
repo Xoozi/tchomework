@@ -1,0 +1,37 @@
+求题中的积分
+
+利用(a)反双曲函数 (b)自然对数
+
+67 ∫(0, 2*sqrt(3)) 1/sqrt(4 + x²) dx
+
+	(a)
+		= asinh(x/2) |(0, 2*sqrt(3))
+		= asinh(sqrt(3))
+
+	(b)	
+		令sqrt(4 + x²) = u
+		du = 1/2 * 1/sqrt(4 + x²) * 2*x
+		xoozi 暂时没想好用自然对数怎么做
+
+69 ∫(5/4, 2) 1/(1 - x²) dx
+	
+	(a)	
+		= acot(x) |(5/4, 2)
+		= acot(2) - acot(5/4)
+
+71 ∫(1/5, 3/13) 1/(x * sqrt(1 - 16*x²)) dx
+	
+	(a)
+		= -∫(1/5, 3/13) -4/(4*x * sqrt(1 - 16*x²)) dx
+		= -asech(4*x)|(1/5, 3/13)
+		= -asech(12/13) + asech(4/5)
+
+73 ∫(0, pi) cos x / sqrt(1 + sin²x) dx
+	
+	(a)
+		令 u = sin x
+		du = cosx dx
+
+	= ∫(0, 0) 1/sqrt(1 + u²) du
+	= asinh(u)|(0, 0)
+	= 0
