@@ -1,0 +1,68 @@
+悬链线
+
+想象一根绳索, 如同电话线或电视电缆, 两端固定并自由地悬挂着, 绳索每单位长度的重量为w, 
+在最低点处的张力沿水平方向其大小为H, 如果我们在绳索所在平面上选择一个坐标系, x轴水平向右
+重力垂直向下, y轴铅直向上通过绳索最低点, 并使得最低点的y坐标为y = H/w, 试证明绳索的形状是双曲余弦
+		y = H/w * cosh(w/H * x)
+这样的曲线有时称为链曲线或悬链线
+
+(a)假设P(x, y)表示绳索上任意点, 图6.32示意在点P处的张力与在最低点A处的张力H一样, 是大小为T的向量
+试证绳索在点P处的斜率为
+		tan φ = dy/dx = sinh(w/H * x)
+
+		设以P为起点的一小段绳索PQ, Q(x + dx, y + dy)
+		P点张力T(Th, Tv)
+		Q点张力Td(Th + dh, Tv + dv)
+
+		重力 w*ds的作用在PQ上
+
+		PQ处于静止状态, 作用在其上的所有力在任意方向上的投影都为0
+
+		水平方向 -Th + (Th + dh) = 0 => dh = 0
+		竖直方向 -w*ds -Tv + (Tv + dv) = 0 =>dv = w*ds = w * sqrt(dx² + dy²)
+
+		tan φ = dy/dx = Tv/Th
+			d²y/dx²= 1/Th * dv/dx
+
+			dv = w*ds
+
+			=> d²y/dx² = w/Th * ds/dx
+			Th = H
+			=> d²y/dx² = w/H * sqrt(1 + dy²/dx²) dx/ dx
+			=> d²y/dx² = w/H * sqrt(1 + dy²/dx²)
+
+			得到微分方程 d²y/dx² = w/H * sqrt(1 + dy²/dx²)
+
+			(a)的目标是证明dy/dx = sinh(w/H * x)
+			dy = sinh(w/H * x) dx
+			d²y/dx² = w/H * cosh(w/H *x)
+
+
+			由微分方程 d²y/dx² = w/H * sqrt(1 + dy²/dx²)
+			d²y/dx² = w/H * sqrt(1 + sinh(w/H * x)²*dx²/ dx²)
+				= w/H * sqrt(1 + sinh(w/H * x)²)
+				= w/H * cosh(w/H * x)
+
+			=> 证明了
+			tan φ = dy/dx = sinh(w/H * x)
+
+
+(b)利用(a)的结果和绳索在点P处水平方向张力应该等于H的事实(绳索处于平衡状态), 证明T = w*y, 从而在
+点P(x, y)处的张力大小刚好等于y单位绳索的重量
+
+		tan φ = dy/dx = Tv/Th
+		Th = H
+		Tv = tan φ * H = sinh(w/H * x) * H
+
+		T  = sqrt(Th² + Tv²) = sqrt(H² + sinh(w/H * x)²*H²)
+		   = H * sqrt(1 + sinh(w/H * x)²)
+		   = H * sqrt(cosh(w/H * x)²)
+		   = H * cosh(w/H * x)
+
+		   由于有 y = H/w * cosh(w/H * x)
+		   = w * y
+
+
+
+
+
