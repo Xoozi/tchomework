@@ -1,0 +1,26 @@
+分开分式
+
+53. ∫ (1 - x)/sqrt(1 - x²) dx
+	原式	= ∫ 1/sqrt(1 - x²) dx  - ∫ x/sqrt(1 - x²) dx
+	令u	= 1 - x²,  du = -2x dx
+		= asin(x) + C1 + 1/2 * ∫ u**(-1/2) du
+		= asin(x) + C1 + u**(1/2) + C2
+		= asin(x) + sqrt(1 - x²) + C
+
+55. ∫(0, pi/4) (1 + sin(x)) / cos²(x) dx
+	反导数	= ∫ 1/cos²(x) + sin(x)/cos²(x) dx
+		= ∫ sec²(x) + sin(x)/cos²(x) dx
+
+	令u	= cos²(x), du = -2*sin(x) dx
+		
+	反导数	= ∫ sec2(x) dx - 1/2*∫ 1/u du
+		= tan(x) + C1 - 1/2*ln(cos²(x)) + C2
+		= tan(x) - ln(cos(x)) + C
+
+	原式	= (tan(pi/4) - ln(sqrt(2)/2) - tan(0) + ln(1)
+		= 1 - ln(sqrt(2)/2)
+
+		xoozi和书上答案不一样, 书上是sqrt(2)
+		但我验算了发现ln消不掉的
+		我的答案应该是对的
+

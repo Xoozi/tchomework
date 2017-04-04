@@ -1,0 +1,30 @@
+乘以1的一种表示
+
+57. ∫ 1/(1 + sin(x)) dx
+	原式	= ∫ 1/(1 + sin(x))  * (1 - sin(x))/(1 - sin(x)) dx
+		= ∫ (1 - sin(x)) / (1 - sin²(x)) dx
+		= ∫ 1/cos²(x) - sin(x)/cos²(x) dx
+		= ∫ sec²(x) dx - ∫ sin(x)/cos²(x) dx
+		= tan(x) + C1 - ∫ tan(x) * sec(x) dx
+		= tan(x) + C1 - sec(x) + C2
+		= tan(x) + sec(x) + C
+
+59. ∫ 1/(sec(x) + tan(x)) dx
+	原式	= ∫ 1/(1/cos(x) + sin(x)/cos(x)) dx
+		= ∫ cos(x)/(1 + sin(x)) dx
+	令u	= 1 + sin(x)
+	du	= cos(x) dx
+	原式	= ∫ 1/u du
+		= ln(1 + sin(x)) + C
+
+61. ∫ 1/(1 - sec(x)) dx
+	原式	= ∫ 1/(1 - 1/cos(x)) dx
+		= ∫ cos(x)/(cos(x) - 1) dx
+		= ∫ cos(x)/(cos(x) - 1) * (cos(x) + 1)/(cos(x) + 1) dx
+		= ∫ (cos²(x) + cos(x))/(cos²(x) - 1) dx
+		= ∫ (cos²(x) + cos(x))/-sin²(x) dx
+		= ∫ -cot²(x) - cot(x)*csc(x) dx
+		= ∫ 1 - csc²(x) - cot(x)*csc(x) dx
+		= x + cot(x) + csc(x) + C
+	
+

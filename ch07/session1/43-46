@@ -1,0 +1,24 @@
+三角恒等式
+
+43. ∫(sec(x) + cot(x))² dx
+	原式	= ∫ (sec²(x) + 2*sec(x)*cot(x) + cot²(x)) dx
+		= ∫ (sec²(x) + 2/cos(x) * cos(x)/sin(x) + cot²(x)) dx
+		= ∫ (sec²(x) + 2*sec(x) + csc²(x) - 1) dx
+		= ∫ sec²(x) dx + 2*∫ sec(x) dx + ∫ csc²(x) dx  + ∫ dx
+		= tan(x) + C1 + 2*ln|sec(x) + tan(x)| + C2 + -cot(x) + C3 + x + C4
+		= tan(x) + 2ln|sec(x) + tan(x)| - cot(x) + x + C
+
+45. ∫csc(x) sin(3x) dx
+	原式	= ∫ 1/sin(x) * (sin(x)*cos(2x) + cos(x)*sin(2x)) dx
+		= ∫ cos(2x) + cos(x)/sin(x) * sin(2x) dx
+		= ∫ cos²(x) - sin²(x) + cos(x)/sin(x) * 2*sin(x)*cos(x) dx
+		= ∫ cos²(x) - sin²(x) + 2*cos²(x) dx
+		= ∫ 3*cos²(x) - sin²(x) dx
+		= ∫ 3*cos²(x) + 3*sin²(x) - 4*sin²(x) dx
+		= ∫ 3 - 4*sin²(x) dx
+		= ∫ 4 - 4*sin²(x) - 1 dx
+		= ∫ 4*cos²(x) - 1 dx
+		= ∫ 2*cos(2x) - 1 dx
+		= sin(2x) - x + C
+
+		xoozi 答案是sin(2x) + x + C我算了两遍发觉我应该是对的啊

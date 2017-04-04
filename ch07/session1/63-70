@@ -1,0 +1,33 @@
+消去平方根
+
+63. ∫(0, 2*pi) sqrt((1-cos(x))/2 dx
+	原式	= ∫(0, 2*pi) sqrt((1-cos(x))/2 dx
+		= ∫(0, 2*pi) sin(x/2) dx
+		= -2*cos(x/2) | (0, 2*pi)
+		= -2*-1 - -2*1
+		= 4
+
+65. ∫(pi/2, pi) sqrt(1 + cos(2t)) dt
+	原式	= ∫(pi/2, pi) sqrt(2*cos²(t)) dt
+		= sqrt(2) * ∫(pi/2, pi) |cos(t)| dt
+		= sqrt(2) * -( -1 - 0)
+		= sqrt(2)
+
+67. ∫(-pi, 0) sqrt(1 - cos²(x)) dx
+	原式	= ∫(-pi, 0) sqrt(sin²(x)) dx
+		= ∫(-pi, 0) |sin(x)| dx
+		= ∫(-pi, 0) -sin(x) dx
+		= cos(x) |(-pi, 0)
+		= cos(0) - cos(-pi)
+		= 2
+
+69. ∫ (-pi/4, pi/4) sqrt(1 + tan²(x)) dx
+	原式	= ∫(-pi/4, pi/4) sqrt(sec²(x)) dx
+		= ∫(-pi/4, pi/4) |sec(x)| dx
+	在(-pi/4, pi/4) sec(x)是正的
+
+		= ∫(-pi/4, pi/4) sec(x) dx
+		= ln|sec x + tan x|  | (-pi/4, pi/4)
+		= ln(sqrt(2) + 1) - ln(sqrt(2) - 1)
+		= ln((sqrt(2) + 1)/(sqrt(2) - 1))
+
