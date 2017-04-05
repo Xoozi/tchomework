@@ -1,0 +1,14 @@
+弧长
+求曲线y = ln(cos x), 0 <= x < pi/3的弧长
+
+L	= ∫(0, pi/3) ds = ∫(0, pi/3) sqrt(dy² + dx²)
+	= ∫(0, pi/3) sqrt(dy²/dx² + 1) dx
+
+dy/dx	= -sin x/cos x = -tan x
+
+L	= ∫(0, pi/3) sqrt(tan² x + 1) dx
+	= ∫(0, pi/3) sqrt(sec² x) dx
+	= ∫(0, pi/3) sec x dx
+	= ln|sec x + tan x| |(0, pi/3)
+	= ln(2 + sqrt(3)) - ln(1)
+	= ln(2 + sqrt(3))

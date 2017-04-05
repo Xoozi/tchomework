@@ -1,0 +1,6 @@
+三角函数
+
+83. (a)求∫ cos³x dx
+	原式	= ∫ cos x * (1 - sin² x) dx
+		= ∫ cos x * (1 + cos 2x)/2 dx
+

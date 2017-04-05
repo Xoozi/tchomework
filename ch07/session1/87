@@ -1,0 +1,12 @@
+面积
+求上面由y = 2cos x, 下面由y = sec x, -pi/4 <= x <= pi/4界定的区域的面积
+
+S	= ∫(-pi/4, pi/4) 2cos x - sec x dx
+
+反导数	= 2*sin x + ln|sec x + tan x| + C
+	
+S	= (2*sin x + ln|sec x + tan x|) | (-pi/4, pi/4)
+	= sqrt(2) + ln(sqrt(2) + 1) - (-sqrt(2) + ln(sqrt(2) - 1))
+	= sqrt(2) + ln(sqrt(2) + 1) + sqrt(2) - ln(sqrt(2) - 1)
+	= 2*sqrt(2) + ln((sqrt(2) + 1)/(sqrt(2) - 1))
+	= 4.59

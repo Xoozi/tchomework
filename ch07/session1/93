@@ -1,0 +1,14 @@
+推导
+∫ csc x dx
+
+和sec x类似
+
+原式	= ∫ csc x * (csc x + cot x)/(csc x + cot x) dx
+	= ∫ (csc² x + csc x*cot x)/(csc x + cot x) dx
+
+令u	= csc x + cot x
+du	= -csc² x - csc x * cot x
+
+原式	= -∫ 1/u du
+	= -ln|u| + C
+	= -ln|csc x + cot x| + C
