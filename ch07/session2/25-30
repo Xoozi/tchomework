@@ -1,0 +1,96 @@
+替换和分部积分
+
+25 ∫ e**(sqrt(3x + 9)) ds
+	ds = sqrt(dx² + dy²) = sqrt(1 + (dy/dx)²) dx
+	dy/dx = 3e**(sqrt(3x + 9)) / sqrt(3x + 9)
+	ds = sqrt(1 + 9*e**(2*sqrt(3x + 9))/(3x + 9)) dx
+
+	原式
+	= ∫ e**(sqrt(3x + 9)) * sqrt(1 + 9*e**(2*sqrt(3x + 9))/(3x + 9)) dx
+	令 u = 3x + 9, du = 3 dx
+	原式
+	= ∫ e**(sqrt(u)) * sqrt(1 + 9*e**(2*sqrt(u)/ u**2
+
+	xoozi此处题目印刷错误, 应为∫ e**(sqrt(3s + 9)) ds
+
+	令3s + 9 = x², ds = 2x dx, x = sqrt(3s + 9)
+	原式
+	= ∫ e**|x| 2x dx
+	套用分部积分公式
+	∫ u dv = uv - ∫ v du
+	令u = 2x, dv = e**|x| dx
+	du = 2 dx, v = e**|x|
+
+	原式
+	= 2xe**|x| - 2∫ e**|x| dx
+	= 2xe**|x| - 2e**|x| + C
+	= 2*sqrt(3s + 9)*e**(sqrt(3s + 9)) - 2*e**(sqrt(3s + 9)) + C
+
+
+27 ∫(0, pi/3) x tan²(x) dx
+	套用分部积分公式
+	∫ u dv = uv - ∫ v du
+	令 u = x, dv = tan²(x) dx => dv = sec²(x) - 1
+	du = dx,  v = tan(x) - x
+
+	反导数
+	= x*(tan(x) - x) - ∫ tan(x) - x dx
+	= x*(tan(x) - x) - ∫ sin(x)/cos(x) dx + ∫ x dx
+	= x*(tan(x) - x) + ln|cos(x)| + x²/2 + C
+
+	
+	原式
+	= pi/3*(sqrt(3) - pi/3) + ln 1/2 + pi²/18 - 0 + 0 + 0
+
+
+29 ∫ sin(ln(x)) dx
+	套用分部积分公式
+	∫ u dv = uv - ∫ v du
+	另u = sin(ln(x)), dv = dx
+	du = cos(ln(x))/x dx, v = x
+	
+	原式
+	=sin(ln(x)) * x - ∫ cos(ln(x)) dx
+	
+	对∫cos(ln(x)) dx套用分部积分公式
+	∫ f dg = fg - ∫ g df
+	令f=cos(ln(x)), dg = dx
+	df = -sin(ln(x))/x dx, g = x
+
+	∫cos(ln(x)) dx
+	= cos(ln(x)) * x + ∫ sin(ln(x)) dx
+
+
+	∫ sin(ln(x) dx
+	=sin(ln(x)) * x - cos(ln(x)) * x - ∫ sin(ln(x)) dx
+
+	=> ∫ sin(ln(x) dx = (sin(ln(x))*x - cos(ln(x))*x)/2 + C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

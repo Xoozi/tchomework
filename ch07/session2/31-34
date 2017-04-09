@@ -1,0 +1,41 @@
+微分方程
+
+31. dy/dx = x² e**(4x)
+
+	等价于求反导数
+	∫ x² e**(4x) dx
+	
+	列表积分法:
+	u		v
+	x²	(+)	e**(4x)
+	2x	(-)	1/4e**(4x)
+	2	(+)	1/16e**(4x)
+	0	(-)	1/64e**(4x)
+
+	原式
+	= e**(4x) x²/4 - e**(4x) x/8 + e**(4x) 1/32 + C
+	= e**(4x) (x²/4 - x/8 + 1/32) + C
+
+
+33. dy/dx = sin(sqrt(x))
+
+	等价于求反导数
+	∫ sin(sqrt(x)) dx
+	
+	令y² = x
+	2y dy = dx
+
+	反导数
+	=∫ sin(y) 2y dy
+	套用分部积分公式
+	∫ u dv = uv ∫ v du
+	令u = 2y, dv = sin(y) dy
+	du = 2 dy, v = -cos(y)
+
+	反导数
+	= -2y cos(y) + 2∫ cos(y) dy
+	= -2y cos(y) + 2sin(y) + C
+	= -2sqrt(x) cos(sqrt(x)) + 2sin(sqrt(x)) + C
+
+
+	xoozi这个套路有点强
