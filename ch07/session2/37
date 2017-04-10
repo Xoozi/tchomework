@@ -1,0 +1,23 @@
+求体积
+求第一像限中由坐标轴, 曲线y = e**x, 和直线x = ln 2界定的区域绕直线x = ln 2旋转生成的立体体积
+
+	用层壳法:
+	h 	= e**x
+	r 	= ln 2 - x
+
+	V 	= 2pi ∫(0, ln 2) r h dx
+		= 2pi ∫(0, ln 2) (ln 2 - x) e**x dx
+
+		反导数	= ∫ (ln 2 - x) e**x dx
+			套用分部积分公式∫ u dv = uv - ∫ v du
+			令u	= (ln 2 - x), dv = e**x dx
+			du	= - dx, v = e**x
+			= (ln 2 - x) e**x + ∫ e**x dx
+			= (ln 2 - x) e**x + e**x + C
+	V	= 2pi ((ln 2 - x) e**x + e**x) |(0, ln 2)
+		= 2pi (0 + 2 - ln 2 - 1)
+		= 2pi (1 - ln 2)
+
+		
+
+	

@@ -1,0 +1,34 @@
+平均值
+一个减速力, 形象化为右图中的减振器, 放慢重力弹簧的运动, 使得在时刻t, 质量的位置是
+y = 2e**(-t) cos t, t > 0
+
+求y 在区间 0 <= t < = 2pi上的平均值
+
+平均值 = ∫(0, 2pi) y dt / 2pi
+
+	反导数 = ∫ 2e**(-t) cos t dt
+	套用分部积分公式∫ u dv = uv - ∫ v du
+	令u = cos t, dv = 2e**(-t) dt
+	du = -sin t dt, v = -2e**(-t)
+	∫ 2e**(-t) cos t dt
+	= -2e**(-t) cos t - ∫ -2e**(-t) -sin t dt
+	= -2e**(-t) cos t - ∫ 2e**(-t) sin t dt
+
+	对∫ 2e**(-t) sin t dt, 套用分部积分公式 ∫ u dv = uv - ∫ v du
+	令u = sin t, dv = 2e**(-t) dt
+	du = cos t dt, v = -2e**(-t)
+
+	∫ 2e**(-t) cos t dt 
+	= -2e**(-t) cos t - ∫ 2e**(-t) sin t dt 
+	= -2e**(-t) cos t - (-2e**(-t) sin t - ∫-2e**(-t) cos t dt
+	= -2e**(-t) cos t - (-2e**(-t) sin t + ∫ 2e**(-t) cos t dt)
+	= -2e**(-t) cos t + 2e**(-t) sin t - ∫ 2e**(-t) cos t dt
+
+	=>
+	∫ 2e**(-t) cos t dt 
+	= e**(-t)sin t - e**(-t) cos t + C
+
+平均值	= 1/2pi (e**(-t) sin t - e**(-t) cos t)|(0, 2pi)
+	= 1/2pi (0 - e**(-2pi) - 0 + 1)
+	= 1/2pi (1 - e**(-2pi)
+

@@ -1,0 +1,30 @@
+求面积
+求由曲线y = x sin x和x轴围成的面积. 对于
+
+先求反导数, 套用分部积分公式 ∫ u dv = uv - ∫ v u
+令u = x, dv = sin x dx
+du = dx, v = -cos x
+
+∫ x sin x dx = -x cos x + ∫ cos x dx = -x cos x + sin x + C
+
+(a)0 <= x <= pi
+	∫(0, pi) x sin x dx = (-x cos x + sin x)|(0, pi) = pi + 0 - -0 + 0 = pi
+
+(b)pi <= x <= 2pi
+	∫(pi, 2pi) x sin x dx = (-x cos x + sin x)|(pi, 2pi) = -2pi + 0 -pi - 0 = -3pi
+	面积为绝对值, 3pi
+
+(c)2pi <= x <= 3pi
+	∫(2pi, 3pi) x sin x dx = (-x cos x + sin x)|(2pi, 3pi) = 3pi + 0 - -2pi + 0 = 5pi
+
+(d)看出什么模式?夹在曲线和x轴之间满足npi <= x <= (n+1)pi的区域的面积
+	(2n+1)pi
+	∫(npi, (n+1)pi) x sin x dx = (-x cos x + sin x)|(npi, (n+1)pi)
+	当n为偶数时
+	= -(n+1)pi cos((n+1)pi) + sin((n+1)pi) + npi cos(npi) - sin(npi)
+	= -(n+1)pi -1 + 0 + npi - 0
+	= (2n + 1)pi
+	当n为奇数时
+	= -(-(n+1)pi cos((n+1)pi) + sin((n+1)pi) + npi cos(npi) - sin(npi))
+	= -(-(n+1)pi + 0 -npi + 0)
+	= (2n + 1)pi

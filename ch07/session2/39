@@ -1,0 +1,39 @@
+求体积
+求第一像限中有坐标轴和曲线y = cos x, 0 <= x <= pi/2, 界定的区域:
+
+(a)绕y轴旋转生成的立体体积
+	层壳法:
+	h 	= cos x
+	r 	= x
+	V	= 2pi ∫(0, pi/2) rh dx
+		= 2pi ∫(0, pi/2) x cos x dx
+
+		反导数	= ∫ x cos x dx
+		套用分部积分公式∫ u dv = uv - ∫ v du
+		令u = x, dv = cos x dx
+		du = dx, v = sin x
+		反导数	= x sin x - ∫ sin x dx
+			= x sin x + cos x + C
+	V	= 2pi (x sin x + cos x)|(0, pi/2)
+		= 2pi (pi/2 + 0 - 0 - 1)
+		= pi² - 2pi
+
+	
+
+(b)绕直线x = pi/2
+	层壳法:
+	h	= cos x
+	r	= pi/2 - x
+	V	= 2pi ∫(0, pi/2) rh dx
+		= 2pi ∫(0, pi/2) (pi/2 - x) cos x dx
+
+		反导数	= ∫ (pi/2 - x) cos x dx
+		套用分部积分公式 ∫ u dv = uv - ∫ v du
+		令u = (pi/2 - x), dv = cos x dx
+		du = -dx, v = sin x
+		反导数	= (pi/2 - x) sin x + ∫ sin x dx
+			= (pi/2 - x) sin x - cos x + C
+
+	V	= 2pi ((pi/2 - x) sin x - cos x)|(0, pi/2)
+		= 2pi (0 - 0 - 0 + 1)
+		= 2pi 
