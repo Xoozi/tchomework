@@ -1,0 +1,23 @@
+使用分部积分建立递推公式
+
+43. ∫ x**n cos x dx = x**n sin x - n∫ x**(n-1) sin x dx
+
+	∫ x**n cos x dx 套用分部积分公式
+	∫ u dv = uv - ∫ v du
+	令u = x**n, dv = cos x dx
+	du = nx**(n-1) dx, v = sin x
+	∫ x**n cos x dx = x**n sin x - ∫ sin x n x**(n-1) dx = x**n sin x - n∫ x**(n-1) sin x dx
+
+
+45. ∫ x**n e**(ax) dx = x**n e**(ax)/a - n/a ∫ x**(n-1) e**(ax) dx, a != 0
+
+	
+	∫ x**n e**(ax) dx 套用分部积分公式
+	∫ u dv = uv - ∫ v du
+	令u = x**n, dv = e**(ax) dx
+	du = n x**(n-1) dx, v = e**(ax)/a
+
+	∫ x**N e**(ax) dx = x**n e**(ax)/a - ∫ e**(ax)/a n x**(n-1) dx
+			= x**n e**(ax)/a - n/a ∫e**(ax) x**(n-1) dx
+	
+

@@ -1,0 +1,18 @@
+积分反函数
+假定函数f有一个反函数inv_f
+
+(a)证明
+	∫ inv_f(x) dx = ∫ y f'(y) dy
+	
+	y = inv_f(x)
+	x = f(y) => dx = f'(y) dy
+
+	∫ inv_f(x) dx = ∫ y dx = ∫ y f'(y) dy
+
+
+(b)对第二部分的∫ y f'(y) dy, 证明 ∫ y f'(y) dy = x inv_f(x) - ∫ f(y) dy
+	套用分部积分公式 ∫u dv = uv ∫ v du
+	令u = y = inv_f(x), dv = f'(y) dy
+	du = dy, v = f(y) = x
+
+	∫ y f'(y) dy = y f(y) - ∫ f(y) dy = inv_f(x) x - ∫ f(y) dy

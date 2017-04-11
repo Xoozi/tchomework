@@ -1,0 +1,13 @@
+使用47题的结论求积分
+
+49. ∫ asin x dx
+	= x asin x - ∫ sin y dy
+	= x asin x + cos y + C
+	= x asin x + cos(asin x) + C
+
+	xoozi 有点意思, y有点绕
+
+51. ∫ acos x dx
+	= x acos x - ∫ cos y dy
+	= x acos x - sin(y) + C
+	= x acos x - sin(acos(x)) + C
