@@ -1,0 +1,150 @@
+1. ∫ 1/sqrt(9 + x²) dx
+
+    令x = 3tan θ, -pi/2 < θ < pi/2
+    dx = 3 sec² θ dθ
+
+    原式
+    = ∫ 3 sec² θ/sqrt(9 + 9tan² θ) dθ
+    = ∫ 3 sec² θ/3sqrt(sec² θ) dθ
+    = ∫ sec θ dθ
+    = ln| sec θ + tan θ| + C
+
+
+3. ∫ sqrt(25 - t²) dt
+
+    令t = 5sin θ,  -pi/2 < 0 < pi/2
+    dt = 5 cos θ dθ
+
+    原式
+    = ∫ 5 cos θ sqrt(25 - 25sin² θ) dθ
+    = ∫ 25 cos θ sqrt(cos² θ) dθ
+    = ∫ 25 cos²θ dθ
+    = 25/2 ∫ 1 + cos 2θ dθ
+    = 25/2 θ + 25/4 sin 2θ + C
+        θ = arcsin(t/5)
+        sin 2θ = 2sinθcosθ = 2 t/5 sqrt(1 - t²/25)
+    = 25/2(arcsin(t/5) + t/5 sqrt(1 - t²/25) + C
+
+
+5. ∫ 1/sqrt(4x² - 49) dx,  x > 7/2
+
+    令 x = 7/2 sec θ,  x > 7/2, x/(7/2) > 1, 0 < θ < pi/2
+    dx = 7/2 sec θ tan θ
+
+    原式
+    = ∫ (7/2 sec θ tan θ)/sqrt(49 sec² θ - 49) dθ
+    = ∫ (1/2 sec θ tan θ)/sec θ dθ
+    = 1/2 ∫ tan θ dθ
+    = -1/2 ln cosθ + C
+    = -1/2 ln(7/2x) + C
+
+
+7. ∫ 1/(x² sqrt(x² - 1) dx, x > 1
+    
+    令x = sec θ, x > 1, 0 < θ < pi/2
+    dx = sec θ tan θ
+
+
+    原式
+    = ∫ (sec θ tan θ)/(sec² θ sqrt(tan²θ)) dθ
+    = ∫ 1/sec θ dθ
+    = ∫ cos θ dθ
+    = sin θ + C
+
+        x = 1/cos θ
+        cos θ = 1/x
+        sin θ = sqrt(1 - 1/x²)
+    = sqrt(1 - 1/x²) + C
+
+
+9. ∫ x³/sqrt(x² + 4) dx
+
+    令x = 2tan θ, -pi/2 < θ < pi/2
+    dx = 2sec² θ dθ
+
+    原式
+    = ∫ (8tan³ θ sec² θ)/sqrt(4tan² + 4) dθ
+    = ∫ (4tan³ θ sec² θ)/sec θ dθ
+    = ∫ 4tan³ θ sec θ dθ
+    = 4∫ tan² θ tan θ sec θ dθ
+    = 4∫ (sec² θ - 1) tan θ sec θ dθ
+
+        令u = sec θ
+        du = tan θ sec θ dθ
+    = 4∫ u² - 1 du
+    =  4/3 u³ - u + C
+    = 4/3 sec³ θ - sec θ + C
+
+        x = 2 tan θ
+        tan θ = x/2
+        sec θ = sqrt(1 + x²/4)
+    = 4/3 (1 + x²/4)**(3/2) - (1 + x²/4)**(1/2) + C
+
+11. ∫ 8/(w² sqrt(4 - w²)) dw
+    
+    令w = 2sin θ,  -pi/2 < θ < pi/2
+    dw = 2cos θ dθ
+
+    原式
+    = ∫ 16cos θ/(4sin² θ 2 sqrt(1 - sin² θ)) dθ
+    = 2∫ cos θ/(sin² θ cos θ) dθ
+    = 2∫ csc² θ dθ
+    = -2ln|csc θ + cot θ| + C
+
+        w = 2sin θ
+        csc θ = 2/w
+        cot θ = sin θ/ cos θ = w/2/sqrt(1 - w²/4)
+    = -2ln|2/w + w/2sqrt(1 - w²/4)| + C
+
+13. ∫ 1/(x² - 1)**(3/2) dx,  x > 1
+
+    令x = sec θ, 0 < θ < pi/2
+    dx = sec θ tan θ dθ
+
+    原式
+    = ∫ (sec θ tan θ)/(tan² θ)**(3/2) dθ
+    = ∫ (sec θ tan θ)/tan³ θ dθ
+    = ∫ sec θ/tan² θ dθ
+
+        x = sec θ, tan² θ = x² - 1
+
+15. ∫ (1 - x²)**(3/2) / x**6 dx
+
+    令x = sin θ,  -pi/2 < θ < pi/2
+    dx = cos θ dθ
+
+    原式
+    = ∫ cosθ**4/sinθ**6 dθ
+    = ∫ cotθ**4 * cscθ**2 dθ
+
+    令u = cotθ
+    du = -cscθ**2 dθ
+    = -∫ u**4 du
+    = 1/5 u**5 + C
+
+    = 1/5 cotθ**5 + C
+
+        sin θ = x
+        cos θ = sqrt(1 - x²)
+        cot θ = sqrt(1 - x²)/x
+    = 1/5 (sqrt(1-x²)/x)**5 + C
+
+17. ∫ 8/(4x² + 1)² dx
+
+    令x =1/2tan θ,  -pi/2 < θ < pi/2
+    4x² = tan² θ, dx = 1/2sec² θ dθ
+
+    原式
+    = ∫ 4sec² θ/(sec θ)**4 dθ
+    = 4∫cos² θ dθ
+    = 2∫1 + cos(2θ) dθ
+    = 2θ + sin(2θ) + C
+
+        x = 1/2 tan θ
+        θ = arctan 2x
+
+
+
+
+
+
