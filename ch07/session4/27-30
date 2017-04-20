@@ -1,0 +1,44 @@
+27. x dy/dx = sqrt(x² - 4), x >= 2, y(2) = 0
+
+    dy = sqrt(x² - 4)/x dx
+    y = ∫ sqrt(x² - 4)/x dx
+
+        令x = 2sec θ,
+        dx = 2 sec θ tan θ dθ
+    = ∫ 2sqrt(sec² θ - 1) 2 sec θ tan θ / 2sec θ dθ
+    = ∫ 2 tan² θ d θ
+    = 2∫ sec² θ - 1 dθ
+    = 2(tan θ - θ) + C
+
+        x = 2时, 2 = 2sec θ => sec θ = 1 θ = 0
+
+    = 2(0 - 0) + C = 0
+    C = 0
+
+    y   = 2(tan θ - θ)
+        = 2(sqrt(x²/4 - 1) - arcsec(x/2))
+
+
+
+29. (x² + 4) dy/dx = 3, y(2) = 0
+
+    dy = 3/(x² + 4) dx
+
+    y = 3∫1/(x² + 4) dx
+
+    令u = x/2, du = 1/2dx dx = 2 du
+    
+    y   = 3 ∫ 1/(4u² + 4) 2 du
+        = 3/2 ∫ 1/(u² + 1) du
+        = 3/2 arctan(u) + C
+        = 3/2 arctan(x/2) + C
+
+    y(2) = 0
+        = 3/2 arctan(1) + C
+        = 3/2 pi/4+ C = 0
+        C = -3pi/8
+
+    y   = 3/2 arctan(x/2) - 3pi/8
+
+
+        

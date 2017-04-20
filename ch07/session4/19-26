@@ -1,0 +1,143 @@
+19. ∫(0, ln 4) e**t/sqrt(e**2t + 9) dt
+
+    先看反导数
+    ∫ e**t/sqrt(e**2t + 9) dt
+
+    令 e**t = 3tan θ, 0 < θ < pi/2
+    两边微分
+    e**t dt = 3sec² θ dθ
+
+    = ∫ 3sec² θ / 3sqrt(sec² θ) dθ
+    = ∫ sec θ dθ
+    = ln|sec θ + tan θ| + C
+
+    因为0 < θ < pi/2
+    = ln(sec θ + tan θ) + C
+
+        e**t = 3tan θ
+        tan θ = e**t/3
+        sec θ = sqrt(e**2t/9 - 1)
+    = ln(sqrt(e**2t/9 - 1) + e**t/3) + C
+
+xoozi   我的反导数计算没问题, 但这里如果代换回去再计算定积分, 难于化简, 而且会出现e**2t/9 - 1有时小于0的问题
+答案的做法是用θ来算定积分, e**t = 3tan θ, θ = arctan(e**t/3)
+原t的积分限(0, ln4), 变成θ积分限(arctan(1/3), arctan(4/3))这样就妥妥的了
+
+
+21. ∫(1/12, 1/4) 2/(sqrt(t) + 4tsqrt(t)) dt
+
+    ∫ 2/(sqrt(t)(1 + 4t) dt
+
+        令 sqrt(t) = 1/2 tan θ
+        1/12 < t < 1/4
+        sqrt(1/4*1/3) < sqrt(t) < 1/2
+        1/2sqrt(1/3) < sqrt(t) < 1/2
+        1/2sqrt(1/3) < 1/2 tan θ < 1/2
+        sqrt(1/3) < tan θ < 1
+
+        pi/6 < θ < pi/4
+
+        t**(1/2) = 1/2 tan θ
+        t**(-1/2) dt = sec² θ dθ 
+
+    = ∫ 2 sec² θ / sec² θ  dθ
+    = ∫ 2 dθ
+    = 2θ + C
+
+    定积分
+    = pi/2 - pi/3
+    = pi/6
+
+
+23. ∫ 1/(x sqrt(x² - 1)) dx
+
+    令 x = sec θ
+    dx = sec θ tan θ dθ
+    θ = arcsec x
+
+    原式
+    = ∫ (sec θ tan θ)/(sec θ tanθ) dθ
+    = θ + C
+    = arcsec x + C
+
+25. ∫ x/sqrt(x² - 1) dx
+
+    领 x = sec θ
+    dx = sec θ tan θ dθ
+
+    原式
+    = ∫ sec θ sec θ tan θ /tan θ dθ
+    = ∫ sec² θ dθ
+    = tan θ + C
+    = sqrt(x² - 1) + C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

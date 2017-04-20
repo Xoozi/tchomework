@@ -105,8 +105,14 @@
     = ∫ (sec θ tan θ)/(tan² θ)**(3/2) dθ
     = ∫ (sec θ tan θ)/tan³ θ dθ
     = ∫ sec θ/tan² θ dθ
+    = ∫ 1/cos θ * cos² θ/sin θ dθ
+    = ∫ cos θ/ sin² θ dθ
 
-        x = sec θ, tan² θ = x² - 1
+    令u = sin θ, du = cos θ dθ
+    = ∫ 1/u² du
+    = -1/u + C
+    = -1/sin θ + C
+    = -x/sqrt(x² - 1) + C
 
 15. ∫ (1 - x²)**(3/2) / x**6 dx
 
