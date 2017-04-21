@@ -1,0 +1,44 @@
+替换 z = tan(x/2)
+
+把含有sin x和cos x的有理函数的积分问题归结为涉及有理函数z的问题, 在用部分分式求解
+证明下列等式成立
+
+(a) tan x/2 = sin x / (1 + cos x)
+    
+    tan x/2 = sin x/2 / cos x/2
+
+    sin x   = 2 sin x/2 cos x/2
+    cos x   = cos² x/2 - sin² x/2
+    1       = cos² x/2 + sin² x/2
+
+    1 + cosx= 2 cos² x/2
+    
+    sin x / (1 + cos x) 
+    = (2 sin x/2 cos x/2) / (2 cos² x/2)
+    = sin x/2 / cos x/2
+    = tan x/2
+
+(b) cos x   = (1 - z²) / (1 + z²)
+
+    cos x   = (1 - sin² x/2 / cos² x/2) / (1 + sin² x/2 / cos² x/2)
+            = ((cos² x/2 - sin² x/2)/cos² x/2) / ((cos² x/2 + sin² x/2)/cos² x/2)
+            = cos x / 1
+            = cos x
+
+(c) sin x   = 2z/(1 + z²)
+    
+    sin x   = (2 sin x/2 / cos x/2) / (1 + sin² x/2/cos² x/2)
+            = (2 sin x/2 / cos x/2) / (1/cos² x/2)
+            = 2 sin x/2 cos x/2
+            = sin x
+
+(d) dx      = 2/(1 + z²) dz
+    dz      = (1 + z²)/2 dx
+            = sec²(x/2)/2 dx
+
+    z       = tan(x/2)
+    dz      = d(sin(x/2)/cos(x/2)))
+            = (1/2cos(x/2)cos(x/2) + 1/2sin(x/2)sin(x/2)) / cos²(x/2)
+            = 1/2 * 1/cos²(x/2)
+            = sec²(x/2)/2
+        
