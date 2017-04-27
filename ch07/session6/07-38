@@ -1,0 +1,26 @@
+7. lim(x->0) sin x²/x                       0/0
+    = lim(x->0) (cos x² 2x) / 1         
+    = 0
+
+
+9. lim(t->0) (cos t - 1)/(e**t - t - 1)     0/0
+    = lim(t->0) -sin t / e**t - 1           0/0
+    = lim(t->0) -cos t / e**t
+    = -1
+
+11. lim(x->∞) ln(x + 1)/log(2, x)           ∞/∞
+    = lim(x->∞) 1/(x + 1) / 1/(x ln 2)      
+    = lim(x->∞) ln 2   x/x + 1            
+    = ln 2 lim(x->∞) 1/1                    
+    = ln 2
+
+13. lim(x->0+) ln(x² + 2x)/ ln x            -∞/-∞
+    = lim(x->0+) (2x + 2)/(x² + 2x) / 1/x   ∞/∞
+    = lim(x->0+) (2x + 2)/(x + 2)           
+    = 1
+
+15. lim(x->0+) x lnx
+    = lim(x->0+) ln x/ 1/x                  -∞/∞
+    = lim(x->0+) 1/x / -1/x²
+    = lim(x->0+) -x
+    = 0
