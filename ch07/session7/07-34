@@ -38,3 +38,50 @@
     = ln 3 - ln 1
     = ln 3
 
+15. ∫(0, 1) (x + 1)/sqrt(x² + 2x) dx
+
+    = lim(a->0+) ∫(a, 1) (x + 1)/sqrt(x² + 2x) dx
+
+        看反导数
+        ∫ (x + 1)/sqrt(x² + 2x) dx
+        令 u = x² + 2x
+        du = 2x + 2 dx
+        反导数
+        = 1/2 ∫ u**(-1/2) du
+        = u**(1/2) + C
+        = sqrt(x² + 2x) + C
+    = lim(a->0+) sqrt(x² + 2x) | (a, 1)
+    = lim(a->0+) sqrt(3) - sqrt(a² + 2a)
+    = sqrt(3)
+
+17. ∫(0, ∞) 1/((1 + x) sqrt(x)) dx
+
+    xoozi第一步差点没想出来, 前面的有点生了
+    = lim(a->∞) ∫(0, a) 1/((1 + x) sqrt(x)) dx
+        
+        看反导数
+        ∫ 1/((1 + x) sqrt(x)) dx
+            令 u = sqrt(x)
+            du = 1/2sqrt(x) dx
+        = ∫ 2/(1 + u²) du
+        = 2 arctan(sqrt(x)) + C
+
+    = lim(a->∞) 2arctan(sqrt(a)) - 2arctan(0)
+    = pi
+
+
+19. ∫(1, 2) 1/(x sqrt(x² - 1) dx
+
+    = lim(a->1+) ∫(a, 2) 1/(x sqrt(x² - 1) dx
+    = lim(a->1+) arcsec(2) - arcsec(a)
+    = pi/3
+
+
+21. ∫(2, ∞) 2/(x² - x) dx
+    
+    = lim(a->∞) ∫(2, a) 2/(x(x - 1)) dx
+    = 2 lim(a->∞) ∫(2, a) 1/(x(x - 1)) dx
+    = 2 lim(a->∞) ∫(2, a) 1/(x - 1) - 1/x dx
+    = 2 lim(a->∞) ∫(2, a) 1/(x - 1) dx - ∫(2, a) 1/x dx
+    = 2 lim(a->∞) ln(a) - ln(1) - ln(a - 1) + ln 2
+    = ln(4)
