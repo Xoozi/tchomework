@@ -86,3 +86,66 @@
     = e**0
     = 1
 
+
+29. lim(x->0+) (1 + x)**(1/x)
+
+	设f(x) = (1 + x)**(1/x)
+	ln(f(x)) = ln(1 + x)/x			0/0
+
+	lim(x->0+) ln(f(x))
+	= lim(x->0+) ln(1 + x)/x		0/0
+	= lim(x->0+) 1/(1 + x)
+	= 1
+
+	lim(x->0+) f(x)
+	= e**(lim(x->0+) ln(f(x))
+	= e
+
+31. lim(x->0+) (sin x)**x
+
+	设f(x) = (sin x)**x
+	ln(f(x)) = x ln(sin x)
+
+	lim(x->0+) ln(f(x))
+		= lim(x->0+) ln(sin x) / 1/x	-∞/∞
+		= lim(x->0+) tan x / -1/x²
+		= 0
+
+	lim(x->0+) f(x)
+	= e**(lim(x->0+) ln(f(x)))
+	= 1
+
+33. lim(x->1+) x**(1/(1 - x))
+	
+	设f(x) = x**(1/(1 - x))
+
+	ln(f(x)) = ln(x)/(1 - x)
+
+	lim(x->1+) ln(f(x)) 
+	= lim(x->1+) ln(x)/(1 - x)  		0/0
+	= lim(x->1+) -1/x
+	= -1
+
+	lim(x->1+) f(x)
+	= e**(lim(x->1+) ln(f(x)))
+	= 1/e
+
+35. lim(x->∞) ∫(x, 2x) 1/t dt
+	
+	∫(x, 2x) 1/t dt
+	= ln(2x) - ln(x)
+	= ln(2x/x)
+
+	原式
+	= lim(x->∞) ln(2x/x)
+	= ln(lim(x->∞) 2x/x)
+	= ln 2
+
+
+37. lim(x->0) (cos x - 1)/(e**x - x - 1)	0/0
+
+	= lim(x->0) -sin x/(e**x -1)		0/0
+	= lim(x->0) -cos x/(e**x)
+	= -1
+
+	

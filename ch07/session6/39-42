@@ -1,0 +1,33 @@
+洛必达法则无助于求下面的极限, 将陷于循环
+
+39. lim(x->∞) sqrt(9x + 1)/sqrt(x + 1)
+
+	原式是		∞/∞不定型
+
+	=lim(x->∞) 9/sqrt(9x + 1)/1/sqrt(x + 1)
+	=lim(x->∞) 9 sqrt(x + 1)/sqrt(9x + 1)  		∞/∞
+	=lim(x->∞) 9 1/sqrt(x + 1)/9/sqrt(9x + 1)	
+	=lim(x->∞) sqrt(9x + 1)/sqrt(x + 1)		陷入循环
+
+
+	我试着上下同除sqrt(x)
+	=lim(x->∞) sqrt(9 + 1/x)/sqrt(1 + 1/x)
+	= sqrt(9)/sqrt(1)
+	= 3
+
+41. lim(x->pi/2-) sec x / tan x
+
+	原式是∞/∞不定型
+
+	= lim(x->pi/2-) tan x sec x / sec² x
+	= lim(x->pi/2-) tan x / sec x
+	= lim(x->pi/2-) sec² x / tan x sec x
+	= lim(x->pi/2-) sec x / tan x		陷入循环
+
+	1 + tan² x = sec x
+	我试着带入 sec x = sqrt(1 + tan² x)
+
+	= lim(x->pi/2-) sqrt(1 + tan² x)/tan x
+	= lim(x->pi/2-) sqrt(1/tan² x + 1) / 1
+	= 1
+
