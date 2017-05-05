@@ -85,3 +85,24 @@
     = 2 lim(a->∞) ∫(2, a) 1/(x - 1) dx - ∫(2, a) 1/x dx
     = 2 lim(a->∞) ln(a) - ln(1) - ln(a - 1) + ln 2
     = ln(4)
+
+23. ∫(0, 2) 1/sqrt(4 - x²) dx
+
+    = lim(a->0+) ∫(a, 2) 1/sqrt(4 - x²) dx
+    = lim(a->0+) arcsin(x/2) | (a, 2)
+    = lim(a->0+) arcsin(1) - arcsin(a/2)
+    = pi/2
+
+
+25. ∫(0, ∞) 1/((1 + x²) (1 + arctan x)) dx
+
+        令u = 1 + arctan x
+        du = 1/(1 + x²) dx
+
+        ∫ 1/((1 + x²) (1 + arctan x)) dx
+        = ∫ 1/u du
+        = ln |u| + C
+        = ln |1 + arctan x|
+
+    = lim(a->∞) (ln|1 + arctan a| - ln|1 + arctan 0|)
+    = ln(1 + pi/2)
