@@ -106,3 +106,80 @@
 
     = lim(a->∞) (ln|1 + arctan a| - ln|1 + arctan 0|)
     = ln(1 + pi/2)
+
+27. ∫(-1, 4) 1/sqrt(|x|) dx
+	
+	= ∫(-1, 0) 1/sqrt(-x) dx + ∫(0, 4) 1/sqrt(x) dx
+	= lim(a->0-) ∫(-1, a) 1/sqrt(-x) dx + lim(b->0+) ∫(b, 4) 1/sqrt(x) dx
+	= 2 lim(a->0-) (-sqrt(-a) + sqrt(1)) + 2 lim(b->0+) (sqrt(4) - sqrt(b))
+	= 2 + 4
+	= 6
+
+29. ∫(-∞, 0) x e**x dx
+	
+	反导数
+	∫ x e**x dx, 令u = x, dv = e**x dx
+	du = dx, v = e**x
+	套用分部积分公式∫ u dv = uv - ∫v du
+	= x e**x - ∫ e**x dx
+	= x e**x - e**x + C
+
+	原式
+	= lim(a->-∞) (x e**x - e**x)|(a, 0)
+	= lim(a->-∞) 0 - 1 -a*e**a - e**a
+	= lim(a->-∞) a * e**a     -  1
+		极限是-∞ * 0的不定型
+		使用点技巧
+		= lim(a->-∞) a/e**(-a) -∞/0 不定型, 使用洛必达法则
+		= lim(a->-∞) 1/-e**(-a)
+		= 0
+	= -1
+
+31. ∫(-∞, ∞) e**(-abs(x)) dx
+	
+	= ∫(-∞, 0) e**(x) dx + ∫(0, ∞) e**(-x) dx
+	= lim(a->-∞) ∫(a, 0) e**x dx + lim(b->∞) ∫(0, b) e**(-x) dx
+	= lim(a->-∞) 1 - e**a + lim(b->∞) e**(-b) - 1
+	= 0
+
+	xoozi 此题我脑抽了
+	= lim(a->-∞) ∫(a, 0) e**x dx + lim(b->∞) ∫(0, b) e**(-x) dx
+	= lim(a->-∞) 1 - e**a + lim(b->∞) 1 - e**(-b)
+	= 2才对
+
+
+33. ∫(0, 1) x ln x dx
+	
+	= lim(a->0+) ∫(a, 1) x ln x dx
+
+		反导数
+		= ∫ x ln x dx, 令 u = ln x, dv = x dx
+			du = 1/x dx, v = 1/2 x²
+			套用分部积分公式 ∫ u dv = uv - ∫v du
+		= 1/2 x² ln x - ∫ 1/2 x² 1/x dx
+		= 1/2 x² ln x - 1/2 ∫ x dx
+		= 1/2 x² ln x - 1/4 x² + C
+		= 1/4 x² (2 ln x - 1) + C
+
+	= 1/4 lim(a->0+) (x² (2 ln x - 1))|(a, 1)
+	= 1/4 lim(a->0+) -1 - 2 a² ln a + a²
+	= -1/2 lim(a->0+) a² ln a       - 1/4
+		
+		lim(a->0+) a² ln a		0 * ∞不定型
+		= lim(a->0+) ln a/ a**-2 	∞/∞不定型
+		= lim(a->0+) 1/a / -2 a**-3
+		= lim(a->0+) 1 / -2 a**-4
+		= lim(a->0+) -2 a**4
+		= 0
+	= -1/4
+
+
+
+
+
+
+
+
+
+
+
