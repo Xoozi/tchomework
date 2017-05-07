@@ -1,0 +1,4 @@
+论证的错误在:
+lim(b->∞) ln(x - 2) |(3, b) - lim(b->∞) ln x |(3, b)
+= lim(b->∞) ln(b - 2) - ln 1 - ln(b) + ln 3
+= ln 3
