@@ -1,0 +1,67 @@
+积分判别法确定级数的收敛和发散
+
+1 ∑(n=1, ∞) 5/(n + 1)
+
+	f(x) = 5/(x + 1)
+
+	∫(1, ∞) f(x) dx = lim(a->∞) ∫(1, a) 5/(x + 1) dx
+	= 5*lim(a->∞) ln(x + 1) |(1, a)
+	= 5*lim(a->∞) ln(a+1) - ln(2)
+	= ∞
+
+	故级数发散
+
+3 ∑(n=2, ∞) ln n/n
+
+	f(x) = ln x/ x
+
+	∫(2, ∞) f(x) dx 
+	= lim(a->∞) ∫(2, a) ln x / x dx
+		令 u = ln x, du = 1/x dx
+	= lim(a->∞) ∫(ln 2, ln a) u du
+	= lim(a->∞) 1/2 u² |(ln 2, lna)
+	= 1/2 lim(a->∞) ln a ² - ln 2 ²
+	= ∞
+
+	故级数发散
+
+5 ∑(n=1, ∞) e**n/(1 + e**(2n))
+
+	f(x) = e**x/(1 + e**(2x)
+
+	∫(1, ∞) f(x) dx
+	= lim(a->∞) ∫(1, a) e**x/(1 + e**(2x)) dx
+		令 u = e**(2x), du = 2e**x dx
+
+	= 1/2 lim(a->∞) ∫(e**2, e**2a) 1/(1 + u) du
+	= 1/2 lim(a->∞) ln (1 + u) |(e**2, e**a)
+	= 1/2 lim(a->∞) ln (1 + e**a) - ln(1 + e**2)
+	= ∞
+
+	故级数发散
+
+	xoozi
+	从我换元时就错了
+		u = e**(2x), du = 2e**(2x), 就是此处
+
+		令 u = e**x, du = e**x dx
+	= lim(a->∞) ∫(e, e**a) 1/(1 + u²) du
+	= lim(a->∞) arctan(u) |(e, e**a)
+	= pi/2 - arctan(e)
+	约等于0.35, 说明积分收敛
+	故级数收敛
+
+
+
+7 ∑(n=3, ∞) (1/n) / (ln n  sqrt(ln² n - 1))
+
+	f(x) = (1/x) / (ln x sqrt(ln² x - 1))
+
+	∫(3, ∞) f(x) dx
+	= ∫(3, ∞) (1/x) / (ln x sqrt(ln² x - 1)) dx
+		令u = ln x, du = 1/x dx
+	= ∫(3, ∞) 1/(u sqrt(u² - 1)) du
+	= lim(a->∞) arcsec(u)|(ln 3, a)
+	= pi/2.0 - arccos(1/ln(3))
+	约等于1.144, 说明积分收敛
+	故级数收敛
