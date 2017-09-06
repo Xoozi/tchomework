@@ -1,0 +1,13 @@
+29. <3, 4>
+    norm = sqrt(9 + 16) = 5
+    normalize = <3/5, 4/5>
+
+31. <-15, 8>
+    norm = sqrt(15*15 + 64) = 17
+    normalize = <-15/17, 8/17>
+
+33. 6i - 8j
+    norm = sqrt(36 + 64) = 10
+    normalize = 0.6i - 0.8j
+
+
