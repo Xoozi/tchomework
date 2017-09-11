@@ -1,0 +1,25 @@
+
+(a)v·u, |v|和|u|
+(b)v和u夹角的余弦
+(c)u在v方向上的数值分量
+(d)向量proj(v, u)
+
+1. v = 2i - 4j, u = 2i + 4j
+    (a) v·u = 4 - 16 = -12, |v| = sqrt(20), |u| = sqrt(20)
+    (b) cos θ = v·u/(|v||u|) = -12/20 = -3/5
+    (c) u在v方向上的数值分量 = |u| cos θ = -3sqrt(20)/5
+    (d) proj(v, u) = v v·u/|v|² = -12/20 (2i - 4j) = -6/5i + 12/5j
+    xoozi 此题答案有问题, 怎么想也不可能v·u = -20
+
+3. v = -1i + j, u = sqrt(2)i + sqrt(3)j
+    (a) v·u = -sqrt(2) + sqrt(3), |v| = sqrt(2), |u| = sqrt(5)
+    (b) cos θ = v·u/(|v||u|) = (-sqrt(2) + sqrt(3))/sqrt(10)
+    (c) u在v方向上的数值分量 = |u| cos θ = (-sqrt(2) + sqrt(3))/sqrt(2) = -1 + sqrt(3/2)
+    (d) proj(v, u) = v v·u/|v|² = (-1i + j) (-sqrt(2) + sqrt(3))/2
+
+5. v = <1/sqrt(2), 1/sqrt(3)>, u = <1/sqrt(2), -1/sqrt(3)>
+
+    (a) v·u = 1/2 - 1/3 = 1/6, |v| = sqrt(1/2 + 1/3) = sqrt(5/6), |u| = sqrt(5/6)
+    (b) cos θ = v·u/(|v||u|) = 1/6/(5/6) = 1/5
+    (c) u在v方向上的数值分量 = |u| cos θ = sqrt(5/6)/5
+    (d) proj(v, u) = v v·u/|v|² = <1/sqrt(2), 1/sqrt(3)> 1/6/(5/6) = <1/5sqrt(2), 1/5sqrt(3)>
