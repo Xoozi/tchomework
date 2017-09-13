@@ -1,0 +1,11 @@
+正交单位向量
+若u和v是正交单位向量, 向量w = au + bv, 求 w·u
+
+设u = <u1, u2>, v = <v1, v2>
+w = <au1 + bv1, au2 + bv2>
+w·u = au1² + bv1u1 + au2² + bv2u2
+    = a(u1² + u2²) + b(v1u1 + v2u2)
+    = a|u|² + b u·v
+    
+    由于u, v是单位正交向量, u·v = 0, |u| = 1
+    = a
