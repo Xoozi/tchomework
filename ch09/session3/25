@@ -1,0 +1,16 @@
+在一个路径上的速度
+一个质点的位置由下式给定:
+r(t) = (sin t)i + (cos 2t)j
+
+(a)求质点的速度向量
+    v(t) = dr/dt = (cos t)i + (-2 sin 2t)j = (cos t)i - 4(sin t * cos t) j
+
+(b)对区间0 <= t <= 2pi上的t什么值dr/dt等于0
+    观察v(t), 可知在cos t = 0的时候, v(t) = 0
+    => pi/2, 3pi/2的时候, dr/dt = 0
+
+(c)求一条包含质点路径的曲线的笛卡尔方程, 
+    x = sin t
+    y = cos 2t  = cos² t - sin² t
+    观察一下可以把y写成只含x的表达式
+    y = 1 - 2x² 

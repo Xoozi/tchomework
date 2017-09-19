@@ -1,0 +1,9 @@
+15. ∫(1, 2) [(6 -6t)i + 3sqrt(t)j] dt
+    = (∫(1, 2) 6 - 6t dt) i + ∫(1, 2) 3sqrt(t) dt) j
+    = (6t - 3t²)|(1, 2) i + (2*t**(3/2))|(1, 2) j
+    = (12 - 12 - 6 + 3) i + (4*sqrt(2) - 2) j
+    = -3i +(4sqrt(2) - 2)j
+
+
+17. ∫[(sec t tan t)i + (tan t)j] dt
+    = sec t i + ln|sec t| j + C
