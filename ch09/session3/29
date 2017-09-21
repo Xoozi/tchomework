@@ -1,0 +1,95 @@
+圆形路径上的运动
+(a)到(e)的每个方程描述路径为单位圆周x² + y² = 1的质点的运动.
+尽管(a)到(e)的质点路径相同, 每个质点的行为, 或"运动学"是各不相同的, 对每个质点, 回答以下问题:
+
+i. 质点是否常速率? 如果有常速率是多少
+ii.质点的加速度向量是否总是正交于它的速度向量
+iii.质点绕原点顺时针还是逆时针运动
+iv.质点是否从点(1, 0)出发
+
+(a) r(t) = (cos t)i + (sin t)j, t >= 0
+
+    i.
+    v(t) = (-sin t)i + (cos t)j
+    |v| = sqrt(sin² t + cos² t) = 1
+    常速率1
+
+    ii.
+    a(t) = (-cos t)i + (-sin t)j
+    dot(v, a) = sin t cos t - sin t cos t = 0
+    总是正交
+
+    iii.
+    t = 0时, 在(1, 0), t = pi/2时在(0, 1)
+    应该是逆时针
+
+    iv.
+    r(0) = i
+    是从(1, 0)出发
+
+
+(b) r(t) = (cos 2t) i + (sin 2t)j, t >= 0
+    i.
+    常速率1
+
+    ii.
+    总是正交
+
+    iii.
+    逆时针
+
+    iv.
+    是从(1, 0)出发
+
+(c) r(t) = cos(t - pi/2)i + sin(t- pi/2)j, t>= 0
+
+    v(t) = (-sin t)i + (cos t)j
+    |v| = sqrt(sin² t + cos² t) = 1
+    常速率1
+    i.
+    常速率1
+
+    ii.
+    总是正交
+
+    iii.
+    逆时针
+
+    iv.
+    不是
+
+(d) r(t) = (cos t)i - (sin t)j, t >= 0
+
+    i.
+    v(t) = (-sin t)i + (-cos t)j
+    |v| = sqrt(sin² t + cos² t) = 1
+    常速率1
+
+    ii.
+    a(t) = (-cos t)i + (sin t)j
+    dot(v, a) = sin t cot t  - sin t cost = 0
+    总是正交
+
+    iii.
+    顺时针
+
+    iv.
+    是从(1, 0)出发
+
+(e) r(t) = cos(t²)i + sin(t²)j, t >= 0
+
+    i.
+    v(t) = (-sin(t²)*2t)i + (cos(t²)*2t)j
+    |v| = sqrt(4t²sin²(t²) + 4t²cos²(t²)) = 2t
+
+    ii.
+    a(t) = (-cos(t²)*4t² - 2sin(t²))i + (-sin(t²)*4t² + 2cos(t²))j
+    dot(v, a) = (sin(t²)*cos(t²)*8t³ + 2sin²(t²) -
+            cos(t²)*sin(t²)*8t³ + 2cos²(t²) = 2
+    总不是正交
+
+    iii.
+    逆时针
+
+    iv.
+    是从(1, 0)出发

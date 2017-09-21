@@ -1,0 +1,20 @@
+和与差法则
+证明, 若u和v是t的可微向量函数, 则
+
+(a) d/dt(u + v) = du/dt + dv/dt
+    
+    设
+    u(t) = u1(t)i + u2(t)j
+    v(t) = v1(t)i + v2(t)j
+
+    u(t) + v(t) = (u1(t) + v1(t))i + (u2(t) + v2(t))j
+    d/dt(u(t) + v(t)) = (d/dt (u1(t) + v1(t)))i + (d/dt (u2(t) + v2(t)))j
+    = (d/dt(u1(t)) + d/dt(v1(t)))i + (d/dt(u2(t)) + d/dt(v2(t)))j
+    = (d/dt(u1(t))i + (d/dt(u2(t))j + d/dt(v1(t)))i + d/dt(v2(t)))j
+    = du/dt + dv/dt
+
+(b) d/dt(u - w) = du/dt - dw/dt
+
+    根据(a) 设w = -v
+    可得
+

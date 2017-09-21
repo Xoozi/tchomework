@@ -1,0 +1,47 @@
+一个质量为m的人造卫星以常速率v绕质量为M的行星在半径为r0的圆形
+轨道上运动, r0是从行星的质心测量的. 以以下步骤确定人造卫星的轨道周期
+
+(a)在轨道平面建立坐标系, 把原点放在行星的质心, 行星在t = 0
+位于x轴上, 并且以逆时针方向运行, 设r(t)是人造卫星在时刻t的位置
+证明theta = vt/r0, 并且由此证明
+r(t) = (r0 cos(vt/r0))i + (r0 sin(vt/r0))j
+
+因为建模的卫星是以常速率运动
+从0到t扫过的弧长为vt, 设theta为卫星到行星质心的连线与x轴夹角
+theta = vt/r0
+
+于是r(t) = (r0 cos(vt/r0))i + (r0 sin(vt/r0))j
+
+
+(b)求人造卫星的加速度
+v(t)    = (r0 -sin(vt/r0) v/r0)i + (r0 cos(vt/r0) v/r0)j
+        = (-v sin(vt/r0))i + (v cos(vt/r0))j
+a(t)    = (-v cos(vt/r0) v/r0)i + (v -sin(vt/r0) v/r0)j
+        = (-v²/r0 cos(vt/r0))i + (-v²/r0 sin(vt/r0))j
+        = -v²/r0² [(r0 cos(vt/r0))i + (r0 sin(vt/r0))j]
+        = -v²/r0² r(t)
+
+(c)根据Newton重力定律, 行星作用在卫星上的重力指向原点并且:
+F = (-GmM/r0²) r/r0
+其中G为重力常数, F = ma, 证明v² = GM/r0
+
+    ma = F = (-GmM/r0²) r/r0
+
+    由(b)=> a = -v²/r0² r
+
+    => m*-v²/r0² r = (-GmM/r0²) r/r0
+    => v² =  GM/r0
+
+(d)证明轨道周期T满足vT = 2pir0
+
+    轨道半径r0
+    周长2pir0
+    周期T, 卫星常速率v
+    故2pir0 = vT
+
+(e)从(c)和(d)推出
+    T² = (4pi²/(GM)) r0³
+    即圆形轨道是的人造卫星周期的平方正比于从轨道中心算起的半径的立方
+
+    (d)=> T = 2pir0/v
+    =>    T² = 4pi²r0²/v² = 4pi²r0²/(GM/r0) = 4pi²r0³/(GM)
