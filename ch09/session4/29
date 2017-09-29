@@ -1,0 +1,56 @@
+有线性阻力的抛射体运动
+作用在抛射体上的力, 除重力外, 主要是空气阻力.
+这个使抛射体慢下来的力是拖拽力, 它作用在和抛射体
+的速度相反的方向. 对于在空气中运动并且速率相对较低的物体
+拖拽力(非常近似地)正比于速率的一次幂, 于是称为线性的
+
+29 线性拖拽
+通过解平面向量r的下列初值问题:
+
+微分方程:   d²r/dt² = -gj - kv = -gj - kdr/dt
+
+初条件:     r(0) = 0
+            dr/dt|(t = 0) = v0 = (v0 cos α)i + (v0 sin α)j
+
+导出方程:   x = v0/k  (1 - e**(-kt)) cos α
+            y = v0/k  (1 - e**(-kt)) sin α  + g/k²(1 - kt - e**(-kt))
+
+            拖拽系数 k是正的常数, 它表示来自空气密度的阻力, 
+            v0和α是抛射体的初速率和抛射角, 而g是重力加速度
+
+            d²r/dt² = -gj -kv = -gj - k dr/dt
+
+            d²r/dt² + k dr/dt = -gj
+            设P(t) = k, Q(t) = -gj
+            可以得到
+            d²r/dt² + P(t) dr/dt = Q(t)
+            这是一个线性一阶微分方程
+                v(t) = e**(∫ P(t) dt) = e**(kt)
+            于是
+            dr/dt   = 1/v(t) ∫ v(t) * Q(t) dt
+                    = e**(-kt) ∫ e**(kt) * -gj dt
+                    = e**(-kt) [e**(kt) * -gj/k + C]
+                    = -g/k j + e**(-kt) (c1i + c2j)
+                    = e**(-kt)c1 i+ (e**(-kt)c2 - g/k)j
+
+            根据初条件dr/dt|(t = 0) = (v0 cos α)i + (v0 sin α)j
+            c1 i  + (c2 - g/k) j = (v0 cos α)i + (v0 sin α)j
+            => c1 = v0 cos α,  c2 = v0 sin α + g/k
+            于是
+            dr/dt   = (e**(-kt)v0 cosα)i + (e**(-kt)(v0 sinα + g/k) - g/k)j
+
+            r(t)    = ∫(e**(-kt)v0 cosα)i + (e**(-kt)(v0 sinα + g/k) - g/k)j dt
+                    = (-v0cosα/k e**(-kt))i + (-e**(-kt)(v0sinα + g/k)/k - tg/k)j + B
+                    = (-v0cosα/k e**(-kt) + b1)i + (-e**(-kt)(v0sinα + g/k)/k - tg/k + b2)j
+
+            根据初条件
+            r(0)    = (-v0cosα/k + b1)i + (-(v0sinα + g/k)/k - tg/k + b2)j = 0
+                    
+                    b1 = v0cosα/k, b2 = (v0sinα + g/k)/k + tg/k = v0sinα/k + g/k²
+
+            于是
+            r(t)    = (-v0cosα/k e**(-kt) + v0cosα/k)i + (-e**(-kt)v0sinα/k - e**(-kt)g/k² - tg/k + v0sinα/k + g/k²)j
+                    = (v0cosα/k (1 - e**(-kt)))i + (v0sinα/k(1 - e**(-kt)) + g/k²(1 - tk - e**(-kt)))j
+
+                    这里已经成功推到答案了
+

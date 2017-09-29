@@ -1,0 +1,25 @@
+从(x0, y0)发射 通过解平面上的向量r的下列初值问题
+
+微分方程:   d²r/dt² = -gj
+初条件:     r(0) = x0i + y0j
+            dr/dt(0) = (v0 cos α)i + (v0 sin α)j
+
+导出方程:   
+            x = x0 + (v0 cos α)t
+            y = y0 + (v0 sin α)t - gt²/2
+
+
+            d²r/dt² = -gj
+            dr/dt = -gtj + C1
+            dr/dt(0) = C1 = (v0 cos α)i + (v0 sin α)j
+
+            dr/dt = (v0 cos α)i + (v0 sin α - gt)j
+            r = (v0 cos α)t i + (v0 sin α t - gt²/2) j + C2
+
+            r(0) = C2 = x0i + y0j
+
+            于是r(t) = (x0 + v0 cos α t)i + (y0 + v0 sin α t - gt²/2)j
+
+            写成x,y分量形式
+            x = x0 + (v0 cos α)t
+            y = y0 + (v0 sin α)t - gt²/2
