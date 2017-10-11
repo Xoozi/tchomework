@@ -1,0 +1,57 @@
+用等价的笛卡尔方程代替极坐标方程, 然后识别或描述图形
+
+19 r sin θ = 0
+    y = 0的直线
+
+21 r = 4 csc θ = 4/sin θ
+    => 4 = r sin θ
+    => y = 4的直线
+
+23 r cos θ + r sin θ = 1
+    x + y = 1的直线
+
+25 r² = 4r sin θ
+
+    x² + y² = 4y
+
+    x² + (y - 2)² = 4
+
+    圆心笛卡尔坐标(0, 2), 半径为2的圆
+
+27 r² sin(2θ) = 2
+
+     r² 2 sin θ cos θ = 2
+     x y = 1
+
+        y = 1/x
+     双曲线
+
+29 r = (csc θ) e**(r csc θ)
+    r = 1/sin θ e**(r/sin θ)
+    r sin θ = e**(r/sinθ)
+    ln(r sinθ) = r/
+
+    看了半天发觉应该题目有问题
+    结合下答案
+    原题应该是
+    r = (csc θ) e**(r cos θ)
+    => r sin θ = e**(r cos θ)
+    y = e**(x)
+
+31 r sin θ = ln r + ln cos θ
+    r sin θ = ln r cos θ
+    y = ln x
+
+
+33 r² = -4r cos θ
+    x² + y² = -4 x
+    (x + 2)² + y² = 4
+    圆心笛卡尔坐标(-2, 0), 半径为2的圆
+
+35 r = 2cos θ + 2sin θ
+
+    两边同乘r
+    r² = 2r cos θ + 2r sin θ
+    x² + y² = 2x + 2y
+    (x - 1)² + (y - 1)² = 2
+    圆心笛卡尔坐标(1, 1), 半径sqrt(2)的圆

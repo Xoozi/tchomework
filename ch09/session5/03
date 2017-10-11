@@ -1,0 +1,17 @@
+画出给定极坐标的点, 并求它们的笛卡尔坐标
+(a) (sqrt(2), pi/4)
+    x = r cos θ = sqrt(2) * sqrt(2) / 2 = 1
+    y = r sin θ = sqrt(2) * sqrt(2) / 2 = 1
+
+(b) (1, 0)
+    x = r cos θ = 1
+    y = r sin θ = 0
+
+(c) (0, pi/2)
+    x = r cos θ = 0
+    y = r sin θ = 0
+
+(d) (-sqrt(2), pi/4)
+    x = r cos θ = -sqrt(2) * sqrt(2) / 2 = -1
+    y = r sin θ = -sqrt(2) * sqrt(2) / 2 = -1
+
