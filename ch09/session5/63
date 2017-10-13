@@ -1,0 +1,10 @@
+(a)解释为什么水平面上的每条竖直直线有形为 r = a sec θ的方程
+    r = a sec θ = a 1/cos θ
+    => r cos θ = a
+    => x = a
+(b)求类似的水平直线的极坐标方程
+
+    y = b
+    r sin θ = b
+    r = b 1/sin θ
+    r = b csc θ
