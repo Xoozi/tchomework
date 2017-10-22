@@ -1,0 +1,48 @@
+极坐标曲线的斜率
+
+在1-4题中求曲线在指定点的斜率
+
+1 r = -1 + sin θ, θ = 0, pi
+
+	x = r cos θ = (-1 + sin θ) cos θ = sin(2θ)/2 - cos θ
+	dx/dθ = cos 2θ + sin θ
+
+	y = r sin θ = (-1 + sin θ) sin θ = sin²θ - sin θ = 1 - cos²θ - sin θ 
+	  = 1 - (1 + cos 2θ)/2 - sin θ
+	dy/dθ = sin 2θ - cos θ
+
+	
+	θ = 0时
+
+	dx/dθ = 1, dy/dθ = -1
+	dy/dx = -1
+
+	θ = pi时
+	dx/dθ = 1, dy/dθ = 1
+	dy/dx = 1
+
+3 r = 2 - 3 sin θ
+	θ = 0, pi/2, pi, 3pi/2
+
+	x = r cos θ = (2 - 3sin θ)cos θ = 2cos θ - 3sin(2θ)/2
+	dx/dθ = -2sin θ - 3cos(2θ)
+
+	y = r sin θ = (2 - 3sin θ)sin θ = 2sin θ - 3sin²θ = 2sin θ - 3(1 - cos²θ)
+		= 2sin θ - 3(1 - (1 + cos(2θ))/2) = 2sin θ - 3/2 (1 - cos(2θ))
+	dy/dθ = 2cos θ - 3sin(2θ)
+
+	θ = 0时
+	dx/dθ = -3, dy/dθ = 2
+	dy/dx = -2/3
+
+	θ = pi/2时
+	dx/dθ = -2, dy/dθ = 0
+	dy/dx = 0
+
+	θ = pi
+	dx/dθ = -3, dy/dθ = -2
+	dy/dx = 2/3
+
+	θ = 3pi/2
+	dx/dθ = 5, dy/dθ = 0
+	dy/dx = 0
