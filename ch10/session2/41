@@ -1,0 +1,27 @@
+下列哪些判断是真的? 给出理由
+(a) |u| = sqrt(u · u)           真
+
+(b) u · u= |u|                  假
+
+(c) u x 0 = 0 x u = 0           真
+(d) u x (- u) = 0               真
+(e) u x v = v x u               假 因为手性, 实际得到的是两个相反方向的向量
+(f) u x (v + w) = u x v + u x w 真
+(g) (u x v) · v = 0             真 因为 u x v和v正交, 故
+(h) (u x v) · w = u · (v x w)   真
+
+    xoozi 可以不这么证, 其实等号左右边都是uvw的箱积
+    设
+    u = (u0, u1, u2)
+    v = (v0, v1, v2)
+    w = (w0, w1, w2)
+
+    u x v = (u1*v2 - u2*v1, u2*v0 - u0*v2, u0*v1 - u1*v0)
+    (u x v) · w = (u1*v2 - u2*v1)*w0 + (u2*v0 - u0*v2)*w1 + (u0*v1 - u1*v0)*w2
+                = u1*v2*w0 - u2*v1*w0 + u2*v0*w1 - u0*v2*w1 + u0*v1*w2 - u1*v0*w2
+
+    (v x w) = (v1*w2 - v2*w1, v2*w0 - v0*w2, v0*w1 - v1*w0)
+    u · (v x w) = (v1*w2 - v2*w1)*u0 + (v2*w0 - v0*w2)*u1 + (v0*w1 - v1*w0)*u2
+                = u0*v1*w2 - u0*v2*w1 + u1*v2*w0 - u1*v0*w2 + u2*v0*w1 - u2*v1*w0
+                = u1*v2*w0 - u2*v1*w0 + u2*v0*w1 - u0*v2*w1 + u0*v1*w2 - u1*v0*w2
+
