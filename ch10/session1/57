@@ -1,0 +1,24 @@
+求点P(x, y ,z) 到
+
+(a)x 轴
+    min(y, z)
+
+(b)y 轴
+    min(x, z)
+
+(c)z 轴
+    min(x, y)
+
+的距离
+
+
+    xoozi 这我确实想岔了, 应该是
+
+    (a)x 轴
+        sqrt(y**2 + z**2)
+
+    (b)y 轴
+        sqrt(x**2 + z**2)
+
+    (c)z 轴
+        sqrt(x**2 + y**2)
