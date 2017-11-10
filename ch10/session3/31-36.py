@@ -24,8 +24,13 @@ def scale(v, f):
 def line(p, v):
     return (p[0], p[1], p[2], v[0], v[1], v[2])
 
-def panel(p, n):
-    return (n[0], n[1], n[2], dot(p, n))
+def plane(p, n):
+    nn = normalize(n)
+    return (n[0], n[1], n[2], -dot(p, nn))
+
+def planeRaw(a, b, c, d):
+    n = norm((a, b, c))
+    return (a/n, b/n, c/n, -d/n)
 
 
 #31 按下列步骤求从点S到平面Ax + By + Cz = D的距离
@@ -47,11 +52,13 @@ def panel(p, n):
 #   所以dot(S, Plane) / |n| 就可以求出距离了, 通常构造平面对象时会把n归一化, 跨域直接用dot4(S, Plane)来表示距离非常方便
 #   无需像上面的公式去求P, 太绕了
 #   
-def dist2line(line, s):
-    p = (line[0], line[1], line[2])
-    v = (line[3], line[4], line[5])
-    ps = sub(s, p)
-    return norm(cross(ps, v))/norm(v)
+def dist2Plane(p, s):
+    return p[0]*s[0] + p[1]*s[1] + p[2]*s[2] + p[3]
 
 
-print "29 distance:%f" % (dist2line(line((2, 1, 3), (2, 6, 0)), (2, 1, 3)))
+print "31 distance:%f" % (dist2Plane(planeRaw(3, 2, 6, 6), (1, 1, 3)))
+
+print "33 distance:%f" % (dist2Plane(planeRaw(0, 4, 3, -12), (0, 1, 1)))
+
+print "35 distance between two plane is 9/sqrt(41)"
+#这里忘记除以法向量模长了
