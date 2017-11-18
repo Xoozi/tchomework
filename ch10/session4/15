@@ -1,0 +1,16 @@
+抛物面的体积
+
+证明抛物面x²/a² + y²/b² = z/c, 被平面z = h所围的体积等于其底面积和高的乘积的一半
+
+带入z = h
+	x²/a² + y²/b² = h/c
+	x²/(ha²/c) + y²/(hb²/c) = 1
+
+	A(h) = pi*sqrt(ha²/c)*sqrt(hb²/c) = pi*a*b*h/c
+
+	V = ∫(0, h) A(h) dh
+		= ∫(0, h) pi*a*b*h/c dh
+		= pi*a*b/c ∫(0, h) h dh
+		= pi*a*b/c (h²/2)|(0, h)
+		= pi*a*b/c * h²/2
+		= A(h)*h/2
