@@ -1,0 +1,10 @@
+r(t) 是空间中质点在t的位置, 求在给定时间区间内速度和加速度正交的时刻
+
+r(t) = (t - sin t)i + (1 - cos t)j , 0 <= t <= 2pi
+
+	v(t) = (1 - cos t)i + (sin t)j
+	a(t) = (sin t)i + (cos t)j
+
+	dot(v(t), a(t)) = sin t - sin t cos t + sin t cos t
+			= sin t
+	在t = 0, t = pi, t = 2pi时正交
