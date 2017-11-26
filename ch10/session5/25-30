@@ -1,0 +1,46 @@
+求光滑曲线的切线
+
+25. r(t) = (sin t)i + (t² - cos t)j + e**t k,	t0 = 0
+
+	dr/dt = (cos t)i + (2t + sin t)j + e**t k
+	dr/dt|(t = 0) = i + k
+
+	r(0) = -j + k
+
+	切线方程参数方程为	ti - j + (1 + t)k
+
+
+27. r(t) = (a sin t)i + (a cos t)j + btk, t0 = 2pi
+
+	dr/dt = (a cos t)i + (-a sin t)j + bk
+
+	dr/dt|(t = 2pi) = ai + bk
+
+	r(2pi) = aj + 2pibk
+
+	切线参数方程为		ati + aj + (2pib + bt)k
+
+
+在直线上的运动
+
+29. 在时刻t = 0, 一个质点位于点(1, 2, 3). 它沿直线行进到(4, 1, 4), 在(1, 2, 3)的速率为2,
+并有常加速度3i - j + k, 求质点在时刻t的位置r(t)
+
+	a(t) = 3i - j + k
+	v(t) = 3ti - tj + tk + C1
+
+	v(0) = C1
+	v的方向是固定的, 设为3ai - aj + ak
+	|v(0)| = 2 => sqrt(11a²) = 2 => a = 2/sqrt(11)
+	C1 = v(0) = 6/sqrt(11) i - 2/sqt(11) j + 2/sqrt(11) k = 3ai - aj + ak
+
+	v(t) = (3t + 3a)i - (t + a)j + (t + a)k
+
+	r(t) = (3/2 t² + 3at)i - (t²/2 + at)j + (t²/2 + at)k + C2
+
+	r(0) = C2 = i + 2j + 3k
+
+
+	r(t) = (3/2 t² + 3at + 1) i - (t²/2 + at - 2)j + (t²/2 + at + 3)k
+
+
