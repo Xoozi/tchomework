@@ -1,0 +1,14 @@
+常函数法则
+
+证明若向量函数u取常值C, 则du/dt = 0
+
+向量函数取常值可知u(t) = f(t)i + g(t)j + h(t)k
+
+f(t) = a
+g(t) = b
+h(t) = c
+
+a, b, c为常标量
+
+
+du/dt = df/dt i + dg/dt j + dh/dt k = 0 i + 0 j + 0 k = 0

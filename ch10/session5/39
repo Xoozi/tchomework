@@ -1,0 +1,25 @@
+向量函数叉积的极限
+
+假定
+r1 = f1(t)i + f2(t)j + f3(t)k,  lim(t->t0) r1(t) = u
+r2 = g1(t)i + g2(t)j + g3(t)k,  lim(t->t0) r2(t) = v
+
+利用叉积的行列式公式和数量函数的极限乘积法则证明
+
+lim(t->t0) (r1(t) X r2(t)) = u x v
+
+                        i       j       k
+r1(t) X r2(t)   =     f1(t)   f2(t)   f3(t)
+                      g1(t)   g2(t)   g3(t)
+
+                = (f2(t)*g3(t) - f3(t)*g2(t))i - (f3(t)*g1(t) - f1(t)*g3(t))j + (f1(t)*g2(t) - f2(t)*g1(t))k
+
+lim(t->t0) (r1(t) X r2(t)) 
+                = lim(t->t0) (f2(t)*g3(t) - f3(t)*g2(t))i - (f3(t)*g1(t) - f1(t)*g3(t))j + (f1(t)*g2(t) - f2(t)*g1(t))k
+
+
+lim(t->t0) r1(t) = u = (lim(t->t0) f1(t))i + (lim(t->t0) f2(t))j + (lim(t->t0) f3(t))k
+lim(t->t0) r2(t) = v = (lim(t->t0) g1(t))i + (lim(t->t0) g2(t))j + (lim(t->t0) g3(t))k
+
+
+稍加变换可以得到上面两式相等
