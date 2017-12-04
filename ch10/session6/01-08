@@ -31,7 +31,9 @@
             = sqrt(9*(cos²t*sin²t)*(cos²t + sin²t))
             = 3 |cos t * sin t|
 
-    T = v/|v| = (cos²t *-sin t)/|cos t * sin t| j + (sin²t*cos t)/|cos t * sin t|
+    T = v/|v| = (cos²t *-sin t)/|cos t * sin t| j + (sin²t*cos t)/|cos t * sin t|k
+    	    在0 <= t <= pi/2, sin t, cos t都是大于等于0的
+	    = (-cos t) j + (sin t) k
 
     s       = ∫(0, pi/2) |v(t)| dt
             = 3∫(0, pi/2) |cos t * sin t| dt
@@ -46,6 +48,7 @@
     |v(t)|  = sqrt(cos²t + 2cos t t sin t + t²sin²t + sin²t - 2cos t t sin t + t²cos²t + 2t)
             = sqrt(1 + t² + 2t)
             = (1 + t)
+    T = v/|v| = (cos t + t sin t)/(1 + t) i + (sin t - t cos t)/(1 + t) j + sqrt(2t)/(1 + t) k
 
 
     s       = ∫(0, pi) |v(t)| dt

@@ -1,0 +1,27 @@
+
+在11-14中, 通过等式(3)求沿曲线从t = 0 对应的点算起的弧长参数的积分值
+
+s = ∫(0, t) |v(τ)| dτ
+
+11. r(t) = (4 cos t)i + (4 sin t)j + 3tk,    0 <= t <= pi/2
+	v(t) = (-4 sin t)i + (4 cos t)j + 3k
+	s = ∫(0, t) |v(τ)| dτ
+	  = ∫(0, t) sqrt(16sin²τ + 16cos²τ + 9) dτ
+	  = ∫(0, t) 5 dτ
+	  = 5τ |(0, t)
+	  = 5t
+	  = 5pi/2
+
+13. r(t) = (e**t cos t)i + (e**t sin t)j + e**t k,    -ln 4 <= t <= 0
+
+	v(t) = (e**t cos t - e**t sin t)i + (e**t sin t + e**t cos t)j + e**t k
+
+	s = ∫(0, t) |v(τ)| dτ
+	  = ∫(0, t) sqrt(2(e**τ cos τ)² + 2(e**τ sin τ)² + e**(2τ)) dτ
+	  = ∫(0, t) sqrt(3e**(2τ) dτ
+	  = sqrt(3) (e**t - 1)
+
+	s(-ln4) = sqrt(3)(1/4 - 1) = 3sqrt(3)/4
+
+	xoozi 这里就要死套路做才不会错, 我开始想岔了
+	这章的套路就是力破巧, 把问题转换成式子直接算
