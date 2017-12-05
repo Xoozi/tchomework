@@ -1,0 +1,38 @@
+求平面曲线的T, N 和κ 
+
+15. r(t)    = ti + (ln cos t)j,    -pi/2 < t < pi/2
+
+    v(t)    = i + (-tan t)j
+
+    |v(t)|  = sqrt(1 + tan²t) = sqrt(1/cos²t) 在t所处的区间, cos t >= 0
+            = 1/cos t
+
+    T(t) = v(t)/|v(t)| = (cos t)i + (-sin t)j
+
+    dT/dt = (-sin t)i + (-cos t)j
+    |dT/dt| = 1
+
+    N(t) = dT/dt / |dT/dt| = (-sin t)i + (-cos t)j
+
+    κ = |dT/ds| = |dT/dt * dt/ds| = |dT/dt|/|v| = cos t
+
+
+17. r(t) = (2t + 3)i + (5 - t²)j
+
+    v(t) = 2i + (-2t)j
+
+    |v(t)| = sqrt(4 + 4t²) = 2sqr(1 + t²)
+
+    T(t) = v(t)/|v(t)| = 1/sqrt(1 + t²) i + (-t/sqrt(1 + t²)) j = (1 + t²)**(-1/2) i - (t*(1 + t²)**(-1/2)) j
+         = (1/sqrt(1 + t²))i - (t/sqrt(1 + t²)) j   xoozi我推导后面推错了, 看了答案, 这里这样变形推导更简单
+
+    dT/dt = (-t/sqrt(1 + t²)³)i - (sqrt(1 + t²) - t * 1/2 * 2t / sqrt(1 + t²))/(1 + t²)j
+          = (-t/sqrt(1 + t²)³)i - (1/sqrt(1 + t²)³)j
+
+    |dT/dt| = sqrt(t²/(1 + t²)³ + 1/(1 + t²)³) = sqrt((1 + t²)/(1 + t²)³) = sqrt(1/(1 + t²)²)
+
+    N = dT/dt / |dT/dt| = (-t * sqrt(1 + t²)²/sqrt(1 + t²)³) i - (sqrt(1 + t²)²/sqrt(1 + t²)³)j
+     = (-t/sqrt(1 + t²))i - (1/sqrt(1 + t²))j
+
+
+    κ = |dT/ds| = |dT/dt|/|v| = sqrt(1/(1+t²)²) / 2sqrt(1 + t²) = sqrt(1/(1 + t²)³)/2

@@ -1,0 +1,24 @@
+求曲线 r(t) = (t)i + (sin t)j 在点(pi/2, 1)的曲率圆的方程
+
+   v    = i + (cos t)j
+   |v|  = sqrt(1 + cos²t)
+   T    = v/|v| = (1/sqrt(1 + cos²t))i + (cos t/sqrt(1 + cos²t))j
+   dT/dt= (sin t cos t (1 + cos² t)**(-3/2))i + (-sin t(1 + cos²t)**(-1/2) + cos²t sin t (1 + cos²t)**(-3/2))j
+
+   在点(pi/2, 1)
+   t = pi/2
+
+   dT/dt = 0i + (-1)j
+
+   κ = |dT/dt| / |v| = 1
+
+    ρ = 1/κ = 1
+
+   N = dT/dt / |dT/dt| = -j
+
+   于是可知曲率圆的圆心在(pi/2, 0), 曲率半径为1
+
+   曲率圆方程为(x - pi/2)² + y² = 1
+
+
+   这里看着吓人, 我算到dT/dt已经有头发麻了, 但是这时带入t就马上化简了

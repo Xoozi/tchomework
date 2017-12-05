@@ -1,0 +1,22 @@
+求曲线r(t) = (sqrt(2t))i + (sqrt(2t))j + (1 - t²)k, 从(0, 0, 1) 到(sqrt(2), sqrt(2), 0)的长度
+
+    观察可以知道t的范围是 0 <= t <= 1
+
+    v(t) = (2t)**(-1/2) i + (2t)**(-1/2) j + (-2t)k
+
+    |v(t)| = sqrt(1/2t + 1/2t + 4t²) = sqrt(1/t + 4t²)
+
+    s = ∫(0, 1) |v(t)| dt
+      = ∫(0, 1) sqrt(1/t + 4t²) dt
+
+
+      xoozi 坑爹我说这个积分怎么这么难算, 结果看了答案书, 是sqrt(2)t, 而不是sqrt(2t)
+
+    r(t)    = (sqrt(2)t)i + (sqrt(2)t)j + (1 - t²)k
+    v(t)    = sqrt(2)i + sqrt(2)j - 2tk
+    |v(t)|  = sqrt(2 + 2 + 4t²) = 2sqrt(1 + t²)
+
+    s       = ∫(0, 1) |v(t)| dt
+            = 2∫(0, 1) sqrt(1 + t²) dt
+
+            其实这个也蛮难积
