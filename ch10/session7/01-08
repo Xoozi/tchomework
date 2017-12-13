@@ -1,0 +1,124 @@
+对1-8求 T, N, B, κ 和 τ
+
+1. r(t) = (3 sin t)i + (3 cos t)j + 4tk
+
+    v = (3 cos t)i + (-3 sin t)j + 4k
+    |v| = sqrt(9cos²t + 9sin²t + 16) = sqrt(25) = 5
+
+    T = v/|v| = (3/5 cos t)i + (-3/5 sin t)j + 4/5 k
+
+    dT/dt = (-3/5 sin t)i + (-3/5 cos t)j
+
+    |dT/dt| = 3/5
+
+    N = dT/dt / |dT/dt| = (- sin t)i + (- cos t)j
+
+                | i                 j                   k|
+    B = T x N = |(3/5 cos t)    (-3/5 sin t)          4/5|
+                |(- sin t)      (- cos t)               0|
+
+              = (4/5 cos t)i + (-4/5 sin t)j + (-3/5 cos²t -3/5 sin²t)k
+              = (4/5 cos t)i + (-4/5 sin t)j + (-3/5)k
+
+    a = (-3 sin t)i + (-3 cos t)j 
+
+            |i                  j                   k|
+    v x a = |(3 cos t)      (-3 sin t)              4|
+            |(-3 sin t)     (-3 cos t)              0|
+          
+          = (12 cos t)i - (12 sin t)j + (-9cos²t -9sin²t)k
+          = (12 cos t)i + (-12 sin t)j + (-9)k
+
+    |v x a| = sqrt(144 + 81) = 15
+
+    κ = |v x a| / |v|³ = 3 / 25
+
+    jerk = da/dt = (-3 cos t)i + (3 sin t)j
+
+
+    det(r', r'', r''')
+
+      |vx         vy          vz|
+    = |ax         ay          az|
+      |jerkx      jerky    jerkz|
+    
+      |(3 cos t)    (-3 sin t)      4|
+    = |(-3 sin t)   (-3 cos t)      0| = 0 - 0 + 4(-9sin²t - 9cos²t) = -36
+      |(-3 cos t)   (3 sin t)       0|
+
+
+    τ = det(r', r'', r''') / |v x a|² = -36/15*15 = -4/25
+
+
+
+3. r(t) = (e**t cos t)i + (e**t sin t)j + 2k
+
+    v = (e**t cos t - e**t sin t)i + (e**t sin t + e**t cos t)j
+
+    |v| = sqrt(e**2t cos²t - 2e**2t sin t cos t + e**2t sin²t + e**2t sin²t + 2e**2t sin t cos t + e**2t cos²t)
+        = sqrt(2e**2t)
+        = e**t sqrt(2)
+
+    T = v/|v| = (cos t/sqrt(2) - sin t/sqrt(2))i + (sin/sqrt(2)...
+              = (cos t - sin t)/sqrt(2) i + (cos t + sin t)/sqrt(2) j
+
+    dT/dt = (-sin t - cos t)/sqrt(2) i + (-sin t + cos t)/sqrt(2) j
+
+    |dT/dt| = sqrt((sin²t + 2sin t cos t + cos²t + sin²t - 2sin t cos t + cos²t)/2) 
+            = sqrt(1) = 1
+
+    N = dT/dt / |dT/dt| = (-sin t - cos t)/sqrt(2) i + (-sin t + cos t)/sqrt(2) j
+
+    
+                |i                              j                       k|
+    B = T x N = |(cos t - sin t)/sqrt(2)  (cos t + sin t)/sqrt(2)       0|
+                |(-sin t - cos t)/sqrt(2) (-sin t + cos t)/sqrt(2)      0|
+
+              = 0i - 0j + ((cos²t + sin²t - 2sin t cos t)/2 + (cos²t + sin²t + 2sin t cos t)/2)k
+              = k
+
+
+    a = dv/dt = (e**t cos t - e**t sin t - e**t sin t - e**t cos t)i + (e**t sin t + e**t cos t + e**t cos t - e**t sin t)j
+              = (-2 e**t sin t)i + (2 e**t cos t)j
+
+            |i                                  j               k|
+    v x a = |(e**t(cos t - sin t))   (e**t(cos t + sin t))      0|
+            |(-2 e**t sin t)            (2 e**t cos t)          0|
+          
+          = 0i + 0j + (2 e**2t (cos²t - sin t cos t) + 2 e**2t (sin t cos t + sin²t))k
+          = (2 e**2t (cos²t - sin t cost + sin t cos t + sin²t)) k
+          = (2 e**2t)k
+
+    |v x a| = 2 e**2t
+
+    κ = |v x a| / |v|³ = 2 e**2t / (e**3t sqrt(8) = 1/(e**t sqrt(2))
+
+
+    jerk = da/dt = (-2(e**t sin t + e**t cos t))i + (2(e**t cos t - e**t sin t))j
+
+    det(r', r'', r''')
+
+        |vx         vy          vz|
+    =   |ax         ay          az|
+        |jerkx      jerky    jerkz|
+
+        |(e**t(cos t - sin t))          (e**t(cos t + sin t))               0|
+    =   |(-2 e**t sin t)                    (2 e**t cos t)                  0|
+        |(-2 e**t (cos t + sin t)       (2 e**t (cos t - sin t))            0|
+
+    = 0
+
+    τ = det(r', r'', r''') / |v x a|² = 0/(4 e**4t) = 0
+
+
+5. r(t) = (t³/3)i + (t²/2)j,    t > 0
+
+    v = (t²)i + (t)j
+    a = (2t)i + j
+    jerk = (2)i
+
+    |v| = sqrt(t**4 + t²) = t sqrt(t² + 1)
+
+    T = v / |v| = (t/sqrt(t² + 1))i + (1/sqrt(t² + 1))j
+
+    dT/dt = 
