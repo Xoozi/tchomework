@@ -1,0 +1,17 @@
+不求T和N把acc写成atT + anN的形式
+
+r(t) = (a cos t)i + (a sin t)j + btk
+
+    v = (-a sin t)i + (a cos t)j + bk
+
+    |v| = |a|
+
+    acc = (-a cos t)i + (-a sin t)j
+    |acc| = |a|
+
+    at = d/dt|v| = 0
+
+    an = sqrt(|acc|² - at²) = |a|
+
+    所以
+    acc = |a|N

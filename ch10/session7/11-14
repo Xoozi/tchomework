@@ -1,0 +1,38 @@
+不求T和N而对给定的t值吧acc写成形式atT + anN
+
+11. r(t) = (t + 1)i + 2tj + t²k,    t = 1
+
+    v  = i + 2j + 2tk
+    |v| = sqrt(5 + 4t²)
+
+    acc = 2k
+
+    at = d/dt|v| = 1/2 * 1/sqrt(5 + 4t²) * 8t = 4t/sqrt(5 + 4t²) = 4/3
+
+    an = sqrt(|acc|² - at²) = sqrt(4 - 16/9) = sqrt(20/9) = 2sqrt(5)/3
+
+
+    acc = 4/3 T + 2sqrt(5)/3 N
+
+
+
+13. r(t) = (t²)i + (t + t³/3)j + (t - t³/3)k, t = 0
+
+    v = (2t)i + (1 + t²)j + (1 - t²)k
+    |v| = sqrt(4t² + 1 + 2t² + t**4 + 1 - 2t² + t**4)
+        = sqrt(4t² + 2 + 2t**4)
+
+    acc = (2)i + (2t)j + (-2t)k
+    |acc| = sqrt(4 + 4t² + 4t²)
+
+
+    at = d/dt|v| = 1/2 * 1/sqrt(4t² + 2 + 2t**4) * (8t + 8t³)
+                 = (4t + 4t³)/sqrt(4t² + 2 + 2t**4)
+                    t = 0
+                 = 0
+
+    an = sqrt(|acc|² - at²) = sqrt(4 + 4t² + 4t² - 0) = 2
+
+    acc = 2N
+
+
