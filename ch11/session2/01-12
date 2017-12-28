@@ -1,0 +1,21 @@
+1. lim(x, y)->(0, 0) (3x² - y² + 5)/(x² + y² + 2)
+    有理函数, 可直接代入:
+        = 5/2
+
+3. lim(x, y)->(3, 4) sqrt(x² + y² - 1)
+        = sqrt(24)
+
+5. lim(x, y)->(0, pi/4) sec x tan y
+        = 1
+
+7. lim(x, y)->(0, ln 2) e**(x - y)
+        = e**(-ln2)
+        = 1/2
+
+9. lim(x, y)->(0, 0) e**y sin(x) / x
+
+        = lim(y->0) e**y * lim(x->0) sin x /x
+        = 1
+
+11. lim(x, y)->(1, 0) x sin y / (x² + 1)
+        = 0

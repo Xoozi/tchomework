@@ -1,0 +1,28 @@
+13. lim(x, y)->(1, 1) x!=y (x² - 2xy + y²)/(x - y)
+        表达式可化简为:
+        (x - y)²/(x - y)
+        = x - y
+    = 1 - 1
+    = 0
+    
+
+15. lim(x, y)->(1, 1) x!=y (xy - y - 2x + 2)/(x - 1)
+        表达式化简:
+        (y(x - 1) - 2(x - 1))/(x - 1)
+        = (x - 1)(y - 2)/(x - 1)
+        = y - 2
+    = -1
+
+17. lim(x, y)->(0, 0) y!=-4 x!=x² (x - y + 2sqrt(x) - 2sqrt(y))/(sqrt(x) - sqrt(y))
+        表达式化简:
+        ((sqrt(x) + sqrt(y))*(sqrt(x) - sqrt(y)) + 2(sqrt(x) - sqrt(y))) / (sqrt(x) - sqrt(y))
+        = sqrt(x) + sqrt(y) + 2
+        = 2
+
+
+19. lim(x, y)->(2, 0) (sqrt(2x - y) - 2)/(2x - y - 4)
+        表达式化简:
+        (sqrt(2x - y) - 2) / [(sqrt(2x - y) - 2) (sqrt(2x - y) + 2)]
+        = 1/(sqrt(2x - y) + 2)
+        = 1/4
+
