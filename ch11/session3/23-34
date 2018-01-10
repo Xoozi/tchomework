@@ -1,0 +1,37 @@
+求∂f/∂x, ∂f/∂y, ∂f/∂z
+
+23. f(x, y, z) = 1 + xy² + 2z²
+
+	∂f/∂x = y²
+	∂f/∂y = 2xy
+	∂f/∂z = 4z
+
+25. f(x, y, z) = x - (y² + z²)**(1/2)
+
+	∂f/∂x = 1
+	∂f/∂y = -y * (y² + z²)**(-1/2)
+	∂f/∂z = -z * (y² + z²)**(-1/2)
+
+27. f(x, y, z) = arcsin(xyz)
+
+	∂f/∂x = yz/sqrt(1 - x²y²z²)
+	∂f/∂y = xz/sqrt(1 - x²y²z²)
+	∂f/∂z = xy/sqrt(1 - x²y²z²)
+
+29. f(x, y, z) = ln(x + 2y + 3z)
+
+	∂f/∂x = 1/(x + 2y + 3z)
+	∂f/∂y = 2/(x + 2y + 3z)
+	∂f/∂z = 3/(x + 2y + 3z)
+
+31. f(x, y, z) = e**-(x² + y² + z²)
+
+	∂f/∂x = e**-(x² + y² + z²) * -2x
+	∂f/∂y = e**-(x² + y² + z²) * -2y
+	∂f/∂z = e**-(x² + y² + z²) * -2z
+
+33. f(x, y, z) = tanh(x + 2y + 3z)
+
+	∂f/∂x = sech²(x + 2y + 3z)
+	∂f/∂y = 2 sech²(x + 2y + 3z)
+	∂f/∂z = 3 sech²(x + 2y + 3z)
