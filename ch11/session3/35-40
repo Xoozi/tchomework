@@ -1,0 +1,20 @@
+求对每个变量的偏导
+
+35. f(t, a) = cos(2pit - a)
+
+	∂f/∂t = -2pisin(2pit - a)
+	∂f/∂a = sin(2pit - a)
+
+37. h(a, b, c) = a sin b cos c
+	
+	∂f/∂a = sin b cos c
+	∂f/∂b = a cos c cos b
+	∂f/∂c = -a sin b sin c
+
+39. W(P, V, d, v, g) = PV + Vdv²/(2g)
+
+	∂f/∂P = V
+	∂f/∂V = P + dv²/(2g)
+	∂f/∂d = Vv²/(2g)
+	∂f/∂v = Vdv/g
+	∂f/∂g = -Vdv²/2g²

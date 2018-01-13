@@ -1,0 +1,19 @@
+什么次序计算fxy更快, 直接回答, 不计算
+
+(a) f(x, y) = x sin y + e**y
+	先x
+
+(b) f(x, y) = 1/x
+	先y
+
+(c) f(x, y) = y + x/y
+	先x
+
+(d) f(x, y) = y + x²y + 4y³ - ln(y² + 1)
+	先x
+
+(e) f(x, y) = x² + 5xy + sin x + 7e**x
+	先y
+
+(f) f(x, y) = x ln xy
+	先y

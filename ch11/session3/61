@@ -1,0 +1,28 @@
+假设方程x = v ln u 和 y = u ln v, 定义u 和 v是自变量x 和 y的函数, 并设vx存在
+用u, v表示vx
+
+设:
+
+x = v ln u	(1)
+y = u ln v	(2)
+
+对(1)两边对x求微分:
+1 = ∂v/∂x ln u + v/u ∂u/∂x
+
+∂v/∂x = (1 - v/u ∂u/∂x)/ln u 	(3)
+
+对(2)两边对x求微分:
+0 = ∂u/∂x ln v + u / v ∂v/∂x
+∂u/∂x = -∂v/∂x u/(v ln v)	(4)
+
+
+把(4)代入(3)
+
+∂v/∂x 	= (1 - v/u*(-∂v/∂x u/(v ln v))) / ln u
+	= (1 + ∂v/∂x/ln v) / ln u
+	= 1/ln u + ∂v/∂x /(ln v ln u)
+
+∂v/∂x((ln v ln u - 1)/(ln v ln u)) = 1/ln u
+∂v/∂x = ln v/(ln v ln u - 1)
+
+

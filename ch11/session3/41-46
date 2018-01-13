@@ -1,0 +1,26 @@
+计算41-46的所有二阶偏导
+
+41. f(x, y) = x + y + xy
+
+	∂f/∂x = 1 + y
+	∂f/∂y = 1 + x
+	∂²f/∂x∂y = ∂f/∂y∂x = 1
+	∂²f/∂x² = 0
+	∂²f/∂y² = 0
+
+43. g(x, y) = x²y + cos y + y sin xy
+	
+	xoozi 答案虽然说这是2yx + y cos xy, 但我觉得我是对的
+	∂g/∂x = 2yx + y² cos xy
+	∂g/∂y = x² - sin y + sin xy + xy cos xy
+	∂²g/∂x∂y = ∂²g/∂y∂x = 2x + 2y cos xy + - y²x sin xy
+	∂²g/∂x² = 2y - y³sin xy
+	∂²g/∂y² = -cos y + 2x cos xy - x²y sin xy
+
+45. r(x, y) = ln(x + y)
+
+	∂r/∂x = 1/(x + y)
+	∂r/∂y = 1/(x + y)
+	∂²r/∂x∂y = ∂²r/∂y∂x = -1/(x + y)²
+	∂²r/∂x² = -1/(x + y)²
+	∂²r/∂y² = -1/(x + y)²

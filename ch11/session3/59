@@ -1,0 +1,17 @@
+以隐函数把A表示成a, b, c的函数, 并计算∂A/∂a, ∂A/∂b
+
+根据余弦定理
+
+a² = b² + c² - 2bc cos A
+
+两边对a求导
+
+2a = 2bc sin A ∂A/∂a
+
+∂A/∂a = a/(bc sin A)
+
+两边对b求导
+
+0 = 2b - 2c cos A - 2bc sin A ∂A/∂b
+
+∂A/∂b = (2b - 2c cos A)/(2bc sin A) = (b - c cos A) / (bc sin A)
