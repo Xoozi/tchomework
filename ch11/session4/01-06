@@ -1,0 +1,41 @@
+在1-6题中, 
+(a)用链式法则和用t表示w, 而直接对t求导两个方法, 把dw/dt 表示成t的函数
+(b)求dw/dt在指定点的值
+
+1. w = x² + y², x = cos t, y = sin t, t = pi
+
+(a) dw/dt = ∂w/∂x * dx/dt + ∂w/∂y * dy/dt
+	  = 2x * -sin t + 2y * cos t
+	  = 2 -cos t sin t + 2 sin t cos t
+	  = 0
+     w = cos²t + sin²t = 1
+
+     dw/dt = 0
+
+(b) 0
+
+
+
+3. w = x/z + y/z, x = cos²t, y = sin²t, z = 1/t, t = 3
+
+(a) dw/dt = ∂w/∂x * dx/dt + ∂w/∂y * dy/dt + ∂w/∂z * dz/dt
+	  = -2cos t sin t/z + 2cos t sin t/z + (x + y)/z² * 1/t²
+	  = (x + y) * t² * 1/t²
+	  = 1
+
+    w = tcos²t + tsin²t = t
+    dw/dt = 1
+
+(b) 1
+
+
+
+5. w = 2y e**(x) - ln z, x = ln(t² + 1), y = arctan t, z = e**t, t = 1
+
+(a) dw/dt = ∂w/∂x * dx/dt + ∂w/∂y * dy/dt + ∂w/∂z * dz/dt
+	  = 2y e**(x) * 2t/(t² + 1) + 2e**(x) * 1/(t² + 1) - 1/z * e**t
+	  = (4yt + 2) * (e**(x)/(t² + 1)) - 1
+	  = (4*arctan t * t + 2) * (t² + 1))/(t² + 1) - 1
+	  = (4*arctan t * t + 2)  - 1
+	  t = 1
+	  = pi + 1

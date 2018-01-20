@@ -1,0 +1,38 @@
+
+7. z = 4 e**x ln y, x = ln(u cos v), y = u sin v, (u, v) = (2, pi/4)
+
+∂z/∂u 	= ∂z/∂x * ∂x/∂u + ∂z/∂y * ∂y/∂u
+	= 4 e**x ln y cos v/(u cos v) + 4 e**x /y * sin v
+	= 4 e**x ln y / u + 4e**x/u
+	= (4e**x ln y + 4e**x)/u
+	= (4e**(ln(u cos v)) ln (u sin v) + 4e**(ln(u cos v)))/u
+	= (4u cos v ln(u sin v) + 4u cos v) / u
+		(u, v) = (2, pi/4)
+	= 
+
+
+	xoozi和答案有点不一样, 答案没有/u
+	我觉得∂x/∂u = cos v/(u cos v) = 1/u
+	这应该是对的, 答案有误
+
+
+9. w = xy + yz + xz, x = u + v, y = u - v, z = uv,	(u, v) =(1/2, 1)
+
+	∂w/∂u = ∂w/∂x * ∂x/∂u + ∂w/∂y * ∂y/∂u + ∂w/∂z * ∂z/∂u
+	      = (y + z)*1 + (x + z)*1 + (y + x)*v
+	      = u - v + uv + u + v + uv + 2u*v
+	      = 2u + 4uv
+	      	(1/2, 1)
+              = 1 + 2
+	      = 3
+
+
+
+11. u = (p - q)/(q - r), p = x + y + z, q = x - y + z, r = x + y - z, (x, y, z) = (sqrt(3), 2, 1)
+
+	∂u/∂x = ∂u/∂p * ∂p/∂x + ∂u/∂q * ∂q/∂x + ∂u/∂r * ∂r/∂x
+
+	= 1/(q - r) * 1 + (r - p)/(q - r)² * 1 - (p - q)/(q - r)² * 1
+	= 1/(q - r) + (r - p)/(q - r)² + (p - q)/(q - r)²
+	= (q - r + r - p + p - q) / (q - r)²
+	= 0
