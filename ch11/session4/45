@@ -1,0 +1,15 @@
+螺旋线上的极值
+
+假定一个函数f(x, y, z)在螺旋线x = cos t, y = sin t, z = t的点的偏导数是
+
+∂f/∂x = cos t, ∂f/∂y = sin t, ∂f/∂z = t² + t - 2
+
+于是
+
+∂f/∂t 	= ∂f/∂x * ∂x/∂t + ∂f/∂y * ∂y/∂t + ∂f/∂z * ∂z/∂t
+	= cos t * -sin t + sin t * cos t + t² + t - 2
+	= t² + t - 2
+
+
+	如果有极值点, ∂f/∂t = 0解此方程可得解
+

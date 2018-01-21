@@ -1,0 +1,27 @@
+Laplace方程, 证明若 w = f(u, v)满足方程fuu + fvv = 0, 又若u = (x² - y²)/2, v = xy, 则w满足Laplace方程
+wxx + wyy = 0
+
+
+wx = ∂w/∂x 	= ∂w/∂u * ∂u/∂x + ∂w/∂v * ∂v/∂x
+		= ∂w/∂u * x + ∂w/∂v * y
+
+wxx = ∂²w/∂x² 	= ∂(∂w/∂u)/∂x * x + ∂w/∂u + ∂(∂w/∂v)/∂x
+			xoozi这步的展开我当时就没想到
+		= (d²w/∂u² * ∂u/∂x + ∂²w/∂v∂u * ∂v/∂x) * x + ∂w/∂u + (∂²w/∂v² * ∂v/∂x + ∂²w/∂u∂v * ∂u/∂x) * y
+		= fuu * x² + fvu * xy + fu + fvv * y² + fuv * xy
+
+
+wy  = ∂w/∂y	= ∂w/∂u * ∂u/∂y + ∂w/∂v * ∂v/∂y
+		= ∂w/∂u * -y + ∂w/∂v * x
+wyy = ∂²w/∂y²	= ∂(∂w/∂u)/∂y * -y - ∂w/∂u + ∂(dw/∂v)/∂y * x
+		= (∂²w/∂u² * ∂u/∂y + ∂²w/∂v∂u * ∂v/∂y) * -y - ∂w/∂u + (∂²w/∂v² * ∂v/∂y + ∂²w/∂u∂v * ∂u/∂y) * x
+		= fuu * y² - fvu * xy - fu + fvv * x² + fuv * xy
+
+wxx + wyy 	= fuu * (x² + y²) - 2fvu * xy + fvv*(x² + y²) + 2fuv * xy
+	 	= (fuu + fvv)*(x² + y²) + xy*(-2fvu + 2fuv)
+
+		由于是可微函数, fvu = fuv => 0
+
+
+
+
