@@ -1,0 +1,51 @@
+find the derivative of the function at P0 in the direction of A
+
+9. f(x, y) = 2xy - 3y², P0(5, 5), A = 4i + 3j
+
+    ∇f 
+    = ∂f/∂x i + ∂f/∂y j
+    = (2y)i + (2x - 6y)j
+    = 10i - 20j
+
+    u
+    = A/|A|
+    = 4/5 i + 3/5 j
+
+    DA
+    = ∇f · u
+    = 8 - 12
+    = -4
+
+11. g(x, y) = x - (y²/x) + sqrt(3) arcsec(2xy), P0(1, 1), A = 12i + 5j
+
+    ∇f
+    = ∂f/∂x i + ∂f/∂y j
+    = (1 + y²/x² + sqrt(3)/(x*sqrt(4x²y² - 1)))i + (-2y/x + sqrt(3)/(y*sqrt(4x²y² - 1)))j
+    = (1 + 1 + sqrt(3)/sqrt(3))i + (-2 + sqrt(3)/sqrt(3))j
+    = 3i - j
+
+    u
+    = A/|A|
+    = 12/13 i + 5/13 j
+
+    DA
+    = ∇f · u
+    = 36/13 - 5/13
+    = 31/13
+
+13. f(x, y, z) = xy + yz + zx, P0(1, -1, 2), A = 3i + 6j - 2k
+
+    ∇f
+    = ∂f/∂x i + ∂f/∂y j + ∂f/∂z k
+    = (y + z)i + (x + z)j + (y + x)k
+    = i + 3j + 0k
+
+    u
+    = A/|A|
+    = 3/7 i + 6/7 j - 2/7 k
+
+    DA
+    = ∇f · u
+    = 3/7 + 18/7
+    = 21/7
+    = 3
