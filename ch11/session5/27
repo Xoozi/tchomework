@@ -1,0 +1,19 @@
+Zero directional derivative
+In what direction is the derivative of f(x, y) = xy + y² at P(3, 2) equal to zero
+
+    ∇f
+    = ∂f/∂x i + ∂f/∂y j
+    = (y)i + (x + 2y)j
+    = 2i + 7j
+
+    if u = u1i + u2j
+
+    u · ∇f = 0
+
+    2u1 + 7u2 = 0
+    u1² + u2² = 1
+
+    u = 7/sqrt(53)i - 2/sqrt(53)j
+        or
+    u = -7/sqrt(53)i + 2/sqrt(53)j
+

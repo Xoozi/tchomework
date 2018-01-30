@@ -1,0 +1,81 @@
+Find the directions in which the functions increase and decrease most rapidly a P0.
+Then find the derivatives of the functions in these directions.
+
+17. f(x, y) = x² + xy + y², P0(-1, 1)
+
+    ∇f
+    = ∂f/∂x i + ∂f/∂y j
+    = (2x + y)i + (2y + x)j
+    = -i + j
+
+    inc
+    = ∇f/|∇f|
+    = -1/sqrt(2) i + 1/sqrt(2) j
+
+    dec
+    = -∇f/|∇f|
+    = 1/sqrt(2) i - 1/sqrt(2) j
+
+    Dinc
+    = ∇f · inc
+    = 1/sqrt(2) + 1/sqrt(2)
+    = 2/sqrt(2)
+    = sqrt(2)
+
+    Ddec
+    = ∇f · dec
+    = -sqrt(2)
+
+
+19. f(x, y, z) = x/y - yz, P0(4, 1, 1)
+
+    ∇f
+    = ∂f/∂x i + ∂f/∂y j + ∂f/∂z k
+    = (1/y) i + (-x/y² - z)j + (-y)k
+    = i - 5j - k
+
+    inc
+    = ∇f/|∇f|
+    = 1/(3sqrt(3)) i - 5/(3sqrt(3)) j - 1/(3sqrt(3)) k
+
+    dec
+    = -∇f/|∇f|
+    = -1/(3sqrt(3)) i + 5/(3sqrt(3)) j + 1/(3sqrt(3)) k
+
+
+    Dinc
+    = ∇f · inc
+    = 1/(3sqrt(3)) + 25/(3sqrt(3)) + 1/(3sqrt(3))
+    = 9/sqrt(3)
+    = 3sqrt(3)
+
+    Ddec
+    = ∇ · dec
+    = -9/sqrt(3)
+    = -3sqrt(3)
+
+
+21. f(x, y, z) = ln(xy) + ln(yz) + ln(xz), P0(1, 1, 1)
+
+    ∇f
+    = ∂f/∂x i + ∂f/∂y j + ∂f/∂z k
+    = (2/x)i + (2/y)j + (2/z)k
+    = 2i + 2j + 2k
+
+    inc
+    = ∇f/|∇f|
+    = 1/sqrt(3) i + 1/sqrt(3) j + 1/sqrt(3) k
+
+    dec
+    = -∇f/|∇f|
+    = -1/sqrt(3) i - 1/sqrt(3) j - 1/sqrt(3) k
+
+    Dinc
+    = ∇f · inc
+    = 2/sqrt(3) + 2/sqrt(3) + 2/sqrt(3)
+    = 2sqrt(3)
+
+    Ddec
+    = ∇f · dec
+    = -2sqrt(3)
+

@@ -1,0 +1,33 @@
+The derivative of f(x, y) at P0(1, 2)in the direction of i + j
+is 2sqrt(2) and in the direction of -2j is -3. What is the derivative 
+of f in the direction of -i - 2j?
+
+    let ∇f = ai + bj
+
+    u = i + j
+
+    normalize(u) = 1/sqrt(2) i + 1/sqrt(2) j
+    
+    Du = ∇f · normalize(u) = a/sqrt(2) + b/sqrt(2) = 2sqrt(2)
+
+    w = -2j
+
+    normalize(w) = -j
+
+    Dw = ∇f · normalize(w) = -b = -3
+
+
+    => b = 3
+
+    a   = (2sqrt(2) - 3/sqrt(2))*sqrt(2)
+        = 4 - 3
+        = 1
+
+    so ∇f = i + 3j
+
+
+    v = -i - 2j
+    normalize(v) = -1/sqrt(5) i - 2/sqrt(5) j
+
+    Dv = ∇f · normalize(v) = -1/sqrt(5) - 6/sqrt(5) = -7/sqrt(5)
+        

@@ -1,0 +1,28 @@
+Sketch the curve f(x, y) = c together with ∇f and the tangent line at
+the point. Then write an equation for the tangent line.
+
+23. x² + y² = 4, (sqrt(2), sqrt(2))
+
+    ∇f
+    = ∂f/∂x i + ∂f/∂y j
+    = (2x)i + (2y)j
+    = 2sqrt(2) i + 2sqrt(2) j
+
+    tangent line equation:
+
+    2sqrt(2)(x - sqrt(2)) + 2sqrt(2)(y - sqrt(2)) = 0
+
+
+25. xy = -4,    (2, -2)
+
+    ∇f
+    = ∂f/∂x i + ∂f/∂y j
+    = y i + x j
+    = -2i + 2j
+
+    tangent line equation:
+
+    -2(x - 2) + 2(y + 2) = 0
+    2y - 2x + 8 = 0
+
+    y = x - 4

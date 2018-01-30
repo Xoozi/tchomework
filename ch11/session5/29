@@ -1,0 +1,29 @@
+Is there a direction u in which the rate of change of f(x, y) = x² - 3xy + 4y²
+at P(1, 2) equals 14
+
+    ∇f
+    = ∂f/∂x i + ∂f/∂y j
+    = (2x - 3y)i + (-3x + 8y)j
+    = -4i + 13j
+
+
+    if u = u1i + u2j
+
+    Dp
+    = ∇f · u
+    = -4u1 + 13u2
+    = 14
+
+    -4u1 + 13u2 = 14
+    u1² + u2² = 1
+
+
+    (169u2² - 364u2 + 196)/16 + u2² = 1
+
+    (185u2² - 364u2 + 196) = 16
+
+    185u2² - 364u2 + 180 = 0
+
+    delta = 364*364 - 4*185*180 = -704
+
+    so there no that u
