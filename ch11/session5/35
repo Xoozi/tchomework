@@ -1,0 +1,17 @@
+Lines in the xy-plane
+
+Show that A(x - x0) + B(y - y0) = 0 is an equation
+for the line in the xy-plane through the point (x0, y0)
+normal to the vector N = Ai + Bj
+
+
+xoozi, 这个的证明, 比较有意思, 我一下没想到
+
+设P(x, y)是该直线上的点
+则向量v = (x - x0)i + (y - y0)j 平行于该直线
+
+
+而v · N = A(x - x0) + B(x - y0) = 0
+
+故v与N正交,
+故该直线与N正交

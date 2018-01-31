@@ -1,0 +1,13 @@
+Directional derivatives and scalar components
+
+How is the derivative of a differentialble function f(x, y, z)
+at a point P0 in the direction of a unit vector u related to the
+scalar component of (∇f)P0 in the direction of u?
+
+    if ∇f = ai + bj + ck
+
+    U = ai + bj + ck
+
+    u = U/|U| = a/sqrt(a² + b² + c²) i + b/sqrt(a² + b² + c²) j + c/sqrt(a² + b² + c²) k
+
+    D = ∇f · u = a²/sqrt(a² + b² + c²) i + b²/sqrt(a² + b² + c²) j + c²/sqrt(a² + b² + c²) k
