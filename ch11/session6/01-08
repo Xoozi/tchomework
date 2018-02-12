@@ -1,0 +1,64 @@
+in 1-8, find equations for the
+
+(a) tangent plane and
+(b) normal line at the point P0
+
+1. x² + y² + z² = 3, P0(1, 1, 1)
+
+    ∇f = 2xi + 2yj + 2zk
+
+    tangent plane: 2(x - 1) + 2(y - 1) + 2(z - 1) = 0 => x + y + z - 3 = 0
+
+    normal line : x = 1 + 2t, y = 1 + 2t, z = 1 + 2t
+
+3. 2z - x² = 0, P0(2, 0, 2)
+
+    ∇f = -2x + 2k
+
+    tangent plane: -4(x - 2) + 4(z - 2) = 0 => -x + z = 0
+
+    normal line: x = 2 - 2t, y = 0, z = 2 + 2t
+
+5. cos pix - x²y + e**(xz) + yz = 4, P0(0, 1, 2)
+
+    ∇f = (-pi sin pix - 2xy + z e**(xz))i + (-x² + z)j + (x e**(xz) + y)k
+    ∇f(0, 1, 2) = 2i + 2j + k
+
+    tangent plane: 2x + 2(y - 1) + z - 2 = 0 => 2x + 2y + z - 4 = 0
+
+    normal line: x = 2t, y = 1 + 2t, z = 2 + t
+
+7. x + y + z = 1, P0(0, 1, 0)
+
+    ∇f = i + j + k
+
+    tangent plane: x + y + z - 1= 0
+
+    normal line: x = t, y = 1 + t, z = t
+
+
+
+
+in 9-12, find an equation for the plane that is tangent to the given surface at the given point
+
+9. z = ln(x² + y²), (1, 0, 0)
+
+    f = ln(x² + y²) - z
+
+    ∇f = 2x/(x² + y²) i + 2y/(x² + y²) j - k
+
+    ∇f(1, 0, 0) = 2i - k
+
+    tangent plane: 2x - z - 2 = 0
+
+11. z = sqrt(y - x), (1, 2, 1)
+    
+    f = sqrt(y - x) - z
+
+    ∇f = -1/2sqrt(y - x) i + 1/2sqrt(y - x) j - k
+
+    ∇f(1, 2, 1) = -1/2i + 1/2j - k
+
+    tangent plane: -(x - 1)/2 + (y - 2)/2 - (z - 1) = 0
+        => -x + 1 + y - 2 - 2z + 2 = 0
+        => -x + y - 2z + 1 = 0
