@@ -1,0 +1,26 @@
+find an equation for the plane that is tangent to 
+the given surface at the given point
+
+9. z = ln(x² + y²), (1, 0, 0)
+
+    f = ln(x² + y²) - z
+
+    ∇f = 2x/(x² + y²) i + 2y/(x² + y²) j - k
+
+    ∇f(1, 0, 0) = 2i - k
+
+    eq: 2(x - 1) - z = 0
+        2x - z - 2 = 0
+
+
+11. z = sqrt(y - x), (1, 2, 1)
+
+    f = sqrt(y - x) - z
+
+    ∇f = -1/2sqrt(y - x) i + 1/2sqrt(y - x) j - k
+
+    ∇f(1, 2, 1) = -i + j - k
+
+    eq: -(x - 1)/2 + (y - 2)/2 - (z - 1) = 0
+        -x + 1 + y - 2 - 2z + 2 = 0
+        -x + y - 2z + 1 = 0
