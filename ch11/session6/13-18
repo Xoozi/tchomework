@@ -1,4 +1,55 @@
 find parametric equations for the line tangent to the
 curve of intersection of the surfaces at the given point
 
-13. x + y² + 2z = 4, x = 1
+13. surfaces: x + y² + 2z = 4, x = 1
+    point: (1, 1, 1)
+
+    f: x + y² + 2z - 4 = 0
+    g: x - 1 = 0
+
+
+    ∇f = i + 2yj + 2k
+    ∇f(1, 1, 1) = i + 2j + 2k
+    ∇g = i
+
+                                      | i  j  k |
+    tangent vector  = cross(∇f, ∇g) = | 1  2  2 | = 2j - 2k
+                                      | 1  0  0 |
+
+
+    tangent line: x = 1 , y = 1 + 2t, z = 1 - 2t
+
+
+15. surface: x² + 2y + 2z = 4, y = 1
+    point:(1, 1, 1/2)
+
+    f: x² + 2y + 2z - 4 = 0
+    g: y - 1 = 0
+
+    ∇f = 2xi + 2j + 2k
+    ∇f(1, 1, 1/2) = 2i + 2j + 2k
+
+    ∇g = j
+
+                            | i  j  k |
+    t v = cross(∇f, ∇g) =   | 2  2  2 | = -2i + 2k
+                            | 0  1  0 |
+
+    t l: x = 1 - 2t, y = 1, z = 1/2 + 2t
+
+
+
+17. surfaces: x**3 + 3x²y² + y**3 + 4xy - z² = 0, x² + y² + z² = 11
+    point:  (1, 1, 3)
+
+    ∇f = (3x² + 6y²x + 4y)i + (6x²y + 3y² + 4x)j + (-2z)k
+    ∇f(1, 1, 3) = 13i + 13j - 6k
+
+    ∇g = 2xi + 2yj + 2zk
+    ∇g(1, 1, 3) = 2i + 2j + 6k
+
+                            | i  j  k |
+    t v = cross(∇f, ∇g) =   | 13 13 -6| = (78 + 12)i - (78 + 12)j + (0)k = 90i - 90j 实际等价于 i - j
+                            | 2  2  6 |
+
+    t l: x = 1 + t, y = 1 - t, z = 3
