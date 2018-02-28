@@ -1,0 +1,35 @@
+find the lineariztion L(x, y) of the function at each point
+
+25. f(x, y) = x² + y² + 1   at a:(0, 0), b:(1, 1)
+
+    fx = 2x, fy = 2y
+
+    fx(a) = 0, fy(a) = 0
+
+    so L(x, y)|a = f(a) = 1
+
+
+    fx(b) = 2, fy(b) = 2
+    L(x, y)|b = 3 + 2(x - 1) + 2(y - 1) = 2x + 2y - 1
+
+
+27. f(x, y) = 3x - 4y + 5   at a:(0, 0), b:(1, 1)
+
+    fx = 3, fy = -4
+
+    L(x, y)|a = 5 + 3x - 4y
+
+    L(x, y)|b = 4 + 3(x - 1) - 4(y - 1) = 3x - 4y + 5
+
+
+29. f(x, y) = e**x cos y    at a:(0, 0), b:(0, pi/2)
+
+    fx = e**x cos y, fy = -e**x sin y
+
+    fx(a) = 1, fy(a) = 0
+
+    L(x, y)|a = 1 + x
+
+    fx(b) = 0, fy(b) = -1
+    
+    L(x, y)|b = -y + pi/2

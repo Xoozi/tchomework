@@ -45,4 +45,11 @@ estimating change
     a. how fast is the temperature experienced by the particle changing in degrees Celsius per meter at the point
     P(1/2, sqrt(3)/2)
 
+    ∇T = sin(2y)i + 2xcos(2y)j
+    ∇T(P) = sin(sqrt(3))i + cos(sqrt(3))j
+    v = sqrt(3)/2 i - 1/2 j
+    df = dot(∇T(P), v) = sin(sqrt(3)) * sqrt(3)/2 - cos(sqrt(3))/2 ≈ 0.9351 deg/m
+
     b. how fast is the temperature experienced by the particle changing in degrees Celsius per second at P
+
+    rate is 2m/sec * 0.9351 deg/m ≈ 1.8702 deg/sec
