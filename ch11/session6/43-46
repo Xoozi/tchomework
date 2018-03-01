@@ -1,0 +1,40 @@
+find the linearization L(x, y, z) of the function f(x, y, z) at P0
+then find an upper bound for the magnitude of the error E in
+approximation f(x, y, z) ≈ L(x, y, z) over the region R
+
+
+43. f(x, y, z) = xz - 3yz + 2    P0(1, 1, 2)
+    R: |x - 1| <= 0.01, |y - 1| <= 0.01, |z - 2| <= 0.02
+
+    fx = z, fy = -3z, fz = x - 3y
+    fx(P0) = 2, fy(P0) = -6, fz(P0) = -2
+
+    f(P0) = 2 - 6 + 2 = -2
+
+    L(x, y, z)|P0 = -2 + 2(x - 1) - 6(y - 1) - 2(z - 2) = 2x - 6y - 2z + 6
+
+
+    fxx = 0, fxy = 0, fyy = 0, fxz = 1, fyz = -3, fzz = 0
+    so then have a upper bound M = 3
+
+    |E| <= M/2 (|x - 1| + |y - 1| + |z - 2|)² <= 3/2 0.04² = 3/2 * 0.016 = 0.024
+
+
+
+45. f(x, y, z) = xy + 2yz - 3xz, P0(1, 1, 0)
+    R: |x - 1| <= 0.01, |y - 1| <= 0.01, |z| <= 0.01
+
+    fx = y - 3z, fy = x + 2z, fz = 2y - 3x
+
+    fx(P0) = 1, fy(P0) = 1, fz(P0) = -1
+
+    f(P0) = 1 
+
+    L(x, y, z) = 1 + (x - 1) + (y - 1) - z = x + y - z - 1
+
+
+    fxx = 0, fxy = 1 , fxz = -3, fyy = 0, fyz = 2, fzz = 0
+
+    so M = 3
+
+    |E| <= M/2 (|x - 1| + |y - 1| + |z - 1|)² <= 3/2 0.0009 = 0.00135

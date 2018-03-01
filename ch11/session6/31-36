@@ -1,0 +1,61 @@
+find the linearization L(x, y) of the function f(x, y) at P0. Then find an upper bound for the 
+magnitude |E| of the error in the approximation f(x, y) ≈ L(x, y) over the rectangle R.
+
+31. f(x, y) = x² - 3xy + 5 at P0(2, 1)
+    R: |x - 2| <= 0.1, |y - 1| <= 0.1
+
+    fx = 2x - 3y, fy = -3x
+
+    fx|P0 = 1, fy|P0 = -6
+
+    f(P0) = 4 - 6 + 5 = 3
+
+
+    L(x, y) = 3 + (x - 2) - 6(y - 1) = x - 6y + 7
+
+    fxx = 2, fxy = 3, fyy = 0
+
+    so |fxx|, |fxy|, |fyy| have a upper bound M = 3
+
+    |E| <= M/2 ((x - 2)² + (y - 1)²) <= 3/2 (0.01 + 0.01) = 0.03
+
+    xoozi 这里我记错了公式
+
+    |E| <= M/2 (|x - 2| + |y - 1|)² <= 3/2 (0.2)² = 0.06
+
+
+33. f(x, y) = 1 + y + x cos y at P0(0, 0)
+    R: |x| <= 0.2, |y| <= 0.2
+
+    fx = cos y, fy = 1 - x sin y
+    fx|P0 = 1, fy|P0 = 1
+    f(P0) = 1
+
+    L(x, y) = 1 + x + y
+
+    fxx = 0, fxy = -sin y, fyy = -x cos y
+
+    so |fxx|, |fxy|, |fyy| have a upper bound M = 1
+
+    |E| <= M/2 (|x| + |y|)² <= 0.08
+
+
+35. f(x, y) = e**x cos y at P0(0, 0),
+    R: |x| <= 0.1, |y| <= 0.1
+
+    fx = e**x cos y, fy = -e**x sin y
+    fx|P0 = 1, fy|P0 = 0
+
+    L(x, y) = 1 + x
+
+    fxx = e**x cos y, fxy = -e**x sin y, fyy = -e**x cos y
+
+    e**x <= 1.11, cos y <= 1
+
+    so |fxx| <= 1.11, |fxy| <= 1.11, fyy...
+    have a upper bound M = 1.11
+
+    |E| <= M/2(0.2)² = 1.11*0.02 = 0.0222
+
+
+
