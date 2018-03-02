@@ -1,0 +1,156 @@
+Estimating Error; Sensitivity to Change
+
+
+47 estimation maximum error
+    Suppose that T is to be found from the formula T = x(e**y + e**(-y)), 
+    where x and y are found to be 2 and ln 2 with maximum possible errors of |dx| = 0.1
+    and |dy| = 0.02. Estimate the maximum possible error in the computed value of T
+
+    Tx = e**y + e**(-y), Ty = x(e**y - e**(-y))   P(2, ln 2)
+
+    Txx = 0, Txy = e**y - e**(-y), Tyy = x(e**y + e**(-y))
+
+    |Txy|max = e**(ln2 + 0.02) - e**(ln 2 - 0.02) ≈ 0.08
+    |Tyy|max = 2.1(e**(ln 2 + 0.02) + e**(-ln 2 + 0.02)) ≈ 5.3560
+
+    xoozi这里我想错了, 该用全微分来做
+
+
+    Tx(P) = 2 + 1/2 = 2.5, Ty(P) = 2(2 - 1/2) = 3
+
+    dT = 2.5dx + 3dy
+
+    |dT| = 2.5*0.1 + 3*0.02 = 0.25+0.06 = 0.31
+
+
+
+49 maximum percentage error
+    If r = 5.0cm and h = 12.0cm to the nearest millimter, what should we expect the maximum
+    percentage error in calculating V = pi r**2 h to be.
+
+    Vr = 2pi r h = 2pi 5 * 12 = 120pi
+    Vh = pi r**2 = 25pi
+
+    dV = Vr dr + Vh dh = 120pi * 0.1 + 25pi * 0.1 
+    V = 12*25*pi
+
+    rate = |dV|/V = 145*pi*0.1/(12*25*pi) = 145*0.1/(12*25) ≈ 4.83%
+    
+
+
+
+51 You plan to calculate the area of a long, thin rectangle from 
+    measurements of its length and width. Which dimension should 
+    you measure more carefully?
+
+    A = l*w
+    Al = w, Aw = l
+
+    dA = Al dl + Aw dw
+
+    l >> w
+    => Aw >> Al
+    so need to measure w carefully
+
+
+53 Error carryover in coordinate changes
+
+    a. If x = 3 ± 0.01 and y = 4 ± 0.01, as shown here 
+    with approximately what accuracy can you calculate the 
+    polar coordinate r and θ of the point P(x, y) from the 
+    formulas r**2 = x**2 + y**2, and θ = arctan(y/x).
+    Express your estimates as percentage changes of the 
+    value that r and θ have at the point (x0, y0) = (3, 4)
+
+    R(x, y) = sqrt(x**2 + y**2)
+    Rx = x/sqrt(x**2 + y**2), Ry = y/sqrt(x**2 + y**2)
+    Rx(P) = 3/5, Ry(P) = 4/5
+
+    dR = Rx dx + Ry dy = ±(0.006 + 0.008) = ±0.014
+    rate = ±0.014/5 = ±0.28%
+
+    θ(x, y) = arctan(y/x)
+    θx = 1/(1 + (y/x)**2) * -y/x**2 = x**2/(x**2 + y**2) * -y/x**2 = -y/(x**2 + y**2)
+    θy = x**2/(x**2 + y**2) * 1/x = x/(x**2 + y**2)
+    θx(P) = -4/25, θy(P) = 3/25
+
+xoozi 这里有问题实际上
+dθ = θx dx + θy dy = -4/25 * ±0.01 + 3/25 * ±0.01 = ±0.07/25, 关键是这一步±的合并要多想下
+= ±0.0028
+rate = ±0.0028/(θ(3, 4)) ≈ ±0.3%
+
+    dθ = θx dx + θy dy = ±0.0004 
+    rate = ±0.0004/(pi/3) = ±0.0382%
+
+
+    b. At the point(x0, y0) = (3, 4), are the values of r and θ
+    more sensitive to changes in x or to change in y?
+
+    R: y is more sensitive
+
+    θ: X is more sensitive
+
+
+
+
+
+55 Value of a 2X2 determinant
+    If |a| is much greater than |b|, |c| and |d|, to which of a, b, c, d is the value of:
+                    |a  b|
+    f(a, b, c, d) = |c  d|
+
+    most sensitive? 
+
+    f = ad - bc
+
+    fa = d, fb = -c, fc = -b, fd = a
+
+    df = fa da + fb db + fc dc + fd dd = d*da - c*db - b*dc + a dd
+
+    if |a| is much greater than other, df is most sensitive at dd
+
+
+
+57 The Wilson lot size formula
+
+    Q = sqrt(2KM/h)
+
+    near point P(K0, M0, h0) = (2, 20, 0.05)
+    
+    which variable is the most sensitive
+
+    Qk = M/(h * sqrt(2KM/h)), Qm = K/(h * sqrt(2KM/h)), Qh = -KM/(h**2 * sqrt(2KM/h))
+
+    Qk(P) = 10, qm = 1.0, qh = -400
+
+    so the most sensitive is h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
