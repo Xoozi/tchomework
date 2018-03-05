@@ -1,0 +1,21 @@
+Tangent curves
+
+A smooth curve is tangent to the surface at a point of 
+intersection if its velocity vector is orthogonal to ∇f there
+
+show that the curve
+
+r(t) = sqrt(t)i + sqrt(t)j + (2t - 1)k
+
+is the tangent to the surface x² + y² - z = 1, when t = 1
+
+
+v(t) = 1/2sqrt(t) i + 1/2sqrt(t) j + 2k
+
+
+∇f = 2xi + 2yj - k
+
+dot(∇f, v(t)) = sqrt(t)/sqrt(t) + sqrt(t)/sqrt(t) - 2 = 0
+
+so
+

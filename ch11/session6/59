@@ -1,0 +1,27 @@
+the linearization of f(x, y) is a tangent-plane approximation
+
+show that the tangent plane at the point P0(x0, y0), f(x0, y0) on the
+surface z = f(x, y) define by a differentiable function f is the plane
+
+fx(x0, y0)(x - x0) + fy(x0, y0)(y - y0) - (z - f(x0, y0)) = 0
+
+or
+
+z = f(x0, y0) + fx(x0, y0)(x - x0) + fy(x0, y0)(y - y0)
+
+Thus the tangent plane at P0 is the graph of the linearization of f
+at P0
+
+
+z = f(x, y)
+=> f(x, y) - z = 0
+
+if F(x, y, z) = f(x, y) - z
+
+then surface z = f(x, y) is F(x, y, z)'s zero level surface
+
+Fx = fx, Fy = fy, Fz = -1
+
+tangent-plane: fx(x - x0) + fy(y - y0) - (z - z0) = 0
+
+=> fx(x0, y0)(x - x0) + fy(x0, y0)(y - y0) - (z - f(x0, y0)) = 0
