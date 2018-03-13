@@ -1,0 +1,162 @@
+1. f(x, y) = x² + xy + y² + 3x - 3y + 4
+
+    fx = 2x + y + 3
+    fy = x + 2y - 3
+
+    0 = 2x + y + 3
+    0 = x + 2y - 3
+
+    0 = 3y - 9
+    y = 3, x = -3
+
+    fxx = 2, fyy = 2, fxy = 1
+    fxx * fyy - fxy² > 1
+
+    it's local minima = 9 - 9 + 9 - 9 - 9 + 4 = -5
+
+
+3. f(x, y) = 2xy - 5x² - 2y² + 4x + 4y - 4
+
+    fx = 2y - 10x + 4
+    fy = 2x - 4y + 4
+
+    0 = 2y - 10x + 4
+    0 = 2x - 4y + 4
+
+    0 = 10x - 20y + 20
+    0 = -18y + 24
+    y = 24/18 = 4/3
+    x = 8/3 - 2 = 2/3
+
+    fxx = -10, fyy = -4, fxy = 2
+    fxx * fyy - fxy² > 0
+
+    it's local maxima = f(2/3, 4/3)
+
+
+5. f(x, y) = x² + xy + 3x + 2y + 5
+
+    fx = 2x + y + 3
+    fy = x  + 2
+
+    0 = 2x + y + 3
+    0 = x + 2
+
+    0 = y - 1
+    y = 1, x = -2
+
+    fxx = 2, fyy = 0, fxy = 1
+    fxx * fyy - fxy² < 0
+
+    it's a saddle point
+
+7. f(x, y) = 5xy - 7x² + 3x - 6y + 2
+
+    fx = 5y - 14x + 3
+    fy = 5x - 6
+
+    0 = 5y - 14x + 3
+    0 = 5x - 6
+
+    x = 6/5, y = (14*6/5 - 15/5)/5 = 69/25
+
+    fxx = -14, fyy = 0, fxy = 5
+    hess < 0
+
+    it's a saddle point
+
+9. f(x, y) = x² - 4xy + y² + 6y + 2
+    
+    fx = 2x - 4y
+    fy = -4x + 2y + 6
+
+    0 = 2x - 4y
+    0 = -4x + 2y + 6
+
+    0 = 4x - 8y
+    0 = -6y + 6
+    y = 1, x = 2
+
+    fxx = 2, fyy = 2
+    fxy = -4
+    hess < 0
+
+    it's a saddle point
+
+
+11. f(x, y) = 2x² + 3xy + 4y² - 5x + 2y
+    
+    fx = 4x + 3y - 5
+    fy = 3x + 8y + 2
+
+    0 = 4x + 3y - 5
+    0 = 3x + 8y + 2
+
+    0 = 12x + 9y - 15
+    0 = 12x + 32y + 8
+
+    0 = 23y + 23
+    y = -1, x = 2
+
+    fxx = 4, fyy = 8, fxy = 3
+    hess > 0
+
+    it's a locale minima f(2, -1)
+
+
+13. f(x, y) = x² - y² - 2x + 4y + 6
+    
+    fx = 2x - 2
+    fy = -2y + 4
+
+    0 = 2x - 2
+    0 = -2y + 4
+    x = 1, y = 2
+
+    fxx = 2, fyy = -2, fxy = 0
+
+    hess < 0
+
+    it's a saddle point
+
+
+15. f(x, y) = x² + 2xy
+
+    fx = 2x + 2y
+    fy = 2x
+
+    0 = 2x + 2y, 0 = 2x
+    x = y = 0
+
+    fxx = 2, fyy = 0, fxy = 2
+    
+    hessian < 0
+
+    it's a saddle point
+
+17. f(x, y) = x³ - y³ - 2xy + 6
+
+    fx = 3x² - 2y
+    fy = -3y² - 2x
+    fxx = 6x , fyy = -6y, fxy = -2
+
+    0 = 3x² - 2y        
+    0 = -3y² - 2x       
+
+    (a) x = y = 0, fxx = 0, fyy = 0 fxy = -2
+    hessian = -4 < 0
+    it's a saddle point
+
+
+    (b)
+    y = 3x²/2
+    0 = -27/4 x**4 - 2x
+    2 = 27/4 x³
+    x³ = -8/27, x = -2/3, y = 4/9 * 3/2 = 2/3
+
+
+    hessian = fxx*fyy - 4 = -4 * -4 - 4 > 0
+
+    it's a locale maxima point
+
+
