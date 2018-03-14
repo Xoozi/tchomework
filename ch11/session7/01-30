@@ -160,3 +160,141 @@
     it's a locale maxima point
 
 
+19. f(x, y) = 6x² - 2x³ + 3y² + 6xy
+    
+    fx = 12x - 6x² + 6y
+    fy = 6y + 6x
+
+    0 = 12x - 6x² + 6y
+    0 = 6y + 6x
+
+    0 = 6x - 6x²
+    x = 0 or x = 1
+    y = 0 or y = -1
+
+    fxx = 12 - 12x
+    fyy = 6
+    fxy = 6
+
+    fxx(0, 0) = 12
+    hess = 12*6 - 6*6 > 0
+
+    so (0, 0) is a local minima value: 0
+
+    fxx(1, -1) = 0
+    hess = 0 - 6*6 < 0
+
+    so (1, -1) is a saddle point
+
+21. f(x, y) = 9x³ + y³/3 - 4xy
+
+    fx = 27x² - 4y
+    fy = y² - 4x
+
+    0 = 27x² + 4y
+    0 = y² - 4x
+    x = y²/4
+
+    0 = 27/16 y⁴ - 4y
+    y = 0, or y = 3/4
+    x = 0, or x = 9/4
+
+    fxx = 54x, fyy = 2y, fxy = -4
+
+    fxx(0, 0) = 0, fyy(0, 0) = 0, hess(0, 0) < 0 
+    so (0, 0) is a saddle point
+
+    fxx(9/4, 3/4) = 27*9/2, fyy(9/4, 3/4) = 3/2, hess(9/4, 3/4) = 27*9*3/4 - 16 > 0
+
+    so (9/4, 3/4) is a minimum point
+
+23. f(x, y) = x³ + y³ + 3x² - 3y² - 8
+    
+    fx = 3x² + 6x
+    fy = 3y² - 6y
+
+    0 = 3x² + 6x
+    0 = 3y² - 6y
+
+    x = 0 or x = -2
+    y = 0 or y = 2
+
+    there 4 kind of status:
+    (0, 0), (0, 2), (-2, 0), (-2, 2)
+
+    fxx = 6x + 6, fyy = 6y - 6, fxy = 0
+
+    fxx(0, 0) = 6, fyy(0, 0) = -6, hess = -36 < 0
+    so (0, 0) is a saddle point
+
+    fxx(0, 2) = 6, fyy(0, 2) = 6, hess = 36 > 0
+    so (0, 2) is a minimum point
+
+    fxx(-2, 0) = -6, fyy(-2, 0) = -6, hess = 36 > 0
+    so (-2, 0) is a maxima point
+
+    fxx(-2, 2) = -6, fyy(-2, 2) = 6, hess = -36 < 0
+
+    so (-2, 2) is a saddle point
+
+25. f(x, y) = 4xy - x⁴ - y⁴
+
+    fx = 4y - 4x³
+    fy = 4x - 4y³
+
+    0 = 4y - 4x³
+    0 = 4x - 4y³
+
+    y = x³
+    x = y³
+
+    x = y = 0, or x = y = 1
+
+    fxx = -12x², fyy = -12y², fxy = 4
+
+    fxx(0, 0) = 0, fyy(0, 0) = 0, hess = -4 < 0
+    so (0, 0) is a saddle point
+
+    fxx(1, 1) = -12, fyy(1, 1) = -12, hess > 0
+    so (1, 1) is a local maximum point
+
+
+    xoozi 这里因为心算忘记了一种情况x = y = -1
+
+    fxx(-1, -1) = -12, fyy(-1, -1) = -12, hess > 0
+    so (-1, -1) is a local maximaum point
+
+27. f(x, y) = 1/(x² + y² - 1)
+    
+    fx = -2x/(x² + y² - 1)²
+    fy = -2y/(x² + y² - 1)²
+
+    0 = -2x/(x² + y² - 1)²
+    0 = -2y/(x² + y² - 1)²
+
+    x = y = 0
+    
+    fxx = -2 * 1/(x² + y² - 1)² + -2x*-2x/(x² + y² - 1)³
+        = (-2x² -2y² + 2 + 4x²)/(x² + y² - 1)³
+        = (2x² - 2y² + 2)/(x² + y² - 1)³
+
+29. f(x, y) = y sin x
+
+    fx = y cos x
+    fy = sin x
+
+    0 = y cos x
+    0 = sin x
+
+    x = kpi
+    y = 0
+
+    fxx = -ysin x, fxy = cos x
+    fyy = 0
+
+    fxx(kpi, 0) = 0, fyy = 0, fxy = cos(kpi) = ±1
+    hess = -1 < 0
+
+    all (kpi, 0) is saddle point
+
+
