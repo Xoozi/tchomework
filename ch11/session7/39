@@ -1,0 +1,20 @@
+find two numbers a and b, with a <= b, such that ∫(a, b) (6 - x - x²) dx has its largets value
+
+    F(x) = 6x - x²/2 - x³/3
+
+    F(b)  - F(a)
+
+    xoozi 这题有意思
+
+    if F(a, b) = ∫(a, b) (6 - x - x²) dx = (6b - b²/2 - b³/3) - (6a - a²/2 - a³/3)
+
+    Fa = -6 + a + a², 
+    Fb = 6 - b - b²
+
+    0 = -6 + a + a² => a = -3 or a = 2
+    0 = 6 - b - b² => b = -3, or b = 2
+
+    a <= b =>
+    F(a, b) max is F(-3, 2)
+
+

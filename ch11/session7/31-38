@@ -79,3 +79,36 @@ in the first quadrant
 
 
     so abs maximum at(0, -3) = 11, minimum at (4, -2) = -10
+
+
+37. f(x, y) = (4x - x²) cos y, on the rectangular plate 1 <= x <= 3, -pi/4 <= y <= pi/4
+
+    fx = (4 - 2x) cos y
+    fy = -(4x - x²)sin y
+
+    0 = (4 - 2x) cos y
+    0 = -(4x - x²) sin y
+
+    x = 2, y = 0, it's a inner point
+
+    fxx = -2cos y, fyy = -(4x - x²)cos y, fxy = -(4 - 2x) sin y
+
+    fxx(2, 0) = -2, fyy(2, 0) = -4, fxy(2, 0) = 0
+    hessian = -2*-4 - 0 > 0
+
+    so it's a local maximum at (2, 0) = 4
+
+    
+    on x = 1, -pi/4 <= y <= pi/4
+    f(x, y) = f(1, y) = 3cos y , local maximum at(1, 0) = 3, local minimum at(1, -pi/4) and (1, pi/4) = 3/sqrt(2)
+
+    on x = 3, -pi/4 <= y <= pi/4
+    f(x, y) = f(3, y) = 3cos y, so local maximum at(1, 0) = 3, local minimum at (3, -pi/4) and (3, pi/4) = 3/sqrt(2)
+
+    on 1 <= x <= 3, y = -pi/4
+    f(x, y) = f(x, -pi/4) = (4x - x²)/sqrt(2) , local maximum at(2, -pi/4) = 4/sqrt(2), local minimum at(1, -pi/4), (3, -pi/4) = 3/sqrt(2)
+
+    because the symmetry on 1 <= x <= 3, y = pi/4 is the same as 1 <= x <= 3, y = pi/4
+
+
+    so abs maximum at(2, 0) = 4, minimum at(1, pi/4), (1, -pi/4), (3, pi/4), (3, -pi/4)
