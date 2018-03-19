@@ -1,0 +1,43 @@
+Find the critical points of f(x, y), if any, given that:
+
+a. fx = 2x - 4y, fy = 2y - 4x
+
+    0 = 2x - 4y
+    0 = 2y - 4x
+
+    x = y = 0
+
+    fxx = 2, fyy = 2, fxy = -4
+
+    hessian = 2*2 - 16 < 0
+
+    so it's a saddle point
+
+b. fx = 2x - 2, fy = 2y - 4
+
+    0 = 2x - 2
+    0 = 2y - 4
+    
+    x = 1, y = 2
+
+    fxx = 2, fyy = 2, fxy = 0
+
+    hessian > 0
+
+    is a local minimum point
+
+
+c. fx = 9x² - 9, fy = 2y + 4
+
+    0 = 9x² - 9
+    0 = 2y + 4
+    x = 1, y = -2, or x = -1, y = -2
+
+
+    fxx = 18x, fyy = 2, fxy = 0
+
+    fxx(1, -2) = 18, Hessian(1, -2) = 18*2 - 0 > 0
+    so (1, -2) is a local minimum point
+
+    fxx(-1, -2) = -18, Hessian(-1, -2) = -18*2 - 0 < 0
+    so (-1, -2) is a saddle point

@@ -1,0 +1,34 @@
+Show that (0, 0) is a critical point of f(x, y) = x² + kxy + y²
+no matter what value the constant k has
+
+    if 0 != k
+    fx = 2x + ky
+    fy = kx + 2y
+
+    0 = 2x + ky
+    0 = kx + 2y
+
+    at (0, 0), it's satisfied
+
+    and fxx = 2, fyy = 2, fxy = k
+
+    Hessian = 4 - k
+
+    if(k > 4) (0, 0) is a saddle point
+    if(k < 4) (0, 0) is a minimum point
+    if(k == 4) -------------
+
+    or y = -2x/k
+    0 = kx - 4x/k
+    k - 4/k = 0
+    k² - 4 = 0
+    k = 2 or k = -2
+
+
+    if 0 == k
+    fx = 2x
+    fy = 2y
+
+    fxx = 2, fyy = 2, fxy = 0
+    Hessian = 4 > 0
+    (0, 0) is a minimum point

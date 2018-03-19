@@ -1,0 +1,38 @@
+Temperatures
+
+the flat circular plate has the shape of the region x² + y² <= 1.
+The plate, including the boundary where x² + y² = 1, is heated
+so thate the temperature at the point(x, y) is:
+    T(x, y) = x² + 2y² - x
+
+Find the temperature at the hottest and coldest points on the plate.
+
+    Tx = 2x - 1
+    Ty = 4y
+
+    0 = 2x - 1
+    0 = 4y
+    x = 0.5, y = 0
+    
+    it's a inner point,
+
+    Txx = 2, Tyy = 4, Txy = 0
+
+    Hessian > 0
+
+    so T(x, y) get a local minimum at (0.5, 0) = -0.25
+
+
+    on the boundary, x² + y² = 1, y² = 1 - x²
+
+    T(x, y) = x² + 2y² - x is equivalent to T(x) = x² + 2 - 2x² - x
+
+    T(x) = -x² - x + 2
+
+    dT/dx = -2x - 1
+
+    x = -0.5, y = sqrt(0.75) or -sqrt(0.75) local maximum = 2.25
+
+
+
+    

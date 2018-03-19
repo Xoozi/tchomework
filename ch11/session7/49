@@ -1,0 +1,16 @@
+Among al the points on the graph of z = 10 - x² - y² 
+
+that lie above the plane x + 2y + 3z = 0, find the point 
+
+farthest from the plane
+
+N = i + 2j + 3k
+
+normalize(N) = (1/sqrt(14))i + (2/sqrt(14)j + (3/sqrt(14)k
+
+if P(x, y, z)
+
+P distance to plane is 
+dis = dot(P, nN) = 1/sqrt(14)(x + 2y + 3z)
+
+is equilent 
