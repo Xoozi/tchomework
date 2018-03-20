@@ -1,0 +1,83 @@
+Extreme Value on Parametrized Curve
+
+To find the extreme values of a function f(x, y) on a curve
+x = x(t), y = y(t), we treat f as a function of the single 
+variable t and use the Chain Rule to find where df/dt is zero.
+
+As in any other single variable case, the extreme values of f 
+are then found among the values at the:
+
+a. critical points(points where df/dt is zero or fails to exist)
+b. endpoints of the parameter domain.
+
+Find the absolute maximum and miminum values of the following function
+
+
+
+53. a. f(x, y) = x + y
+
+        i. The simicircle x² + y² = 4, y >= 0
+
+        x = 2 cos t, y = 2 sin t,  0 <= t <= pi
+
+        f(x, y) = f(t) = 2cos t + 2sin t
+
+        df/dt = -2sin t + 2cos t
+        
+        when t = pi/4, df/dt = 0, d²f/dt² = (-2cos t - 2sin t)|pi/4 = -2sqrt(2) < 0
+
+        so f(t) got a local maximum at (t = pi/4) = 2sqrt(2)
+
+        when t = 0, f(t) = 2, when t = pi, f(t) = -2,
+
+        so abs minimum is -2, abs maximum is 2sqrt(2)
+
+        ii. The quater circle, x² + y² = 4, x >= 0, y>= 0
+
+        as i. when t = pi/4, f(t) got a local maixmum  = 2sqrt(2)
+
+        when t = 0, f(t) = 2, when t = pi/2 f(t) = 2
+
+        so abs minimum is 2, abs maximum is 2sqrt(2)
+
+
+    b. g(x, y) = xy
+
+        i. The simicircle x² + y² = 4, y >= 0
+
+        x = 2cos t, y = 2sin t, 0 <= t <= pi
+
+        g(x, y) = g(t) = 4cos t sin t = 2 sin 2t
+
+        dg/dt = 2 cos 2t
+
+        when t = pi/4, g(t) got local maximum = 2
+        when t = 3pi/4, g(t) got local minimum = -2
+
+        when g(0) = 0, g(pi) = 0
+
+        so ....
+
+        ii. The quater circle, x² + y² = 4, x >= 0, y >= 0
+
+        x = 2cos t ,y = 2sin t, 0 <= t <= pi/2
+
+        when t = pi/4, g(t) got local maximum
+
+        g(0) = 0, g(pi/2) = 0
+
+        so, abs maximum = 2, at t = pi/4
+        abs minimum = 0, at t = 0 and t = pi/2
+
+
+
+
+55. f(x, y) = xy
+
+Curves:
+
+    i. The line , x = 2t, y = t + 1
+
+    f(x, y) = f(t) = 2t² + 2t
+
+    when t = 1/2 f

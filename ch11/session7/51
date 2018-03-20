@@ -1,0 +1,8 @@
+the function f(x, y) = x + y, fails to have an absolute maximum
+value in the closed first quadrant. Dose this contradict the 
+discussion on finding absolute extrema given in the text
+
+fx = fy = 1, fxx = fyy = fxy = 0 hessian = 0 so 
+
+
+xoozi 这里正确的答案是, 第一象限是无界的, 而绝对极值要在有界区域取得
