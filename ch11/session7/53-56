@@ -80,4 +80,16 @@ Curves:
 
     f(x, y) = f(t) = 2t² + 2t
 
-    when t = 1/2 f
+    when t = -1/2 f(t) got abs minimum = -1/2
+
+    ii. The segment x = 2t, y = t + 1, -1 <= t <= 0
+
+    when t = 0, f(t) = 0, abs maximum
+    when t = -1, f(t) = 0, abs maximum
+
+    when t = -1/2 f(t) got abs minimum = -1/2
+
+    iii. The segment x = 2t, y = t + 1, 0 <= t <= 1
+
+    when t = 0, f(t) = 0, abs minimum
+    when t = 1, f(t) = 4, abs maximum
