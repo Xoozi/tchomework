@@ -13,13 +13,38 @@ that minimizes the value of function
         = m²x1² + mbx1 - mx1y1 + mbx1 + b² - by1 - mx1y1 - by1 + y1²
         = m²x1² + 2mbx1 - 2mx1y1 - 2by1 + b² + y1²
 
-    w = m²(∑xk²) + 2mb(∑xk) - 2m(∑xkyk) - 2b(∑yk) + ∑yk² + b²
+    w = m²(∑xk²) + 2mb(∑xk) - 2m(∑xkyk) - 2b(∑yk) + ∑yk² + nb²
 
     wm = 2m(∑xk²) + 2b(∑xk) - 2(∑xkyk)
-    wb = 2m(∑xk) - 2(∑yk) + 2b
+    wb = 2m(∑xk) - 2(∑yk) + 2nb
 
-    0 = wm, 0 = wb
+    0 = wm, 0 = wb, if s = ∑xk², t = ∑xk, u = ∑yk, v = ∑xkyk
     => 
+    0 = 2ms + 2bt - 2v      (1)
+    0 = 2mt - 2u + 2nb      (2)
+
+    (1)*n
+    0 = 2nms + 2nbt - 2nv   (3)
+
+    (2)*t
+    0 = 2mt² - 2ut + 2nbt   (4)
+
+    (4) - (3)
+    0 = 2mt² - 2ut - 2nms + 2nv
+    0 = mt² - ut - nms + nv
+
+    ut - nv = m(t² - ns)
+    m = (ut - nv)/(t² - ns) = (∑yk∑xk - n∑xkyk) / ((∑xk)² - n∑xk²)
+
+    (2)
+    =>
+    0 = mt - u + nb
+    b = u - mt/n = (∑yk - m∑xk)/n
+
+    (1) - (3) 
+    0 = 2ms + 2bt - 2v - 2mt² - 2ut 
+    0 = m(s - t²) - v + 2ut
+    m = (v - ut)/(s - t²) = (
     
     
     ######
