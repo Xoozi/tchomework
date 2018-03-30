@@ -1,0 +1,35 @@
+1. Extrema on an ellipse
+Find the points on the ellipse x² + 2y² = 1, where f(x, y) = xy as its extreme values.
+
+    f(x, y) = xy,  g(x, y) = x² + 2y² - 1
+
+    ∇f = λ ∇g
+
+    yi + xj = λ(2xi + 4yj)
+
+    y = 2λx
+    x = 4λy
+
+    x = 4λ2λx = 8λ²x
+
+    if x != 0, λ² = 1/8, λ = ±1/2sqrt(2)
+
+        g(x, y) = 16λ²y² + 2y² - 1 = 0
+
+    (16λ² + 2)y² = 1
+    y = ±1/(16λ² + 2) = ±1/2
+
+    x = 4λy = ±1/sqrt(2)
+
+
+    if x == 0, y = 2λx = 0, can't satisfy g(x, y) = 0
+
+    so local extrema at
+    (1/sqrt(2), 1/2)        max
+    (-1/sqrt(2), 1/2),      min
+    (1/sqrt(2), -1/2),      min
+    (-1/sqrt(2), -1/2)      max
+
+
+3. Maximum on a line
+Find the maximum value of f(x, y) = 49 - x² - y², on the line x + y = 3
