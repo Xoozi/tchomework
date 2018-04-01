@@ -32,4 +32,255 @@ Find the points on the ellipse x² + 2y² = 1, where f(x, y) = xy as its extreme
 
 
 3. Maximum on a line
-Find the maximum value of f(x, y) = 49 - x² - y², on the line x + y = 3
+Find the maximum value of f(x, y) = 49 - x² - y², on the line x + 3y = 10
+
+	f(x, y) = 49 - x² - y², g(x, y) = x + 3y - 10
+
+	∇f = λ ∇g
+
+	-2xi -2yj = λi + 3λj
+
+	-2x = λ
+	-2y = 3λ
+
+	if λ != 0
+		-6x = -2y
+		y = 3x
+
+		g(x, y) = 0
+		x + 3y - 10 = 0
+		10x - 10 = 0
+		x = 1
+		y = 3
+		λ = -2
+
+	if λ == 0
+		x = y = 0
+		g(0, 0) = -10 != 0
+		this case not on the line
+
+	so extrema is f(1, 3) = 49 - 1 - 9 = 39
+
+
+
+5. Constrained minimum 
+Find the points on the curve xy² = 54 nearest to the origin
+
+	f(x, y, z) = x² + y² + z²
+	g(x, y) = xy² - 54
+
+
+	∇f = λ ∇g
+	2xi + 2yj + 2zk = λy²i + 2λxyj
+		2x = λy²
+		2y = 2λxy
+		2z = 0
+
+		2y = λ²y**3
+
+	case 1 y != 0
+		2 = λ²y²
+		y²= 2/λ²
+		y = ±sqrt(2/λ²)
+
+		xy² - 54 = 0
+		λy²/2 * y² - 54 = 0
+		λ*1/λ²*2/λ² = 54
+		1/27 = λ**3
+		λ = 1/3
+
+		y = ±3sqrt(2)
+		x = λ*y²/2 = 1/3 * 9*2/2 = 3
+
+	case 2 y == 0
+		x = 0
+		this case not on the curve
+
+	
+	so extrema is f(3, 3sqrt(2), 0), f(3, -3sqrt(2), 0)
+
+
+7 use the method Lagrange multipliers to find
+
+a. Minimum on a hyperbola The minimum value of x + y, subject to the constraints xy = 16, x > 0, y > 0
+
+	f(x, y) = x + y
+	g(x, y) = xy - 16
+
+	∇f = λ ∇g
+	i + j = λyi + λxj
+		
+		1 = λy
+		1 = λx
+		x = y = 1/λ
+
+	xy - 16 = 0
+		λ = ±1/4
+
+		x > 0, y > 0
+		λ = 1/4
+
+		f(4, 4) = 8
+
+
+b. Maximum on a line  The maximum value of xy, subject to the constraint x + y = 16
+
+	f(x, y) = xy
+	g(x, y) = x + y - 16
+
+	∇f = λ ∇g
+	yi + xj = λi + λj
+
+	y = x = λ
+	
+	2λ = 16
+	λ = 8
+
+	f(8, 8) = 64
+
+
+
+9. Minimum surface area with fixed volume
+Find the dimensions of the closed right circular cylindrical can of smallest surface area whose volume is 16pi cm**3
+
+	s(r, h) = 2pir² + 2pirh
+	v(r, h) = pir²h
+
+	∇s = λ ∇v
+	(4pir + 2pih)i + (2pir)j = (2λpirh)i + (λpir²)j
+
+	4pir + 2pih = 2λpirh
+		2r + h = λrh	(1)
+
+	2pir = λpir²
+		2 = λr
+		r = 2/λ		(2)
+
+		(1)(2)=>
+		4/λ + h = 2h
+		4/λ = h
+
+		=>
+		h = 2r
+
+		v(r, h) = pir²h = 16pi
+		r²h = 16
+		2r**3 = 16
+		r = 2
+		h = 4
+	s(2, 4) = minimum surface
+
+
+
+11. Rectangle of greatest area in an ellipse
+Use the method of Lagrange multipliers to find the dimensions of the rectangle of greatest area that can be inscribed in the ellipse x²/16 + y²/9 = 1, with sides parallel to the coordinate axes.
+
+	if f(x, y) = xy, x > 0, y > 0
+	g(x, y) = x²/16 + y²/9 - 1
+
+	∇f = λ ∇g
+	yi + xj = λx/8 i + 2λy/9 j
+
+	y = λx/8
+	x = 2λy/9
+
+	x = λ²/36
+	y = λ**3/36*8
+
+	x²/16 + y²/9 - 1 = 0
+	λ**4/(36*36*16) + λ**6/(36*36*8*8*9) = 1
+
+
+	(36λ**4 + λ**6) = 36*36*64*9
+
+	λ**4(36 + λ²) = 
+	xoozi到这里发现走偏了
+
+	y = λx/8	=> λ = 8y/x
+	x = 2λy/9	=> x = 8y/x * 2y/9 => x² = 16/9 y²
+
+	g(x, y) = y²/9 + y²/9 - 1 = 0
+	2y² = 9
+	y = 3/sqrt(2)
+
+	x = 4/3 y = 4/sqrt(2)
+
+	max = 4xy = 4*3*4/2 = 24
+
+	xoozi 虽然我的解法和答案不同, 但我觉得我的办法更优一点
+
+
+13. Extrema on a circle Find the maximum and minimum values of x² + y² subject to the constraint
+x² - 2x + y² - 4y = 0
+
+	f(x, y) = x² + y²
+	g(x, y) = x² - 2x + y² - 4y
+
+	∇f = λ ∇g
+
+	2xi + 2yj = λ[(2x - 2)i + (2y - 4)j]
+
+	x = λ(x - 1)
+	y = λ(y - 2)
+
+	case 1: x = y = λ = 0
+		f(0, 0) = 0
+
+	case 2: λ != 0, x = 1, y = 2
+		not on the curve
+
+	case 3: λ != 0, x != 1, y != 2
+
+		x - λx = -λ
+		x(1 - λ) = -λ
+		if λ = 1, eq not satisfy
+
+		so x = λ/(λ - 1)
+
+		y = 2λ/(λ - 1)
+
+		so y = 2x
+
+		g(x, y) = x² - 2x + 4x² - 8x = 0
+			5x² - 10x = 0
+			x² - 2x = 0
+			x(x - 2) = 0
+			x = 2, y = 4
+
+		f(2, 4) = 4 + 16 = 20
+
+
+15. Ant on a metal plate  The temperature a t a point(x, y) on a metal plate is T(x, y)
+ = 4x² - 4xy + y². An ant on the plate walks around the circle of radius 5 centered at the origin.
+ What are the highest  and lowest temperature encounterd by the ant.
+
+ 	T(x, y) = 4x² - 4xy + y²
+	g(x, y) = x² + y² - 25
+
+	∇T = λ ∇g
+	(8x - 4y)i + (-4x + 2y)j = 2λxi + 2λyj
+
+	8x - 4y = 2λx			(1)
+	-4x + 2y = 2λy			(2)
+	
+	(8x - 4y)/x = (-4x + 2y)/y
+
+	case 1: 8x != 4y
+		2/x = -1/y
+		-x = 2y
+		y = -x/2
+		g(x, y) = x² + x²/4 - 25 = 0
+
+			5x²/4 = 25
+			x² = 20
+			x = ±sqrt(20), y = -+sqrt(5)
+		T(sqrt(20), -sqrt(5)) = T(-sqrt(20), sqrt(5)) = 125
+
+	case 2:8x = 4y
+		2x = y
+
+		g(x, y) = x² + 4x² - 25 = 0
+		x = ±sqrt(5), y = ±2sqrt(5)
+
+		T(sqrt(5), 2sqrt(5)) = T(-sqrt(5), -2sqrt(5)) = 0
+
