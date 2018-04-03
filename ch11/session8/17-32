@@ -1,0 +1,154 @@
+
+17. Minimum distance to a point
+Find the point on the plane x + 2y + 3z = 13 closest to the point(1, 1, 1)
+
+    f(x, y, z) = (x - 1)² + (y - 1)² + (z - 1)² = x² - 2x + y² - 2y + z² - 2z + 3
+    g(x, y, z) = x + 2y + 3z - 13
+
+    ∇f = λ ∇g
+    =>
+        (2x - 2)i + (2y - 2)j + (2z - 2)k = λi + 2λj + 3λk
+
+        2x - 2 = λ
+        2y - 2 = 2λ
+        2z - 2 = 3λ
+
+        x = λ/2 + 1
+        y = λ + 1
+        z = 3λ/2 + 1
+
+    g(x, y, z) = 0
+    => λ/2 + 1 + 2λ + 2 + 9λ/2 + 3 - 13 = 0
+    7λ = 7
+    λ = 1
+
+    x = 1.5, y = 2, z = 2.5
+
+    minimum: f(1.5, 2, 2.5)
+
+
+19. Minimum distance to the origin
+Find the minimum from the surface x² + y² - z² = 1 to the origin
+
+    f(x, y, z) = x² + y² + z²
+    g(x, y, z) = x² + y² - z² - 1
+
+    ∇f = λ ∇g
+    =>
+        2xi + 2yj + 2zk = 2λxi + 2λyj - 2λzk
+
+        case 1: λ = 0
+            x = 0, y = 0, z = 0
+            point(0, 0, 0) not on the surface
+
+        case 2: λ != 0
+            2x = 2λx
+            2y = 2λy
+            2z = -2λz
+
+            λ = 1, z = 0
+
+            g(x, y, z) = x² + y² - 1 = 0
+            so minimum distance = 1
+            on the circle x² + y² - 1 = 0, z = 0
+
+
+21. Find the point on the surface z² = xy + 4 closest to the origin
+
+    f(x, y, z) = x² + y² + z²
+    g(x, y, z) = z² - xy - 4
+
+    ∇f = λ ∇g
+    =>
+        2xi + 2yj + 2zk = -λyi - λxj + 2λzk
+
+        2x = -λy
+        2y = -λx
+        2z = 2z
+
+        x = -λy/2
+
+        2y = -λ(-λy/2) = λ²y/2
+
+        case 1:y = 0, x = 0
+
+            g(0, 0, z) = z² - 4 = 0
+            z = ± 2
+
+            distance = 2
+        
+        case 2: y != 0
+            2 = λ²/2
+            λ = ±2
+            
+            case a: λ = 2
+
+                2x = -2y
+                2y = -2x
+                x = -y
+                y = -x
+
+                g(x, y, z) = z² + x² - 4 = 0
+                g(x, y, z) = z² + y² - 4 = 0
+
+                distance = 2
+
+            case b: λ = -2
+                
+                2x = 2y
+                2y = 2x
+
+                x = y
+
+                g(x, y, z) = z² - x² - 4 = 0
+                g(x, y, z) = z² - y² - 4 = 0
+
+                distance = 2
+
+
+        xoozi 从这里就想岔了
+        2x = -λy
+        2y = -λx
+        2z = 2λz
+
+        case 1: λ = 1
+            x = -y/2
+            y = -x/2
+            y = -(-y/2)/2 = y/4
+            x = -(-x/2)/2 = x/4
+
+            x = y = 0
+
+            g(x, y, z) = z² - 4 = 0
+            z = ± 2
+            distance = 2
+
+        case 2: z = 0
+
+            xoozi 这里不对, 这里假定λ=1了
+            x = -y/2
+            xy = -y²/2
+
+            g(x, y, 0) = y²/2 - 4 = 0
+            y = ±2sqrt(2)
+            x = -+sqrt(2)
+
+            P1(-sqrt(2), 2sqrt(2), 0), distance = sqrt(10)
+            P2(sqrt(2), -2sqrt(2), 0), disntace = sqrt(10)
+
+    
+            g(x, y, 0) = -xy - 4 = 0
+            y = -4/x
+
+            y = -λx/2 = -4/x
+            λ = 8/x²
+
+            xoozi 这里又...
+
+            应该把y = -4/x代入2x = -λy = λ 4/x
+            x = 2λ/x
+            λ = x²/2
+            这里比较迷, 答案用了一招, -8/x = -xλ 
+            代人上面的λ解出, 我没找到有这个式子
+
+
