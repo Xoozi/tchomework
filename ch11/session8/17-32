@@ -152,3 +152,174 @@ Find the minimum from the surface x² + y² - z² = 1 to the origin
             代人上面的λ解出, 我没找到有这个式子
 
 
+
+
+23. Find the maximum and minimum values of f(x, y, z) = x - 2y + 5z
+on the sphere x² + y² + z² = 30
+
+
+    f(x, y, z) = x - 2y + 5z
+    g(x, y, z) = x² + y² + z² - 30
+
+
+    ∇f = λ ∇g
+
+    i - 2j + 5k = 2λxi + 2λyj + 2λzk
+
+    1 = 2λx
+    -2= 2λy
+    5 = 2λz
+
+    x = 1/(2λ)
+    y = -1/λ
+    z = 5/(2λ)
+
+    g(x, y, z) = 1/4λ² + 1/λ² + 25/4λ² - 30 = 0
+
+    1/4λ² + 4/4λ² + 25/4λ² = 30
+    30/4λ² = 30
+    1 = 4λ²
+    λ = ±1/2
+
+    x = ±1
+    y = -+2
+    z = ±5
+
+    f(1, -2, 5) = 1 + 4 + 25 = 30       maximum
+    f(-1, 2, -5) = -1 - 4 - 25 = -30    minimum
+
+
+
+25. Find three real numbers whose sum is 9, and the sum of whose squares is as small as possible
+
+    f(x, y, z) = x² + y² + z²
+    g(x, y, z) = x + y + z - 9
+
+    ∇f = λ ∇g
+
+    2xi + 2yj + 2zk = λi + λj + λk
+
+    2x = λ
+    2y = λ
+    2z = λ
+
+    x = y = z = λ/2
+
+    g(x, y, z) = 3λ/2 - 9 = 0
+    λ = 6
+
+    x = y = z = 3
+
+
+27. Find the dimensions of the closed rectangular box with maximum volume that can be inscribed in the unit sphere
+
+    1/8 of box in the first octant
+    
+    if the corner point is (x, y, z)
+
+    f(x, y, z) = xyz
+    g(x, y, z) = x² + y² + z² - 1
+
+    ∇f = λ ∇g
+    yzi + xzj + xyk = 2λxi + 2λyj + 2λzk
+
+    yz = 2λx
+    xz = 2λy
+    xy = 2λz
+
+    xyz = 2λx²
+    xyz = 2λy²
+    xyz = 2λz²
+
+    => x = y = z
+
+    3x² - 1 = 0
+    x² = 1/3
+
+    x = sqrt(1/3)
+
+
+
+29. A space probe in the shape of the ellipsoid 
+    
+    4x² + y² + 4z² = 16
+
+    enter Earth's atmosphere an its surface begin to heat.
+    After 1 hour, the temperature at the point(x, y, z) on the 
+    probe's surface is:
+
+    T(x, y, z) = 8x² + 4yz - 16z + 600
+
+    Find the hottest point on the probe's surface
+
+
+    g(x, y, z) = 4x² + y² + 4z² - 16
+
+    ∇T = λ ∇g
+
+    16xi + 4zj + (4y - 16)k = 8λxi + 2λyj + 8λzk
+
+    16x = 8λx
+    4z = 2λy
+    4y - 16 = 8λz
+
+    case 1:x != 0
+        
+        16x = 8λx
+        λ = 2
+
+        4z = 4y
+        z = y
+
+        4y - 16 = 16z
+        -16 = 12z
+        z = y = -4/3
+
+        g(x, y, z) = 4x² + 16/9 + 4*16/9 - 16 = 0
+
+        x² = 4 - 4/9 - 16/9 = (36 - 4 - 16)/9 = 16/9
+        x = ± 4/3
+
+    case 2: x = 0
+
+        4y - 16 = 8λz
+        z = λy/2
+
+        4y - 16 = 4λ²y
+        y - 4 = λ²y
+
+
+        16 = 8λz
+        =>
+            z = 2/λ
+
+        4z = 2λy
+        =>
+            y = 2z/λ = 4/λ²
+
+        g(x, y, z) = 0 + 16/λ**4 + 16/λ² - 16 = 0
+
+            1/λ**4 + 1/λ² = 1
+            x = ±sqrt(1/2 + sqrt(5)/2)
+
+        xoozi 我思路错了
+
+        z = λy/2
+        => λ = 2z/y
+
+        4y - 16 = 8λz
+        => y - 4 = 4z²/y
+        => y² - 4y = 4z²
+
+        这里就可以代人g(x, y, z) = 4x² + y² + 4z² - 16 = 0
+
+        0 + y² + y² - 4y - 16 = 0
+        2y² - 4y - 16 = 0
+
+        => y = 4 or y = -2
+
+        => z = ±sqrt(3)
+
+    
+    最后得到可能的点为
+    (±4/3, -4/3, -4/3), (0, -2, ±sqrt(3)), (0, 4, ±sqrt(3))
