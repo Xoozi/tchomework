@@ -323,3 +323,40 @@ on the sphere x² + y² + z² = 30
     
     最后得到可能的点为
     (±4/3, -4/3, -4/3), (0, -2, ±sqrt(3)), (0, 4, ±sqrt(3))
+
+
+
+Maximizing a utility function: an example from economics
+In economics, the usefulness or utility of amounts x and y of two capital goods G1 and G2
+is sometimes measured by a function U(x, y). For example, G1 and G2 might be two chemicals 
+a pharmaceutical company needs to have on hand and U(x, y) the gain from manufacturing a 
+product whose synthesis requires different amounts of the chemicals depending on the process
+used. If G1 costs a dollars per kg, G2 costs b dollar per kg, and the total amount  allocated
+for the purchase of G1 and G2 together is c dollars, then the company's manager want to maximize
+U(x, y) given that ax + by = c. Thus, they need to solve a typical Lagrange multiplier problem
+
+	Suppose that
+		U(x, y) = xy + 2x
+	and that the equation ax + by = c simplifies to
+		2x + y = 30
+
+	Find the maximum value of U and the corresponding values of x and y subject to this
+	latter constraint
+
+	
+	U(x, y) = xy + 2x
+	g(x, y) = 2x + y - 30
+
+	∇U = λ ∇g
+
+	(y + 2)i + xj = 2λi + λj
+
+	y + 2 = 2λ
+	x = λ
+	y = 2λ - 2
+
+	g(x, y) = 2λ + 2λ - 2 - 30 = 0
+
+	λ = 8
+
+	x = 8, y = 14
