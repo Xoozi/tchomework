@@ -1,0 +1,60 @@
+
+
+9. Establish the fact, widely used in hydrodynamics, that if f(x, y, z) = 0, then
+
+
+    (∂x/∂y)(z) * (∂y/∂z)(x) * (∂z/∂x)(y) = -1
+
+
+    ∂f/∂y = ∂f/∂x * ∂x/∂y
+        ∂x/∂y = ∂f/∂y / ∂f/∂x
+
+    ∂f/∂z = ∂f/∂y * ∂y/∂z
+        ∂y/∂z = ∂f/∂z / ∂f/∂y
+
+    ∂f/∂x = ∂f/∂z * ∂z/∂x
+        ∂z/∂x = ∂f/∂x / ∂f/∂z
+
+
+        ∂x/∂y * ∂y/∂z * ∂z/∂x = (∂f/∂y / ∂f/∂x) * (∂f/∂z / ∂f/∂y) * (∂f/∂x / ∂f/∂z) = 1
+    
+    xoozi 这里我是凑出来的式子, 看来有点问题
+
+
+
+
+    (x, y, z) -> (u, v, w) -> f
+                u = x(y, z)
+                v = y
+                w = z
+    (∂f/∂y)(z)  = ∂f/∂u * ∂u/∂y + ∂f/∂v * ∂v/∂y + ∂f/∂w * ∂w/∂y
+            0   = ∂f/∂u * ∂u/∂y + ∂f/∂v 
+            0   = ∂f/∂x * ∂x/∂y + ∂f/∂y
+            ∂x/∂y = -∂f/∂y / ∂f/∂x
+    
+    xoozi, 到这里就懂了 ,其实答案故意有点绕, 没我这个推导好
+
+
+
+
+11. Suppose that the equation g(x, y, z) = 0 determines z as a differentiable function of
+the independent variables x and y that gz != 0.
+
+    Show that (∂z/∂y)x = - ∂g/∂y / ∂g/∂z
+
+    (x, y, z) -> (u, v, w) -> g
+
+                u = x
+                v = y
+                w = z(x, y)
+
+    (∂g/∂y)(x)  = ∂g/∂u * ∂u/∂y + ∂g/∂v * ∂v/∂y + ∂g/∂w * ∂w/∂y
+                = ∂g/∂u * 0 + ∂g/∂v * 1 + ∂g/∂w * ∂w/∂y
+                = ∂g/∂y + ∂g/∂z * ∂z/∂y
+
+
+            0   = ∂g/∂y + ∂g/∂z * ∂z/∂y
+            ∂z/∂y = -∂g/∂y / ∂g/∂z
+
+
+            xoozi !!!有点意思, 原来9题是这样的
