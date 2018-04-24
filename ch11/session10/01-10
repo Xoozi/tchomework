@@ -1,0 +1,93 @@
+Use taylor fromula for f(x, y) at the origin to find
+quadratic and cubic approximations of f near the origin.
+
+
+1. f(x, y) = x e**y
+
+    fx = e**y, fy = xe**y
+    fxx = 0, fxy = e**y, fyy = xe**y
+    fxxx = 0, fxxy = 0, fyyx = e**y, fyyy = xe**y
+
+    f(0, 0) = 0
+    f'(0, 0) = x fx|(0, 0) + y fy|(0, 0) = x*(1) + y*(0) = x
+    f''(0, 0) = x²fxx|(0, 0) + 2xyfxy|(0, 0) + y²fyy|(0, 0) = x²(0) + 2xy(1) + y²(0) = 2xy
+    f'''(0, 0) = x³fxxx|(0, 0) + 3x²y fxxy|(0, 0) + 3xy² fxyy|(0, 0) + y³ fyyy|(0, 0) = x³(0) + 3x²y(0) + 3xy²(1) + y³(0) = 3xy²
+
+
+    f(x, y) ≈ f(0, 0) + f'(0, 0) + 1/2 f''(0, 0) = x + xy   quadrtic approximations
+
+    f(x, y) ≈ f(0, 0) + f'(0, 0) + 1/2 f''(0, 0) + 1/6 f'''(0, 0) = x + xy + xy²/2  cubic approximations
+
+
+3. f(x, y) = y sin x
+
+    fx = y cos x, fy = sin x
+    fxx = -y sin x, fxy = cos x, fyy = 0
+    fxxx = -y cos x, fxxy = -sin x, fxyy = 0, fyyy = 0
+
+    f(0, 0) = 0
+    f'(0, 0) = x fx|(0, 0) + y fy|(0, 0) = x(0) + y(0) = 0
+    f''(0, 0) = x²fxx|(0, 0) + 2xy fxy|(0, 0) + y² fyy|(0, 0) = x²(0) + 2xy(1) + y²(0) = 2xy
+    f'''(0, 0) = x³ fxxx|(0, 0) + 3x²y fxxy|(0, 0) + 3xy² fxyy|(0, 0) + y³ fyyy|(0, 0) = x³(0) + 3x²y(0) + 3xy²(0) + y³(0) = 0
+
+    f(x, y) ≈ f(0, 0) + f'(0, 0) + 1/2 f''(0, 0) = xy       quadrtic approximations
+    f(x, y) ≈ f(0, 0) + f'(0, 0) + 1/2 f''(0, 0) + 1/6 f'''(0, 0) = xy   cubic approximations
+
+
+
+5. f(x, y) = e**x ln(1 + y)
+
+    fx = e**x ln(1 + y), fy = e**x/(1 + y)
+    fxx = e**x ln(1 + y), fxy = e**x/(1 + y), fyy = -e**x/(1 + y)²
+    fxxx = e**x ln(1 + y), fxxy = e**x/(1 + y), fxyy = -e**x/(1 + y)², fyyy = 2e**x/(1 + y)³
+
+    f(0, 0) = 0
+    f'(0, 0) = x fx|(0, 0) + y fy|(0, )) = x(0) + y(1) = y
+    f''(0, 0) = x² fxx|(0, 0) + 2xy fxy|(0, 0) + y² fyy|(0, 0) = x²(0) + 2xy(1) + y²(-1) = 2xy - y²
+    f'''(0, 0) = x³ fxxx|(0, 0) + 3x²y fxxy|(0, 0) + 3xy² fxyy|(0, 0) + y³ fyyy|(0, 0) = x³(0) + 3x²y(1) + 3xy²(-1) + y³(2) = 2y³ - 3xy² + 3x²y
+
+
+    f(x, y) ≈ f(0, 0) + f'(0, 0) + 1/2 f''(0, 0) = y + xy - y²/2    quadrtic approximations
+    f(x, y) ≈ f(0, 0) + f'(0, 0) + 1/2 f''(0, 0) + 1/6 f'''(0, 0) = y + xy - y²/2 + y³/3 - xy²/2 + x²y/2 cubic approximations
+
+
+7. f(x, y) = sin(x² + y²)
+
+    fx = 2x cos(x² + y²), 
+    fy = 2y cos (x² + y²)
+    fxx = 2 cos(x² + y²) - 4x² sin(x² + y²), 
+    fxy = -4xysin(x² + y²), 
+    fyy = 2 cos(x² + y²) - 4y² sin(x² + y²)
+    fxxx = -4x sin(x² + y²) - 8x sin(x² + y²) - 8x³cos(x² + y²) = -12x sin(x² + y²) - 8x³ cos(x² + y²)
+    fxxy = (2 cos(x² + y²) - 4x² sin(x² + y²))' = -4ysin(x² + y²) - 8x²ycos(x² + y²)
+    fxyy = -4x( ysin(x² + y²))' = -4x(sin(x² + y²) + 2y²cos(x² + y²)) = -4xsin(x² + y²) - 8xy²cos(x² + y²)
+    fyyy = -4ysin(x² + y²) - (8ysin(x² + y²) + 8y³cos(x² + y²)) = -12ysin(x² + y²) - 8y³cos(x² + y²)
+
+    f(0, 0) = 0
+    f'(0, 0) = x fx|(0, 0) + y fy|(0, 0) = 0
+    f''(0, 0) = x² fxx|(0, 0) + 2xy fxy|(0, 0) + y² fyy|(0, 0) =  2x² + 2y²
+    f'''(0, 0) = x³ fxxx|(0, 0) + 3x²y fxxy|(0, 0) + 3xy² fxyy|(0, 0) + y³ fyyy|(0, 0) = 0
+
+    f(x, y) ≈ f(0, 0) + f'(0, 0) + 1/2 f''(0, 0) = 0 + 0 + x² + y² = x² + y²       quadrtic approximations
+    f(x, y) ≈ f(0, 0) + f'(0, 0) + 1/2 f''(0, 0) + 1/6 f'''(0, 0) = x² + y²         cubic approximations
+
+
+9. f(x, y) = 1/(1 - x - y)
+
+    fx = 1/(1 - x - y)²
+    fy = 1/(1 - x - y)²
+    fxx = 2/(1 - x - y)³
+    fxy = 2/(1 - x - y)³
+    fyy = 2/(1 - x - y)³
+    fxxx = 6/(1 - x - y)**4
+    fxxy = 6/(1 - x - y)**4
+    fxyy = 6/(1 - x - y)**4
+    fyyy = 6/(1 - x - y)**4
+
+    f(0, 0) = 1
+    f'(0, 0) = x fx|(0, 0) + y fy|(0, 0) = x + y
+    f''(0, 0) = x²fxx|(0, 0) + 2xy fxy|(0, 0) + y² fyy|(0, 0) = 2x² + 4xy + 2y²
+    f'''(0, 0) = x³ fxxx|(0, 0) + 3x²y fxxy|(0, 0) + 3xy² fxyy|(0, 0) + y³ fyyy|(0, 0) = 6x³ + 18x²y + 18xy² + 6y³
+
+    f(x, y) ≈ f(0, 0) + f'(0, 0) + 1/2 f''(0, 0) = 1 + x + y + x² + 2xy + y²    quadrtic approximations
+    f(x, y) ≈ f(0, 0) + f'(0, 0) + 1/2 f''(0, 0) + 1/6 f'''(0, 0) = 1 + x + y + x² + 2xy + y² + x³ + 3x²y + 3xy² + y³, cubic approximations

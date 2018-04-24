@@ -1,0 +1,35 @@
+Use taylor's formula to find a quadratic approximation of f(x, y) = cos x cos y
+at the origin. Estimate the error in the approximation if |x| <= 0.1 and |y| <= 0.1
+
+fx = -sin x cos y
+fy = -cos x sin y
+fxx = -cos x cos y
+fyy = cos x cos y
+fxy = sin x sin y
+fxxx = sin x cos y
+fxxy = cos x sin y
+fxyy = sin x cos y
+fyyy = -cos x sin y
+
+fxxxx = cos x cos y
+fxxxy = -sin x sin y
+fxxyy = cos x cos y
+fxyyy = - sin x sin y
+fyyyy = -cosx cos y
+
+
+f(0, 0) = 1
+f'(0, 0) = x fx|(0, 0) + y fy|(0, 0) = 0
+f''(0, 0) = x² fxx|(0, 0) + 2xy fxy|(0, 0) + y² fyy|(0, 0) = -x² + y²
+f'''(0, 0) = x³ fxxx|(0, 0) + 3x²y fxxy|(0, 0) + 3xy² fxyy|(0, 0) + y³ fyyy|(0, 0) = 0
+f⁴(0, 0) = x⁴ fxxxx|(0, 0) + 4x³y fxxxy|(0, 0) + 6x²y² fxxyy|(0, 0) + 4xy³ fxyyy|(0, 0) + y⁴ fyyyy|(0, 0)
+         = x⁴ + 6x²y² - y⁴
+
+
+f(x, y) ≈ f(0, 0) + f'(0, 0) + 1/2 f''(0, 0) = 1 + (y² - x²)/2
+
+error = 1/24 f4(x, y) = (x⁴ + 6x²y² - y⁴)/24 <= (0.1**4 + 6*0.1**4 - 0.4**4)/24 = 0.1**4/4 = 0.000025
+
+xoozi 粗看答案我以为我做错了, 后来发现, 我也没错, f³(0, 0)确实算出来是0, 然后用4阶来算余项我的值也没错
+而题目答案没有去算fxxx ,fxxy, fxyy, fyyy只是因为他们都是两个正余弦的乘积, 把他们都按小于1来算的, 结果算出误差小于等于0.00134
+
