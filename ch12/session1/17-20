@@ -1,0 +1,19 @@
+Each of exercises 17-20 gives an integral over a region in a
+Cartesian coordinate plane. Sketch the region and evaluate.
+
+17. ∫(-2, 0) ∫(v, -v) 2 dp dv
+
+    = ∫(-2, 0) (2p)|(v, -v) dv
+    = ∫(-2, 0) (-2v - 2v) dv
+    = ∫(-2, 0) -4v dv
+    = -2v²|(-2, 0)
+    = 8
+
+
+19. ∫(-pi/3, pi/3) ∫(0, sec t) 3cos t du dt
+
+    = ∫(-pi/3, pi/3) (3cos t u)|(0, sec t) dt
+    = ∫(-pi/3, pi/3) (3cos t sec t) dt
+    = ∫(-pi/3, pi/3) 3 dt
+    = 3t|(-pi/3, pi/3)
+    = 2pi

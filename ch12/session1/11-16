@@ -1,0 +1,42 @@
+Integrate f over the given region
+
+11. Quadrilateral
+    f(x, y) = x/y, over the region in the first quadrant bounded by the lines y = x, y = 2x, x = 1, x = 2
+
+    ∬(R) x/y dA
+    = ∫(1, 2) ∫(x, 2x) x/y dy dx
+    = ∫(1, 2) (x lny)|(x, 2x) dx
+    = ∫(1, 2) (x ln2x - x lnx) dx
+    = ∫(1, 2) x ln 2 dx
+    = ln 2 * (x²/2)|(1, 2)
+    = 3ln2/2
+
+
+13. Triangle
+    f(x, y) = x² + y² over the triangular region with vertices:
+    (0, 0), (1, 0) and (0, 1)
+
+    ∬(R) x² + y² dA
+    = ∫(0, 1) ∫(0, 1 - x) x² + y² dy dx
+    = ∫(0, 1) (x²y + y³/3)|(0, 1 - x) dx
+    = ∫(0, 1) (x²(1 - x) + (1 - x)³/3) dx
+    = ∫(0, 1) (1/3 - x + 2x² - 4x³/3) dx
+    = (x/3 - x²/2 + 2x³/3 - x**4/3)|(0, 1)
+    = 1/3 - 1/2 + 2/3 - 1/3
+    = 4/6 - 3/6
+    = 1/6
+
+
+15. Triangle
+    f(u, v) = v - sqrt(u) over the triangular region cut from the 
+    first quadrant of the uv-plane by the line u + v = 1
+
+    ∬(R) v - sqrt(u) dA
+    = ∫(0, 1) ∫(0, 1 - u) v - sqrt(u) dv du
+    = ∫(0, 1) (v²/2 - sqrt(u)v)|(0, 1 - u) du
+    = ∫(0, 1) ((1-u)²/2 - sqrt(u)(1-u)) du
+    = ∫(0, 1) (1/2 - u + u²/2 - u**(1/2) + u**(3/2)) du
+    = (u/2 - u²/2 + u³/6 - 2u**(3/2)/3 + 2u**(5/2)/5)|(0, 1)
+    = 1/2 - 1/2 + 1/6 - 2/3 + 2/5
+    = 5/30 - 20/30 + 12/30
+    = -1/10
