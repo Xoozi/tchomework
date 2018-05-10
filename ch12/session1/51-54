@@ -1,0 +1,26 @@
+Integrals over Unbounded Regions
+
+Improper double integrals can often be computed similaryly to
+improper intergrals of one variable. The first iteration of the 
+following improper integrals is conducted just as if they were
+proper integrals. One then evaluates an improper integrals of a
+single variable by taking appropriate limits, as in Section 8.8
+Evaluate the improper integrals in 51-54 as iterated integrals.
+
+51. ∫(1, ∞) ∫(e**(-x), 1) 1/(x³y) dy dx
+
+    = ∫(1, ∞) (1/x³ ln y)|(e**(-x), 1) dx
+    = ∫(1, ∞) (-1/x³ * -x) dx
+    = ∫(1, ∞) (1/x²) dx
+    = lim(b->∞) (-1/x)|(1, b)
+    = lim(b->∞) (-1/b + 1)
+    = 1
+
+
+53. ∫(-∞, ∞) ∫(-∞, ∞) 1/(x² + 1)(y² + 1) dx dy
+
+    = ∫(-∞, ∞) 1/(y²+1) (arctan x)|(-∞, ∞)
+    = ∫(-∞, ∞) 1/(y²+1) lim(b->∞) (arctan x)|(-b, b) dy
+    = pi∫(-∞, ∞) 1/(y²+1) dy
+    = pi lim(a->∞) (arctan y)|(-a, a)
+    = pi²

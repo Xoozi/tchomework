@@ -1,0 +1,26 @@
+Approximating Double Integrals
+
+In 55-56, approximate the double integral of f(x, y) over the
+region R partitioned by the given vertical lines x = a, and 
+horizontal lines y = c. In each subrectangle, use (xk, yk) as
+indicated for your approximation.
+
+∬(R) f(x, y) dA ≈ ∑(k=1, n) f(xk, yk) ΔAk
+
+
+f(x, y) = x + y over the region R bounded above by the semicircle
+y = sqrt(1 - x**2) and below by the x-axis, using the partition
+x = -1, -1/2, 0, 1/4, 1/2, 1, and y = 0, 1/2, 1 with (xk, yk) the 
+lower left corner in the kth subrectangle
+
+    ∬(R) f(x, y) dA ≈
+
+    ∑(k=1, 10) f(xk, yk) ΔAk
+    = f(-1, 1/2)*1/4 + f(-1, 0)*1/4 + f(-1/2, 1/2)*1/4 +
+        f(-1/2, 0)*1/4 + f(0, 1/2)*1/8 + f(0, 0)*1/8 +
+        f(1/4, 1/2)*1/8 + f(1/4, 0)*1/8 +
+        f(1/2, 1/2)*1/4 + f(1/2, 0)*1/4
+    = 0.0625
+
+
+    xoozi 答案不对, 没有包括左下角为(-1, 1/2) (-1, 0)的部分
