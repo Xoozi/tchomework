@@ -1,0 +1,43 @@
+15. find the average value of f(x, y) = sin(x + y) over
+
+a. the rectangle 0 <= x <= π, 0 <= y <= π
+    area = π²
+
+    ∫(0, π) ∫(0, π) sin(x + y) dxdy
+    = ∫(0, π) (-cos(x + y))|(0, π) dy
+    = ∫(0, π) (-cos(π + y) + cos(y)) dy
+    = (sin(y) - sin(π + y))|(0, π)
+    = 0 - 0 - 0 - 0
+    = 0
+
+    average value = 0/π² = 0
+
+b. the rectangle 0 <= x <= π, 0 <= y <= π/2
+
+    area = π²/2
+
+    ∫(0, π) ∫(0, π/2) sin(x + y) dydx
+    = ∫(0, π) (-cos(x + y))|(0, π/2) dx
+    = ∫(0, π) (-cos(x + π/2) + cos(x)) dx
+    = (sin(x) - sin(x + π/2))|(0, π)
+    = 0 - (-1) - 0 + 1
+    = 2
+
+    average value = 2/π²/2 = 4/π²
+
+
+17. find the average height of the paraboloid z = x² + y² over
+the square 0 <= x <= 2, 0 <= y <= 2
+
+
+    area = 4
+
+    ∫(0, 2) ∫(0, 2) x² + y² dx dy
+
+    = ∫(0, 2) (x³/3 + y²x)|(0, 2) dy
+    = ∫(0, 2) (8/3 + 2y²) dy
+    = (8/3 y + 2/3 y³) | (0, 2)
+    = 16/3 + 16/3
+    = 32/3
+
+    average value = 32/3 / 4 = 8/3
