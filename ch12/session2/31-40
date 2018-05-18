@@ -1,0 +1,113 @@
+31. find the moment of inertia and radius of gyration about the 
+    x-axis of a thin plat bounded by the parabola x = y - y² and 
+    the line x + y = 0, if δ(x, y) = x + y
+
+    0 <= y <= 2, -y <= x <= y - y²
+
+    M   = ∫(0, 2) ∫(-y, y - y²) δ(x, y) dx dy
+        = ∫(0, 2) ∫(-y, y - y²) x + y dx dy
+        = ∫(0, 2) (x²/2 + xy)|(-y, y - y²) dy
+        = ∫(0, 2) ((y - y²)²/2 + y² - y³ - ((-y)²/2 - y²)) dy
+        = 1/2 ∫(0, 2) (y² - 2y³ + y⁴ + 2y² - 2y³ - y² + 2y²) dy
+        = 1/2 ∫(0, 2) (4y² - 4y³ + y⁴) dy
+        = 1/2 (4y³/3 - y⁴ + y**5/5) |(0, 2)
+        = 1/2 (32/3 - 16 + 32/5)
+        = 16/3 - 8 + 16/5
+        = 80/15 - 120/15 + 48/15
+        = 8/15
+
+    Ix  = ∫(0, 2) ∫(-y, y - y²) y²δ(x, y) dx dy
+        = ∫(0, 2) ∫(-y, y -y²) xy² + y³ dx dy
+        = ∫(0, 2) (x²y²/2 + xy³)|(-y, y-y²) dy
+        = 1/2 ∫(0, 2) (y**6 - 4y**5 + 4y⁴) dy
+        = 1/2 (y**7/7 - 2y**6/3 + 4y**5/5)|(0, 2)
+        = 1/2 (128/7 - 128/3 + 4*32/5)
+        = 64/7 - 64/3 + 64/5
+        = (15*64 - 35*64 + 21*64)/105
+        = 64/105
+
+
+    Ry  = sqrt(Ix / M) = sqrt(8/7)
+
+   
+
+33. find the center of mass of a thin triangle plate bounded
+    by the y-axis and the lines y = x and y = 2 - x, 
+    if δ(x, y) = 6x + 3y + 3
+
+
+    0 <= x <= 1, x <= y <= 2 - x
+
+    M   = ∫(0, 1) ∫(x, 2-x) δ(x, y) dy dx
+        = ∫(0, 1) ∫(x, 2-x) 6x + 3y + 3 dy dx
+        = ∫(0, 1) (6xy + 3y²/2 + 3y)|(x, 2-x) dx
+        = ∫(0, 1) -12x² + 12 dx
+        = (-4x³ + 12x)|(0, 1)
+        = -4 + 12
+        = 8
+
+    Mx  = ∫(0, 1) ∫(x, 2-x) yδ(x, y) dy dx
+        = ∫(0, 1) ∫(x, 2-x) 6xy + 3y² + 3y dy dx
+        = ∫(0, 1) (3xy² + y³ + 3y²/2)|(x, 2-x) dx
+        = ∫(0, 1) (-2x³ - 6x² - 6x + 14) dx
+        = (-x⁴/2 - 2x³ - 3x² + 14x)|(0, 1)
+        = (-1/2 - 2 - 3 + 14)
+        = 17/2
+
+    My  = ∫(0, 1) ∫(x, 2-x) xδ(x, y) dy dx
+        = ∫(0, 1) ∫(x, 2-x) 6x² + 3xy + 3x dy dx
+        = ∫(0, 1) (6x²y + 3xy²/2 + 3xy)|(x, 2-x) dx
+        = ∫(0, 1) (-12x³ + 12x) dx
+        = (-3x⁴ + 6x²)|(0, 1)
+        = (-3 + 6)
+        = 3
+
+    x'  = My/M = 3/8
+
+    y'  = Mx/M = 17/16
+
+
+
+35.  find the center of mass and the moment of inertia and
+    radius of gyration about the y-axis of a thin reactangle
+    plate cut from the first quadrant by the lines x = 6
+    y = 1, if δ(x, y) = x + y + 1
+
+
+    0 <= x <= 6, 0 <= y <= 1
+
+
+    M   = ∫(0, 1) ∫(0, 6) δ(x, y) dx dy
+        = ∫(0, 1) ∫(0, 6) x + y + 1 dx dy
+        = ∫(0, 1) (x²/2 + xy + x)|(0, 6) dy
+        = ∫(0, 1) (24 + 6y) dy
+        = (24y + 3y²)|(0, 1)
+        = 27
+
+    Mx  = ∫(0, 1) ∫(0, 6) yδ(x, y) dx dy
+        = ∫(0, 1) ∫(0, 6) xy + y² + y dx dy
+        = ∫(0, 1) (x²y/2 + xy² + xy)|(0, 6) dy
+        = ∫(0, 1) (18y + 6y² + 6y) dy
+        = (9y² + 2y³ + 3y²)|(0, 1)
+        = 9 + 2 + 3
+        = 14
+
+    My  = ∫(0, 1) ∫(0, 6) xδ(x, y) dx dy
+        = ∫(0, 1) ∫(0, 6) x² + xy + x dx dy
+        = ∫(0, 1) (x³/3 + x²y/2 + x²/2)|(0, 6) dy
+        = ∫(0, 1) (90 + 18y) dy
+        = (90y + 9y²)|(0, 1)
+        = 99
+
+    Iy  = ∫(0, 1) ∫(0, 6) x²δ(x, y) dx dy
+        = ∫(0, 1) ∫(0, 6) x³ + x²y + x² dx dy
+        = ∫(0, 1) (x⁴/4 + x³y/3 + x³/3)|(0, 6) dy
+        = ∫(0, 1) (396 + 72y) dy
+        = (396y + 36y²)|(0, 1)
+        = 396 + 36
+        = 432
+
+
+    x'  = My/M = 99/27 = 11/3
+    y'  = Mx/M = 14/27
+    Ry  = sqrt(Iy/M) = sqrt(432/27) = 4
