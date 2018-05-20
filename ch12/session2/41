@@ -1,0 +1,31 @@
+Bacterium population 
+
+If f(x, y) = (10000 e**y)/(1 + |x|/2) represents the 
+"population density" of a certain bacterium on the 
+xy-plane, find the total population within the rectangle
+-5 <= x <= 5, -2 <= y <= 0
+
+
+	population = p1 + p2
+
+	p1:
+	-5 <= x < = 0, -2 <= y <= 0
+
+	p1	= 10000*∫(-5, 0) ∫(-2, 0) e**y/(1 - x/2) dy dx
+		= 10000*∫(-5, 0) (e**y/(1 - x/2))|(-2, 0) dx
+		= 10000*∫(-5, 0) (1 - e**(-2))/(1 - x/2) dx
+		= 20000*(1 - e**(-2)) ∫(-5, 0) 1/(2 - x)dx
+		= 20000*(1 - e**(-2)) (-ln(2 - x))|(-5, 0)
+		= 20000*(1 - e**(-2)) (-ln(2) + ln(7))
+	
+	p2:
+	0 <= x <= 5, -2 <= y <= 0
+
+	p2	= 10000*∫(0, 5) ∫(-2, 0) e**y/(1 + x/2) dy dx
+		= 10000*∫(0, 5) (e**y/(1 + x/2))|(-2, 0) dx
+		= 10000*∫(0, 5) (1 - e**(-2))/(1 + x/2) dx
+		= 20000*(1 - e**(-2)) (ln(2 + x))|(0, 5)
+		= 20000*(1 - e**(-2)) (ln(7) - ln(2))
+
+
+	population = p1 + p2 = 40000*(1-e**(-2))*(ln7 - ln2)

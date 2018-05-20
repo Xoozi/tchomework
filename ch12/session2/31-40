@@ -111,3 +111,120 @@
     x'  = My/M = 99/27 = 11/3
     y'  = Mx/M = 14/27
     Ry  = sqrt(Iy/M) = sqrt(432/27) = 4
+
+
+
+37. find the center of mass and the moment of inertia and 
+    radius of gyration about the y-axis of a thin plate 
+    bounded tye the x-axis, the lines x = ±1, and the 
+    parabola y = x² if δ(x, y) = 7y + 1
+
+    -1 <= x <= 1, 0 <= y <= x²
+
+    M	= ∫(-1, 1) ∫(0, x²) δ(x, y) dy dx
+    	= ∫(-1, 1) ∫(0, x²) 7y + 1 dy dx
+	= 1/2 ∫(-1, 1) (7y² + 2y)|(0, x²) dx
+	= 1/2 ∫(-1, 1) 7x⁴ + 2x² dx
+	= 1/2 (7x**5/5 + 2x³/3)|(-1, 1)
+	= 1/2 (7/5 + 2/3 - (-7/5 - 2/3))
+	= 1/2 (14/5 + 4/3)
+	= 7/5 + 2/3
+	= 21/15 + 10/15
+	= 31/15
+
+	
+    Mx	= ∫(-1, 1) ∫(0, x²) yδ(x, y) dy dx
+    	= ∫(-1, 1) ∫(0, x²) 7y² + y dy dx
+	= ∫(-1, 1) (7y³/3 + y²/2)|(0, x²) dx
+	= ∫(-1, 1) 7x**6/3 + x⁴/2 dx
+	= (x**7/3 + x**5/10)|(-1, 1)
+	= (2/3 + 1/5)
+	= 10/15 + 3/15
+	= 13/15
+
+    My	= ∫(-1, 1) ∫(0, x²) xδ(x, y) dy dx
+    	= ∫(-1, 1) ∫(0, x²) 7xy + x dy dx
+	= ∫(-1, 1) (7xy²/2 + xy)|(0, x²) dx
+	= ∫(-1, 1) 7x**5/2 + x³ dx
+	= (7x**6/12 + x⁴/4)|(-1, 1)
+	= 0
+
+    Ix	= ∫(-1, 1) ∫(0, x²) y²δ(x, y) dy dx
+    	= ∫(-1, 1) ∫(0, x²) 7y³ + y² dy dx
+	= ∫(-1, 1) (7y⁴/4 + y³/3)|(0, x²) dx
+	= ∫(-1, 1) 7x**8/4 + x**6/3 dx
+	= (7x**9/36 + x**7/21)|(-1, 1)
+	= 7/18 + 2/21
+	= (49 + 12)/(3*6*7)
+	= 61/126
+
+
+	x' = My/M = 0
+	y' = Mx/M = 13/15 * 15/31 = 13/31
+
+	Ry = sqrt(Ix/M) = sqrt(61/126 * 15/31) = 
+
+	xoozi这里注意不要记错了 Ry = sqrt(Iy/M)
+
+
+39. find the center of mass, the moment of inertia and
+    radii of gyration about the coordinate axes, and the 
+    polar moment of inertia and radius of gyration of a
+    thin tiangular plate bounded by the lines y = x
+    y = -x, and y = 1, if δ(x, y) = y + 1
+
+    0 <= y <= 1,  -y <= x <= y
+
+    M	= ∫(0, 1) ∫(-y, y) δ(x, y) dx dy
+    	= ∫(0, 1) ∫(-y, y) y + 1 dx dy
+	= ∫(0, 1) (xy + x)|(-y, y) dy
+	= ∫(0, 1) (y² + y - (-y² - y)) dy
+	= ∫(0, 1) (2y² + 2y) dy
+	= (2y³/3 + y²)|(0, 1)
+	= 2/3 + 1
+	= 5/3
+
+   Mx	= ∫(0, 1) ∫(-y, y) yδ(x, y) dx dy
+   	= ∫(0, 1) ∫(-y, y) y² + y dx dy
+	= ∫(0, 1) (xy² + xy)|(-y, y) dy
+	= ∫(0, 1) (2y³ + 2y²) dy
+	= (y⁴/2 + 2y³/3)|(0, 1)
+	= 1/2 + 2/3
+	= 3/6 + 4/6
+	= 7/6
+
+    My	= ∫(0, 1) ∫(-y, y) xδ(x, y) dx dy
+    	= ∫(0, 1) ∫(-y, y) xy + x dx dy
+	= ∫(0, 1) (yx²/2 + x²/2)|(-y, y) dy
+	= ∫(0, 1) (y³/2 + y²/2 - (y³/2 + y²/2)
+	= 0
+
+    Ix	= ∫(0, 1) ∫(-y, y) y²δ(x, y) dx dy
+    	= ∫(0, 1) ∫(-y, y) y³ + y² dx dy
+	= ∫(0, 1) (y³x + y²x)|(-y, y) dy
+	= ∫(0, 1) 2y⁴ + 2y³ dy
+	= (2y**5/5 + 2y⁴/4)|(0, 1)
+	= 2/5 + 1/2
+	= 4/10 + 5/10
+	= 9/10
+
+    Iy	= ∫(0, 1) ∫(-y, y) x²δ(x, y) dx dy
+    	= ∫(0, 1) ∫(-y, y) x²y + x² dx dy
+	= ∫(0, 1) (x³y/3 + x³/3)|(-y, y) dy
+	= ∫(0, 1) (2y⁴/3 + 2y³/3) dy
+	= (2y**5/15 + 2y**4/12)|(0, 1)
+	= 2/15 + 1/6
+	= 4/30 + 5/30
+	= 9/30
+	= 3/10
+
+
+	x' = My/M = 0
+	y' = Mx/M = 7/6 * 3/5 = 7/10
+
+	Rx = sqrt(Ix/M) = sqrt(9/10 * 3/5)
+	Ry = sqrt(Iy/M) = sqrt(3/10 * 3/5) 
+
+	Io = Ix + Iy = 9/10 + 3/10 = 12/10 = 6/5
+
+	Ro = sqrt(Io/M) = sqrt(6/5 * 3/5) = 3sqrt(2)/5
