@@ -1,0 +1,22 @@
+Find the centroid of the infinite region in the xy-plane
+bounded by the curves y = 1/sqrt(1-x²) y = -1/sqrt(1-x²)
+and the lines x = 0, x = 1
+
+
+    M   = ∫(0, 1) ∫(-1/sqrt(1-x²), 1/sqrt(1-x²)) dy dx
+        = 2∫(0, 1) 1/sqrt(1-x²) dx
+        = 2 (sin x)|(0, 1)
+        = 2 arcsin(1)
+        = π
+
+
+    Mx  = 0
+
+    My  = ∫(0, 1) ∫(-(1-x²)**(-1/2), (1-x²)**(-1/2)) x dy dx
+        = 2∫(0, 1) x(1-x²)**(-1/2) dx
+        = 2(-(1-x²)**(1/2))|(0, 1)
+        = 2
+
+
+    cx  = 2/π
+    cy  = 0

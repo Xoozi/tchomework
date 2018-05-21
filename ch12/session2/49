@@ -1,0 +1,30 @@
+The Parallel Axis Theorem
+
+
+Let Lc.m be a line in the xy-plane that runs through the center of mass
+of a thin plate of mass m covering a region in the plane, Let L be a line
+in the plane parallel to and h units away from Lc.m. The Parallel Axis 
+Theorem says that under these condition the moments of inertia IL and
+Ic.m of the plate about L and Lc.m satisfy the equation:
+    IL = Ic.m + mh²
+
+This equation gives a quick way to calculate on moment when the other
+moment and the mass are known.
+
+49. Proof of the Parallel Axis Theorem
+
+a.Show that the first moment of a thin flat plate about any line in
+the plane of the plate through the plate's center of mass is zero
+
+    cx = My/M = 0 => My = ∫∫(R) x δ(x,y) dA = 0
+
+
+b. Use the result in (a) to derive the Parallel Axis Theorem Assume that
+the plane is coordinatized in a way that makes Lc.m. the y-axis and L
+the line x = h, Then expand the integrand of the integral of IL to rewrite
+the integral as the sum of inegrals whose values you recongnize
+
+    IL = ∫∫(R) (x - h)² δ(x,y) dA = ∫∫(R) x² δ(x, y) dA - 2h ∫∫(R) x δ(x, y) dA + ∫∫(R) h² δ(x, y) dA
+    = Iy - 2h0 + h²∫∫(R) δ(x, y) dA
+    = Iy + h²m
+    = Ic.m + mh²
