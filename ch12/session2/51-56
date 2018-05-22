@@ -1,0 +1,44 @@
+Pappus' Formula
+
+Pappus knew that the centroid of the union of two nonoverlapping
+plane region lies on the line segment joining their individual
+centroid. More specifically, suppose that m1 and m2 are the masses
+of thin plates P1 and P2 that cover nonoverlapping regions in the 
+xy-plane. Let c1 and c2 be the vectors from the origin to the respective
+center of mass of P1 and P2. Then the center of mass of the union
+P1 ∪ P2 of the two plates is determined by the vector:
+
+    c = (m1c1 + m2c2)/(m1 + m2)         (9)
+
+
+generalizes
+
+    c = (m1c1 + m2c2 + ... + mncn)/(m1 + m2 + ... + mn) (10)
+
+
+
+51. Derive (9)
+
+    M = m1 + m2
+
+    Mx = m1*c1.y + m2*c2.y
+    My = m1*c1.x + m2*c2.x
+
+    c.x = My/M = (m1*c1.x + m2*c2.x)/(m1 + m2)
+    c.y = Mx/M = (m1*c1.y + m2*c2.y)/(m1 + m2)
+
+    so  
+    c = (m1c1 + m2c2)/(m1 + m2)
+
+
+53. 
+
+    MA = 8
+    MB = 2
+    Mc = 6
+
+    cA = (1, 3)
+    cB = (3, 3.5)
+    cC = 
+
+    A U B 
