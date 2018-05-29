@@ -1,0 +1,49 @@
+17. Find the area of the region cut from the first quadrant 
+by the curve r = 2(2 - sin2θ)**(1/2)
+
+ = ∫(0, π/4) ∫(0, 2(2-sin2θ)**(1/2)) r drdθ
+ = 2 ∫(0, π/4) (2 - sin2θ) dθ
+ = (4θ + cos2θ)|(0, π/4)
+ = (π + 0 - 0 - 1)
+ = π - 1
+
+ xoozi 这里要注意一点, 因为r的表达式对应的是2θ, 故θ的限应该是(0, π/2)
+ = (4θ + cos2θ)|(0, π/2)
+ = (2π - 1 - 1)
+ = (2π - 2)
+
+19. One leaf of a rose. Find the area enclosed by one leaf of the rose
+    r = 12 cos3θ
+
+ = ∫(0, 2π/3) ∫(0, 12cos3θ) rdrdθ
+ = 1/2 ∫(0, 2π/3) r²|(0, 12cos3θ) dθ
+ = 1/2 ∫(0, 2π/3) 144cos²3θ dθ
+ = 72 ∫(0, 2π/3) cos²3θ dθ
+ = 36 ∫(0, 2π/3) cos6θ + 1 dθ
+ = 36 * (sin6θ/6 + θ)|(0, 2π/3)
+ = 36 * (0 + 2π/3 - 0 - 0)
+ = 24π
+
+ xoozi这里我臆测了θ的限, 这个限要画图才好理解
+ θ = 0对应r = 12
+ 逆时针θ = π/6时, r = 0, 顺时针θ = -π/6时, r=0,这之间
+ 刚好是一片叶子
+
+ = 36 * (sin6θ/6 + θ)|(-π/6, π/6)
+ = 36 * (0 + π/6 - 0 + π/6)
+ = 12π
+
+
+21. Cardioid in the first quadrant Find the area of the region cut from
+    the first quadrant by the cardiod r = 1 + sinθ
+
+    用Wolfram画出图形, 可以看到在θ = 0时r = 1,这是图形在第一象限起始的地方
+    θ = π/2时, r = 2,这是图形在第一象限结束的地方
+
+    = ∫(0, π/2) ∫(0, 1+sinθ) r dr dθ
+    = 1/2 ∫(0, π/2) r²|(0, 1+sinθ) dθ
+    = 1/2 ∫(0, π/2) (1 + 2sinθ + sin²θ) dθ
+    = 1/4 ∫(0, π/2) (3 + 4sinθ - cos2θ) dθ
+    = 1/4 * (3θ - 4cosθ - sin2θ/2)|(0, π/2)
+    = 1/4 * (3π/2 - 0 + 0 - 0 + 4 - 0)
+    = 3π/8 + 1
