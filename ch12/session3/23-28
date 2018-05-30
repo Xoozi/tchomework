@@ -1,0 +1,57 @@
+23. First moment of a plate
+    Find the first moment about the x-axis of a thin plate
+    of constant density δ(x, y) = 3, bounded below by the 
+    x-axis and above by the cardioid r = 1 - cosθ
+
+    = ∫(0, π) ∫(0, 1-cosθ) 3r² sinθ drdθ
+    = ∫(0, π) (r³sinθ)|(0, 1-cosθ) dθ
+    = ∫(0, π) (1-cosθ)³ sinθ dθ
+
+    = 1/32 * (-56cosθ + 28cos(2θ) - 8cos(3θ) + cos(4θ))|(0, π)
+    = 1/32 * (56 + 28 + 8 + 1 - (-56 + 28 - 8 + 1))
+    = 1/32 * (56 + 56 + 8 + 8)
+    = 4
+
+    xoozi见鬼 ∫(1-cosθ)³sinθ dθ 这个积分我积不出来, 用的wolfram
+
+
+25. Mass of a plate
+    Find the mass of a thin plate covering the region outside
+    the circle r = 3 and inside the circle r = 6sinθ if the
+    plate's density function is δ(x, y) = 1/r
+
+    intersection: r = 3, r = 6sinθ => sinθ = 1/2 => θ = π/6 or 5π/6
+
+    = ∫(π/6, 5π/6) ∫(3, 6sinθ) drdθ
+    = ∫(π/6, 5π/6) 6sinθ - 3 dθ
+    = (-6cosθ - 3θ)|(π/6, 5π/6)
+    = 3sqrt(3) - 5π/2 - (-3sqrt(3) - π/2)
+    = 6sqrt(3) - 2π
+
+27. Centroid of a cardioid region
+    Find the centroid of the region enclosed by the cardioid
+    r = 1 + cosθ
+
+    M   = ∫(0, 2π) ∫(0, 1+cosθ) rdrdθ
+        = 1/2 ∫(0, 2π) r²|(0, 1+cosθ) dθ
+        = 1/2 ∫(0, 2π) 1 + 2cosθ + cos²θ dθ
+        = 1/4 ∫(0, 2π) 3 + 4cosθ + cos2θ dθ
+        = 1/4 * (3θ + 4sinθ + sin2θ/2)|(0, 2π)
+        = 1/4 * 6π
+        = 3π/2
+
+    Mx  = ∫(0, 2π) ∫(0, 1+cosθ) r²sinθ drdθ
+        = 1/3 ∫(0, 2π) (r³sinθ)|(0, 1+cosθ) dθ
+        = 1/3 ∫(0, 2π) (1 + cosθ)³sinθ dθ
+        = 1/3 * 1/32 * (-56cosθ - 28cos(2θ) - 8cos(3θ) - cos(4θ))|(0, 2π)
+        = 1/3 * 1/32 * (-56 - 28 - 8 - 1 - (-56 - 28 - 8 - 1))
+        = 0
+
+    My  = ∫(0, 2π) ∫(0, 1+cosθ) r²cosθ drdθ
+        = 1/3 ∫(0, 2π) (1 + cosθ)³cosθ dθ
+        = 1/3 * 1/32 * (60θ + 104sin(θ) + 32 sin(2θ) + 8sin(3θ) + sin(4θ))|(0, 2π)
+        = 1/3 * 1/32 * (120π)
+        = 5π/4
+
+    x'  = My/M = 5π/4 * 2/3π = 5/6
+    y'  = Mx/M = 0

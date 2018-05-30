@@ -1,0 +1,18 @@
+33. Converting to a polar integral
+    Integrate f(x, y) = [ln(x² + y²)]/sqrt(x² + y²)
+    over the region 1 <= x² + y² <= e
+
+
+    = ∫(0, 2π) ∫(0, e) ln(r²) drdθ
+    = 2 ∫(0, 2π) ∫(0, e) ln(r) drdθ
+    = 2 ∫(0, 2π) (rln(r) - r)|(0, e) dθ
+    = 2 ∫(0, 2π) (e - e)
+    = 0
+    xoozi 这里有问题, r的范围错了
+
+    = ∫(0, 2π) ∫(1, sqrt(e)) ln(r²) drdθ
+    = 2 ∫(0, 2π) ∫(1, sqrt(3)) ln(r) drdθ
+    = 2 ∫(0, 2π) (rln(r) - r)|(1, sqrt(e)) dθ
+    = ∫(0, 2π) (-sqrt(e) + 2)
+    = 2π * (2 -sqrt(e))
+

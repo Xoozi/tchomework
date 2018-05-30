@@ -1,0 +1,28 @@
+29. Average height of a hemisphere
+    Find the average height of the hemisphere z = sqrt(a² - x² - y²)
+    above the disk x² + y² <= a², in the xy-plane
+
+    R: 
+        0 <= θ <= 2π, 0 <= r <= a
+        area = πa²
+
+    avgh    = 1/area ∫(0, 2π) ∫(0, a) sqrt(a² - r²) r drdθ
+            = 1/πa² * -1/3 ∫(0, 2π)  (a² - r²)**(3/2)|(0, a)
+            = 1/πa² * a³/3 ∫(0, 2π) dθ
+            = a³2π/3πa²
+            = 2a/3
+        
+
+31. Average distance frome interior of disk to center
+    Find the average distance from a point P(x, y), in
+    the disk x² + y² <= a² to the origin
+
+    R:  0 <= θ <= 2π, 0 <= r <= a
+        area = πa²
+    distance : r
+
+    avgd    = 1/area ∫(0, 2π) ∫(0, a) r²drdθ
+            = 1/3πa² ∫(0, 2π) r³|(0, a) dθ
+            = a/3π * 2π
+            = 2a/3
+
