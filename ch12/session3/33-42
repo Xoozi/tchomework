@@ -16,3 +16,81 @@
     = ∫(0, 2π) (-sqrt(e) + 2)
     = 2π * (2 -sqrt(e))
 
+
+35. Volume of noncircular right cylinder
+    The region that lies inside the cardioid r = 1 + cosθ
+    and outside the circle r = 1, is the base of a solid
+    right cylinder. The top of the cylinder lies in the 
+    plane z = x. Find the cylinder's volume
+
+    R: -π/2 <= θ <= π/2,  1 <= r <= 1 + cosθ
+
+    V   = ∫(-π/2, π/2) ∫(1, 1+cosθ) r²cosθ drdθ
+        = 1/3 ∫(-π/2, π/2) (r³cosθ)|(1, 1+cosθ) dθ
+        = 1/3 ∫(-π/2, π/2) (1 + cosθ)³cosθ - cosθ dθ
+        = 1/3 ∫(-π/2, π/2) cos⁴θ dθ
+        = 1/3 * 1/32 * (12θ + 8sin(2θ) + sin(4θ))|(-π/2, π/2)
+        = 1/3 * 1/32 * (6π + 0 + 0 - (-6π + 0 + 0))
+        = 4π/32
+        = π/8
+
+        xoozi这里就算错了
+        = 1/3 ∫(-π/2, π/2) (1 + cosθ)³cosθ - cosθ dθ
+        = 1/36 * (30θ + 33sin(θ) + 9sin(2θ) + sin(3θ))|(-π/2, π/2)
+        = 1/36 * (15π + 33 + 0 - 1 - (-15π - 33 + 0 + 1))
+        = 1/36 * (30π + 64)
+        = 5π/6 + 
+        
+
+37. 
+    a) The usual way to evaluate the improper integral
+        I   = ∫(0, ∞) e**(-x²) dx is first to calculate its square:
+
+        I²  = (∫(0, ∞) e**(-x²) dx) (∫(0, ∞) e**(-y²) dy)
+            = ∫(0, ∞) ∫(0, ∞) e**(-(x² + y²)) dxdy
+            = ∫(0, ∞) ∫(0, 2π) e**(-r²) rdθdr
+            = 2π * ∫(0, ∞) re**(-r²) dr
+            = -π * lim(b->∞) (e**(-r²))|(0, b)
+            = -π * (0 - 1)
+            = π
+
+            = ∫(0, ∞) ∫(0, 2π) e**(-r²) rdθdr
+            xoozi 这里错了, 应该是0 <= θ <= π/2
+            = ∫(0, ∞) ∫(0, π/2) e**(-r²)r dθ dr
+            = π/2 * ∫(0, ∞) re**(-r²) dr
+            = -π/4 * (0 - 1)
+            = π/4
+        I   = sqrt(π)/2
+
+    b)Evaluate
+        
+        lim(x->∞) erf(x) 
+        = lim(x->∞) ∫(0, x) 2e**(-t²)/sqrt(π) dt
+        = 2/sqrt(π) * lim(x->∞) ∫(0, x) e**(-t²) dt
+        = 2/sqrt(π) * I
+        = 1
+    xoozi 这个很巧啊
+
+
+
+39. Integrate the function f(x, y) = 1/(1 - x² - y²)
+    over the disk x² + y² <= 3/4. Does the integral of 
+    f(x, y) over the disk x² + y² <= 1 exist?
+
+    R1:
+        0 <= θ <= 2π, 0 <= r <= sqrt(3)/2
+
+        ∫(0, 2π) ∫(0, sqrt(3)/2) r/(1 - r²) drdθ
+        = -1/2 * ∫(0, 2π) ln(1 - r²)|(0, sqrt(3)/2) dθ
+        = -1/2 *∫(0, 2π) ln(1/4) dθ
+        = -ln(1/4)π
+        = ln(4)π
+
+
+    R2:
+        = -1/2 * ∫(0, 2π) ln(1-r²)|(0, 1) dθ
+        = -1/2 * ∫(0, 2π) ln(0) - ln(1)
+        ln(0) i
+
+        xoozi 我这个算得不严谨, 还是要用
+        ∫(0, 2π) lim(a->1) ∫(0, a) r/(1-r²) drdθ这种套路
