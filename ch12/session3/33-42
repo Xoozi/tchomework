@@ -94,3 +94,33 @@
 
         xoozi 我这个算得不严谨, 还是要用
         ∫(0, 2π) lim(a->1) ∫(0, a) r/(1-r²) drdθ这种套路
+
+
+41. Average distance to a given point inside a disk
+    Let P0 be a point inside a circle of radius a and
+    let h denote the distance from P0 to the center of
+    the circle. Let d denote the distance from a arbitrary
+    point P to P0. Find the average value of d² over the
+    region enclosed by the circle.
+
+    put the circle center at origin point(0, 0)
+    and the P0 on the x-axis P0(h, 0)
+    
+    For arbitrary point P(x, y)
+
+    d = sqrt((x-h)² + y²)
+
+    if radius of circle is a
+
+    ∫(0, 2π) ∫(0, a) ((x-h)² + y²) r drdθ
+    = ∫(0, 2π) ∫(0, a) (x² + y² - 2hx + h²) r dr dθ
+    = ∫(0, 2π) ∫(0, a) (r³ - 2hr²cosθ + h²r) dr dθ
+    = ∫(0, 2π) (r**4/4 - 2hr³cosθ/3 + h²r²/2)|(0, a) dθ
+    = ∫(0, 2π) (a**4/4 - 2ha³cosθ/3 + h²a²/2) dθ
+    = (a**4θ/4 - 2ha³sinθ/3 + h²a²θ/2)|(0, 2π)
+    = (a**4π/2 - 0 + h²a²π)
+    
+
+    area = πa²
+
+    average value = a²/2 + h²
