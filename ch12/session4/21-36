@@ -1,0 +1,47 @@
+21. Here is the region of integration of the integral
+   ∫(-1, 1) ∫(x², 1) ∫(0, 1-y) dzdydx 
+
+   rewrite the integral as an equivalent iterated integral in the order:
+
+    a. dydzdx
+    ∫(-1, 1) ∫(0, 1-x²) ∫(x², 1-z) dydzdx
+
+    b. dydxdz
+    ∫(0, 1) ∫(-(1-z)½, (1-z)½) ∫(x², 1-z) dydxdz
+
+    c. dxdydz
+    ∫(0, 1) ∫(0, 1-z) ∫(-(y)½, y½) dxdydz
+    
+    d. dxdzdy
+
+    ∫(0, 1) ∫(0, 1-y) ∫(-y½, y½) dxdzdy
+
+    e. dzdxdy
+    ∫(0, 1) ∫(-y½, y½) ∫(0, 1-y) dzdxdy
+
+
+23. The region between the cylinder z = y² and the xy-plane
+    that is bounded by the planes x = 0, x = 1, y = -1, y = 1
+
+    ∫(0, 1) ∫(-1, 1) ∫(0, y²) dzdydx
+    = ∫(0, 1) ∫(-1, 1) y²dydx
+    = 2/3 ∫(0, 1) dx
+    = 2/3
+
+25. The region in the first octant bounded by the coordinate
+    planes, the plane y + z = 2, and the cylinder x = 4 - y²
+
+     ∫(0, 2) ∫(0, 4-y²) ∫(0, 2-y) dzdxdy
+     = ∫(0, 2) ∫(0, 4-y²) 2-y dxdy
+     = ∫(0, 2) (2x - xy) | (0, 4-y²) dy
+     = ∫(0, 2) 8 - 2y² - 4y + y³ dy
+     = (8y - 2y² - 2y³/3 + y⁴/4)|(0, 2)
+     = 16 - 8 - 16/3 + 4
+     = 12 - 16/3
+     = 36/3 - 16/3
+     = 20/3
+
+
+27. The terahedron in the first octant bouned by the 
+    coordinate planes and the plane passing (1, 0, 0), 
+    (0, 2, 0), and(0, 0, 3)
