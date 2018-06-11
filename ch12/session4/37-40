@@ -1,0 +1,35 @@
+Average Values
+
+37. F(x, y, z) = x² + 9 over the cube in the first octant
+    bounded by the coordinate planes and the planes
+    x= 2, y = 2, and z = 2
+
+    V = 8
+
+    ∫(0, 2) ∫(0, 2) ∫(0, 2) (x² + 9) dzdydx
+    = ∫(0, 2) ∫(0, 2) (x²z + 9z) | (0, 2) dydx
+    = ∫(0, 2) ∫(0, 2) 2x² + 18 dydx
+    = ∫(0, 2) (2x²y + 18y) | (0,2) dx
+    = ∫(0, 2) 4x² + 36 dx
+    = (4x³/3 + 36x)|(0, 2)
+    = 32/3 + 72
+
+    /V
+    = 4/3 + 9
+    = 4/3 + 27/3
+    = 31/3
+
+
+39. F(x, y, z) = x² + y² + z² over the cube
+    in the first octant bounded by the coordinate
+    planes and the planes x = 1, y = 1, z = 1
+
+    ∫(0, 1) ∫(0, 1) ∫(0, 1) x² + y² + z² dxdydz
+    = ∫(0, 1) ∫(0, 1) (x³/3 + xy² + xz²)|(0, 1) dydz
+    = ∫(0, 1) ∫(0, 1) 1/3 + y² + z² dydz
+    = ∫(0, 1) (1/3y + y³/3 + z²y)|(0, 1) dz
+    = ∫(0, 1) 2/3 + z² dz
+    = (2z/3 + z³/3)|(0, 1)
+    = 2/3 + 1/3
+    = 1/1
+    = 1

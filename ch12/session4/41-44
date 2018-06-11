@@ -1,0 +1,39 @@
+Evaluate the integrals by changing the order of integration in an appropriate way.
+
+41. ∫(0, 4) ∫(0, 1) ∫(2y, 2) 2cos(x²)/sqrt(z) dxdydz
+
+
+    inner
+    ∫(0, x/2) 2cos(x²)/sqrt(z) dy
+    = (xcos(x²)/sqrt(z)
+
+    middle
+    ∫(0, 2) xcos(x²)/sqrt(z) dx
+    = 1/2 * (sin(x²)/sqrt(z)) |(0, 2)
+    = 1/2 * sin(4)/sqrt(z)
+
+    out
+    sin(4)/2 ∫(0, 4) z**(-1/2) dz
+    = sin(4) (sqrt(z))|(0, 4)
+    = 2sin(4)
+
+
+43. ∫(0, 1) ∫(z**(1/3), 1) ∫(0, ln3) π e**(2x) sin(πy²)/y² dx dy dz
+
+
+    inner:
+    ∫(y³, 1) π e**(2x) sin(πy²)/y² dz
+    = π e**(2x) sin(πy²)y
+
+    middle:
+    ∫(0, 1) π e**(2x) sin(πy²) y dy
+    = (-1/2 * e**(2x) cos(πy²))|(0, 1)
+    = e**(2x) 
+
+    out:
+
+    ∫(0, ln3) e**(2x) dx
+    = (1/2e**(2x)) | (0, ln3)
+    = 9/2 - 1/2
+    = 8/2
+    = 4
