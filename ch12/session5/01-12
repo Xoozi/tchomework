@@ -94,3 +94,76 @@
         = 32δ (x³/9 + x/15)|(0, 1)
         = 32δ (1/9 + 1/15)
         = 256δ/45
+
+
+
+7. a. Find the center of mass of a solid of constant density bounded below by the 
+    paraboloid z = x² + y² and above by the plane z = 4
+
+    M   = 4∫(0, 2) ∫(0, sqrt(4-x²)) ∫(x²+y², 4) dzdxdy
+
+        = 4∫(0, π/2) ∫(0, 2) 4r-r³ drdθ
+        = 4∫(0, π/2) (2r² - r**4/4)|(0, 2) dθ
+        = 16∫(0, π/2) θ
+        = 8π
+
+    Mxy = 4∫(0, π/2) ∫(0, 2) ∫(r², 4) z rdzdrdθ
+        = 2∫(0, π/2) ∫(0, 2) 16r - r**5 drdθ
+        = 2∫(0, π/2) (8r² - r**6/6)|(0, 2) dθ
+        = 2∫(0, π/2) 32 - 32/3 dθ
+        = 64π/3
+
+    z'  = Mxy/M = 8/3
+    x'  = y' = 0
+
+
+   b. Find the plane z = c than dividies the solid into two parts of equal volume.
+   This plane does not pass through the center of mass
+
+
+    Vh  = 4∫(0, 2) ∫(0, sqrt(4-x²)) ∫(x²+y², c) dzdxdy
+        = 4∫(0, π/2) ∫(0, 2) ∫(r², c) r dzdrdθ
+        = 4∫(0, π/2) ∫(0, 2) cr - r³ drdθ
+        = 4∫(0, π/2) (cr²/2 - r**4/4) | (0, 2) dθ
+        = 4∫(0, π/2) 2c - 4 dθ
+        = 8 * (c-1) * π/2
+        = 4(c-1)π
+
+    Vh  = 4π
+    => c = 2
+
+    xoozi这里错了, r的上限应该是sqrt(c)
+
+        = 4∫(0, π/2) (cr²/2 - r**4/4) | (0, sqrt(c)) dθ
+        = 4∫(0, π/2) c²/4 dθ
+        = ∫(0, π/2) c² dθ
+        = c²π/2
+
+        = 4π
+
+        => c² = 8
+        c = 2sqrt(2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
