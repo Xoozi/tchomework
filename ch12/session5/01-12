@@ -145,10 +145,35 @@
         c = 2sqrt(2)
 
 
+9. Moment of inertia and radius of gyration about a line
+   A wedge like the one in Exercise 2 has a = 4, b = 6, and c = 3.
+   Make a quick sketch to check for yourself that the square of the 
+   distance from a typical point (x, y, z) of the wedge to the line
+   L: z = 0, y = 6 is r² = (y - 6)² + z². Then calculate the moment of 
+   inertia an radius of gyration of the wedge about L.
 
+	IL 	= δ∫(-c/2, c/2) ∫(-b/2, b/2) ∫(-a/2, a/2) r² dxdydz
+		= δ~ ~ ~ (y² - 12y + 36 + z²) dxdydz
+		= δ~ ~ (y²x - 12yx + 36x + z²x)|(-2, 2) dydz
+		= δ~ ~ (2y² - 24y + 72 + 2z² + 2y² - 24y + 72 +2z²) dydz
+		= 4δ~ ∫(-3, 3) (y² - 12y + z² + 36) dydz
+		= 4δ~ (y³/3 - 6y² + z²y + 36y)|(-3, 3) dz
+		= 4δ~ (9 - 54 + 3z² + 108 + 9 + 54 + 3z² + 108) dz
+		= 4δ~ (18 + 6z² + 216) dz
+		= 8δ ∫(-3/2, 3/2) (117 + 3z²) dz
+		= 8δ (117z + z³)|(-3/2, 3/2)
+		= 8δ * (117*3/2 + 27/8 + 117*3/2 + 27/8)
+		= 2862δ
 
+	M	= abcδ = 4*6*3δ 
 
+	R	= sqrt(IL/M) = sqrt(39)
 
+	xoozi此题有毒, 虽然题中说这是一个"楔形物" 但并未描述其是怎么楔的
+	然后又说类似例二, 看例二是一个长方体, 算好了, 一看答案, 
+	意思是顶面是平面y + 2z = 2, 唔, 我觉得我是算对了的, 题的锅
+
+11题, 这里又来例三, 但本节根本没例三, 不想做了, 这节题不行
 
 
 
