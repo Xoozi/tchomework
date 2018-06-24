@@ -1,0 +1,33 @@
+Changing Order of Integration in Cylindrical Coordinates
+
+The integrals we have seen so farsuggest that there are preferred orders
+of integration for cylindrical coordinates, but other orders usually
+work well and are occasionally easier to evaluate. 
+
+
+7. ∫(0, 2π) ∫(0, 3) ∫(0, z/3) r³ drdzdθ
+	= 1/4 ∫(0, 2π) ∫(0, 3) z**4/81 dzdθ
+	= 1/4 * 1/81 * 1/5 ∫(0, 2π) z**5 | (0, 3) dθ
+	= 1/4 * 1/81 * 1/5 * 3 * 81 ∫(0, 2π) dθ
+	= 3π/10
+
+9. ∫(0, 1) ∫(0, sqrt(z)) ∫(0, 2π) (r²cos²θ + z²) r dθ dr dz
+	= ∫(0, 1) ∫(0, sqrt(z)) ∫(0, 2π) r³(1 + cos(2θ))/2 + z²r dθdrdz
+	= ∫(0, 1) ∫(0, sqrt(z)) (r³/2 * (θ + sin(2θ)/2) + z²rθ)|(0, 2π) drdz
+	= π ∫(0, 1) ∫(0, sqrt(z)) r³ + z²r drdz
+	= π ∫(0, 1) (r**4/4 + z²r²/2)|(0, sqrt(z)) dz
+	= π ∫(0, 1) z²/4 + z³/2 dz
+	= π/2 ∫(0, 1) z²/2 + z³ dz
+	= π/2 (z³/6 + z**4/4) | (0, 1)
+	= π/2 * (1/6 + 1/4)
+	= 5π/24
+
+	= π ∫(0, 1) ∫(0, sqrt(z)) r³ + z²r drdz
+	xoozi 从这里起错了
+	应为
+	= π ∫(0, 1) ∫(0, sqrt(z)) r³ + 2z²r drdz
+	= π ∫(0, 1) (r**4/4 + z²r²) | (0, sqrt(z)) dz
+	= π ∫(0, 1) z²/4 + z³ dz
+	= π (z³/12 + z**4/4|(0, 1)
+	= π * (1/12 + 1/4)
+	= π/3
