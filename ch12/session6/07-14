@@ -31,3 +31,35 @@ work well and are occasionally easier to evaluate.
 	= π (z³/12 + z**4/4|(0, 1)
 	= π * (1/12 + 1/4)
 	= π/3
+
+
+
+11.Let D be the region bounded below by the plane z = 0, above by the sphere x² + y² + z² = 4,
+and on the sides by the cylinder x² + y² = 1. Set up the triple integrals in cylindrical
+coordinates that give the volume of D using the following orders of integration.
+
+	a. dz dr dθ
+	∫(0, 2π) ∫(0, 1) ∫(0, sqrt(4-r²)) dz r dr dθ
+
+	b. dr dz dθ
+	∫(0, 2π) ∫(0, sqrt(3)) ∫(0, 1) r dr dz dθ + ∫(0, 2π) ∫(sqrt(3), 2) ∫(0, sqrt(4-z²)) r drdzdθ
+
+	c. dθ dz dr
+	∫(0, 1) ∫(0, sqrt(4-r²) ∫(0, 2π) r dθ dz dr
+
+	xoozi b有看点, 稍微有点绕
+
+
+13. Give the limits of integration for evaluating the integral:
+	∫∫∫ f(r, θ, z) dz r dr dθ
+
+    as an iterated integral over the region that is bounded below by
+    the plane z = 0, on the side by cylinder r = cosθ, and on top by
+    the paraboloid z = 3r²
+
+    	∫(0, 2π) ∫(0, cosθ) ∫(0, 3r²) f(r, θ, z) dz r dr dθ
+
+	xoozi此处应该画出r = cosθ的形状, 就能一眼看出θ的积分限应该是(-π/2, π/2)
+
+
+

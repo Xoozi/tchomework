@@ -1,0 +1,23 @@
+Finding Iterated Integrals in Cylindrical Coordinates
+
+In 15-20, set up the iterated integral  for evaluating 
+∫∫∫(D) f(r, θ, z) over the given region D
+
+
+15. D is the right circular cylinder whose base is r = 2sinθ in 
+	the xy-plane and whose top lies in the plane z = 4-y
+
+	∫(0, π) ∫(0, 2sinθ) ∫(0, 4-rsinθ) f(r, θ, z) dz r drdθ
+
+17. D is the solid right cylinder whose base is the region in 
+	the xy-plane that lies inside the cardioid r = 1 + cosθ
+	and outside the circle r = 1 and whose top lies in the 
+	plane z = 4
+
+	∫(-π/2, π/2) ∫(1, 1+cosθ) ∫(0, 4) f(r, θ, z) dz r dr dθ
+
+19. D is the prism whoses base is the triangle in the xy-plane
+	bounded by the x-axis and the line y = x, and x = 1
+	and whose top lies in the plane z = 2-y
+
+	∫(0, π/4) ∫(0, 1/cosθ) ∫(0, 2-r*sinθ) dz r dr dθ
