@@ -1,0 +1,46 @@
+33. The solid between the sphere ρ = cosφ and the hemisphere ρ = 2, z >= 0
+
+    ∫(0, 2π) ∫(0, π/2) ∫(cosφ, 2) ρ² sinφ dρdφdθ
+    = 1/3 ∫(0, 2π) ∫(0, π/2) 8sinφ - sinφcosφ**3 dφdθ
+    = 1/3 ∫(0, 2π) (-8cosφ + cosφ**4/4)|(0, π/2) dθ
+    = 31/12 ∫(0, 2π) dθ
+    = 31π/6
+
+35. The solid enclosed by the cardioid of revolution ρ = 1 - cosφ
+
+    ∫(0, 2π) ∫(0, π) ∫(0, 1-cosφ) ρ² sinφ dρdφdθ
+    = 1/3 ∫(0, 2π) ∫(0, π) (1-cosφ)**3sinφ dφdθ
+    = 1/12 ∫(0, 2π) (1-cosφ)**4|(0, π) dθ
+    = 16/12 ∫(0, 2π) dθ
+    = 8π/3
+
+37. The solid bounded below by the sphere ρ = 2cosφ and above
+    by the cone z = sqrt(x² + y²)
+
+        z = sqrt(x² + y²)
+
+        => ρ = sqrt(x² + y² + z²)
+        => ρ = sqrt(2x² + 2y²)
+        => ρ = sqrt(2) * r
+
+        r = ρ * sin φ
+
+        => cone eq is φ = π/4
+
+        meet sphere ρ = 2cosφ at 
+        ρ = sqrt(2)
+
+        ∫(0, 2π) ∫(0, π/2) ∫(0, sqrt(2)) ρ**2 sinφ dρdφdθ
+        = 2sqrt(2)/3 ∫(0, 2π) ∫(0, π/2) sinφ dφdθ
+        = 2sqrt(2)/3 ∫(0, 2π) (-cosφ)|(0, π/2) dθ
+        = 2sqrt(2)/3 ∫(0, 2π) dθ
+        = 4sqrt(2)π/3
+
+
+        xoozi这里我想岔了, 我列那个方程应该是解出φ的限制
+        φ是大于π/4的
+        ∫(0, 2π) ∫(π/4, π/2) ∫(0, 2cosφ) ρ**2 sinφ dρdφdθ
+        = 8/3 ∫(0, 2π) ∫(π/4, π/2) cosφ**3 sinφ dφdθ
+        = 8/3 ∫(0, 2π) (-cosφ**4/4)|(π/4, π/2) dθ
+        = 8/3 ∫(0, 2π) 1/16 dθ
+        = π/3
