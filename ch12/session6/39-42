@@ -1,0 +1,65 @@
+39. Set up triple integrals for the volume of the sphere ρ = 2 in:
+
+	(a)spherical coordinates
+
+	∫(0, 2π) ∫(0, π) ∫(0, 2) ρ² sinφ dρdφdθ
+	= 8/3 ∫(0, 2π) ∫(0, π) sinφ dφdθ
+	= 8/3 ∫(0, 2π) -cosφ |(0, π) dθ
+	= 16/3 ∫(0, 2π) θ
+	= 32π/3
+
+	(b) cylindrical coordinates
+
+	-sqrt(4-r²) <= z <= sqrt(4-r²)
+
+	2∫(0, 2π) ∫(0, 2) ∫(0, sqrt(4-r²)) dz rdrdθ
+	= 2 ∫(0, 2π) ∫(0, 2) sqrt(4-r²)r drdθ
+	= 2/3 ∫(0, 2π) (-(4-r²)**(3/2))|(0, 2) dθ
+	= 16/3 ∫(0, 2π) dθ
+	= 32π/3
+
+	(c) rectangular coordinates
+
+	-sqrt(4-x²-y²) <= z <= sqrt(4-x²-y²)
+	-sqrt(4-x²) <= y <= sqrt(4-x²)
+
+	8∫(0, 2) ∫(0, sqrt(4-x²)) ∫(0, sqrt(4-x²-y²)) dzdydx
+
+41. Let D be the smaller cap cut from a solid ball of radius 2 units
+	by a plane 1 unit from the center of the sphere. Express the 
+	volume of D as an iterated triple integral in:
+
+	(a)spherical coordinates
+	
+	∫(0, 2π) ∫(0, π/3) ∫(secφ, 2) ρ²sinφ dρdφdθ
+
+	(b)cylindrical coordinates
+
+	1 <= z <= sqrt(4-r²)
+
+	∫(0, 2π) ∫(0, sqrt(3)) ∫(1, sqrt(4-r²)) dz rdrdθ
+
+	(c)rectangular coordinates
+
+	4∫(0, sqrt(3)) ∫(0, sqrt(3-x²)) ∫(1, sqrt(4-x²-y²)) dzdydx
+
+
+	i select (b)
+
+	∫(0, 2π) ∫(0, sqrt(3)) ∫(1, sqrt(4-r²)) dz rdrdθ
+	= ∫(0, 2π) ∫(0, sqrt(3)) r*sqrt(4-r²) - r drdθ
+
+	guess (a) better
+
+	∫(0, 2π) ∫(0, π/3) ∫(secφ, 2) ρ²sinφ dρdφdθ
+	= 1/3 ∫(0, 2π) ∫(0, π/3) 8sinφ - sec²φ tanφ dφdθ
+	= 1/3 ∫(0, 2π) (-8cosφ - tan²φ/2)|(0, π/3) dθ
+	= 5/6 ∫(0, 2π) dθ
+	= 5π/3
+
+
+
+
+
+
+
