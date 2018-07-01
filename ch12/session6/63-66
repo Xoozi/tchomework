@@ -1,0 +1,33 @@
+Average Values
+
+63. Find the average value of the function f(r, θ, z) = r
+    over the region bounded by the cylinder r = 1 between the plane
+    z = -1 and z = 1
+
+    V
+    = ∫(0, 2π) ∫(0, 1) ∫(-1, 1) dz rdrdθ
+    = ∫(0, 2π) ∫(0, 1) 2r drdθ
+    = ∫(0, 2π) dθ
+    = 2π
+
+    avg
+    = 1/2π ∫(0, 2π) ∫(0, 1) ∫(-1, 1) f(r, θ, z) dz r drdθj
+    = 1/2π ∫(0, 2π) ∫(0, 1) ∫(-1, 1) r dz rdrdθ
+    = 1/π  ∫(0, 2π) ∫(0, 1) r² drdθ
+    = 1/3π ∫(0, 2π) dθ
+    = 2/3
+
+
+65. Find the average value of the function f(ρ, φ, θ) = ρ, over the solid ball ρ <= 1
+    
+    V
+    = ∫(0, 2π) ∫(0, π) ∫(0, 1) ρ²sinφ dρdφθ
+    = 1/3 ∫(0, 2π) ∫(0, π) sinφ dφdθ
+    = 1/3 ∫(0, 2π) (-cosφ)|(0, π) dθ
+    = 4π/3
+
+    avg
+    = 3/4π ∫(0, 2π) ∫(0, π) ∫(0, 1) ρ**3 sinφ dρdφdθ
+    = 3/16π ∫(0, 2π) ∫(0, π) sinφ dφdθ
+    = 3/8π ∫(0, 2π) dθ
+    = 3/4

@@ -1,0 +1,224 @@
+Masses, Moments and Centroids
+
+67. Center of mass
+    A solid of constant density is bounded below by the plane z = 0,
+    above by the cone z = r, r >= 0, and on the sides by the cylinder
+    r = 1. Find the center of mass
+
+    M 
+    = ∫(0, 2π) ∫(0, 1) ∫(0, r) dz rdrdθ
+    = ∫(0, 2π) ∫(0, 1) r² drdθ
+    = 1/3 ∫(0, 2π) dθ
+    = 2π/3
+
+
+    Mxy
+    = ∫(0, 2π) ∫(0, 1) ∫(0, r) z dz rdrdθ
+    = 1/2 ∫(0, 2π) ∫(0, 1) r**3 drdθ
+    = 1/8 ∫(0, 2π) dθ
+    = π/4
+
+    z' = Mxy / M = π/4 * 3/2π = 3/8
+
+    x' = y' = 0
+
+
+69. ....
+
+
+71. Centroid
+    Find the centroid of the region that is bounded above by the surface z = sqrt(r),
+    on the sides by the cylinder r = 4, and below by the xy-plane
+
+    M
+    = ∫(0, 2π) ∫(0, 4) ∫(0, sqrt(r)) dz rdrdθ
+    = ∫(0, 2π) ∫(0, 4) r**(3/2) drdθ
+    = ∫(0, 2π) (2/5 * r**(5/2))|(0, 4) dθ
+    = 64/5 ∫(0, 2π) dθ
+    = 128π/5
+
+    Mxy
+    = ∫(0, 2π) ∫(0, 4) ∫(0, sqrt(r)) z dz rdrdθ
+    = 1/2 ∫(0, 2π) ∫(0, 4) r²drdθ
+    = 64/6 ∫(0, 2π) dθ
+    = 128π/6
+
+    z' = Mxy / M = 6/5
+
+    x' = y' = 0
+
+
+73. Inertia and radius of gyration
+    Find the moment of inertia and radius of gyration about the z-axis of a thick-walled
+    right circular cylinder bouned on the inside by the cylinder r = 1, on the outside
+    by the cylinder r = 2, and on the top and bottom by the planes z = 4 and z = 0
+
+    M
+    = ∫(0, 2π) ∫(1, 2) ∫(0, 4) dz rdrdθ
+    = 4 ∫(0, 2π) ∫(1, 2) rdrdθ
+    = 6 ∫(0, 2π) dθ
+    = 12π
+
+    Iz
+    = ∫(0, 2π) ∫(1, 2) ∫(0, 4) r² dz r drdθ
+    = 4 ∫(0, 2π) ∫(1, 2) r**3 drdθ
+    = 15 ∫(0, 2π) dθ
+    = 30π
+
+    R
+    = sqrt(Iz/M) = sqrt(30/12) = sqrt(5/2)
+
+
+
+75. Moment of inertia of solid cone
+    Find the moment of inertia of a right circular cone of base radius 1 and height 1
+    about an axis through the vertex
+
+    dist to x-axis
+    = sqrt(ρ²cos²φ + ρ²sin²φsin²θ)
+
+    Ix
+    = ∫(0, 2π) ∫(0, π/4) ∫(1, secφ) ρ**4sinφ*(cos²φ + sin²φsin²θ) dρdφdθ
+    = 1/5 ∫(0, 2π) ∫(0, π/4) 
+	
+    xoozi 这里积起来太繁琐了, 换用柱坐标
+
+    dist to x-axis
+    = sqrt(r²sin²θ + z²)
+    = sqrt(r²sin²θ + r²)
+
+    Ix
+    = ∫(0, 2π) ∫(0, 1) ∫(0, r) (r²sin²θ + r²) dz rdrdθ
+    = ∫(0, 2π) ∫(0, 1) r**4(sin²θ + 1)drdθ
+    = 1/5 ∫(0, 2π) sin²θ + 1 dθ
+    = 1/5 (3θ/2 - sinθcosθ)|(0, 2π)
+    = 1/5 (3π)
+    = 3π/5
+
+    xoozi 这里z²不能写成r² 因为z = r只是圆锥面上的点, 内部的不受这个方程限制
+    = ∫(0, 2π) ∫(0, 1) ∫(0, r) (r²sin²θ + z²) dz rdrdθ
+    = ∫(0, 2π) ∫(0, 1) r**4sin²θ + r**4/3 drdθ
+    = 1/5 ∫(0, 2π) sin²θ + 1/3 dθ
+    = 1/5 * (5θ/6 - sinθcosθ)|(0, 2π)
+    = 1/5 * (5θ/3)
+    = π/3
+
+    xoozi 这里, 我想岔了, 我的建模里, 这是个倒置的圆锥, 顶点在原点, 
+    z的积分限就应该是    r <= z <= 1
+    = ∫(0, 2π) ∫(0, 1) ∫(r, 1) (r²sin²θ + z²) dz rdrdθ
+    = ∫(0, 2π) ∫(0, 1) r**3sin²θ + r/3 - r**4sin²θ - r**4/3 drdθ
+    = ∫(0, 2π) (sin²θ/4 + 1/6 - sin²θ/5 - 1/15) dθ
+    = 1/20 ∫(0, 2π) (sin²θ+ 2) dθ
+    = 1/20 * (5θ/2 - sinθcosθ)|(0, 2π)
+    = 1/20 * (5π)
+    = π/4
+
+
+77. Moment of inertia of solid cone
+    Find the moment of inertia of a right circular cone of base radius a and height h, 
+    about its axis.
+
+    distance to z-axis = r 
+
+    Iz
+    = ∫(0, 2π) ∫(0, a) ∫(h/a*r, h) r² dz rdrdθ
+    = h∫(0, 2π) ∫(0, a) r**3 - r**4/a drdθ
+    = h∫(0, 2π) (r**4/4 - r**5/5a)|(0, a) dθ
+    = ha**4∫(0, 2π) 1/4 - 1/5 dθ
+    = ha**4/20 * 2π
+    = πha**4/10
+
+
+79. Variable density
+    A solid is bounded below by the cone z = sqrt(x² + y²) and above by the plane z = 1
+    Find the center of mass and the moment of inertia and radius of gyration about z-axis
+
+    (a) density f(r, θ, z) = z
+ 	
+	M
+	= ∫(0, 2π) ∫(0, 1) ∫(r, 1) z dz rdrdθ
+	= 1/2 ∫(0, 2π) ∫(0, 1) r - r**3 drdθ
+	= 1/8 ∫(0, 2π) dθ
+	= π/4
+	
+	Mxy
+	= ∫(0, 2π) ∫(0, 1) ∫(r, 1) z² dz rdrdθ
+	= 1/3 ∫(0, 2π) ∫(0 ,1) r - r**4 drdθ
+	= 1/3 ∫(0, 2π) 1/2 - 1/5 dθ
+	= π/5
+
+	z' = Mxy / M = 4/5, x' = y' = 0
+
+        Iz
+	= ∫(0, 2π) ∫(0, 1) ∫(r, 1) zr² dz rdrdθ
+	= 1/2 ∫(0, 2π) ∫(0, 1) r**3 - r**4 drdθ
+	= 1/2 ∫(0, 2π) 1/4 - 1/5 dθ
+	= 1/40 * 2π
+	= π/20
+
+	Rz
+	= sqrt(Iz/M) = sqrt(1/5)
+
+	xoozi Iz时算错了
+	= ∫(0, 2π) ∫(0, 1) ∫(r, 1) zr² dz rdrdθ
+	= 1/2 ∫(0, 2π) ∫(0, 1) (z²r²)|(r, 1) rdrdθ
+	= 1/2 ∫(0, 2π) ∫(0, 1) (r² - r**4)*r drdθ
+	= 1/2 ∫(0, 2π) ∫(0, 1) r**3 - r**5 drdθ
+	= 1/2 ∫(0, 2π) 1/4 - 1/6 dθ
+	= 1/24 ∫(0, 2π) dθ
+	= π/12
+
+	Rz
+	= sqrt(Iz/M) = sqrt(1/3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
