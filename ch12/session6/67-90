@@ -172,6 +172,113 @@ Masses, Moments and Centroids
 	= sqrt(Iz/M) = sqrt(1/3)
 
 
+81. Centroid of solid semiellipsoid
+    Show that the centroid of the solid semiellipsoid of revolution 
+    (r²/ a²) + (z²/h²) <= 1, z >= 0
+
+    lies on the z-axis three-eighths of the way from the base to the top.
+    The special case h = a give a solid hemisphere. Thus, the centroid 
+    of a solid hemisphere lies on the axis of symmetry three-eighths
+    of the way from the base to the top.
+
+
+83. Variable density 
+    A solid right circular cylinder is bounded by the cylinder r = a, and
+    the planes z = 0, and z = h, h > 0. Find the center of mass and the 
+    moment of inertia and radius of gyration about the z-axis if the density is
+    f(r, θ, z) = z + 1
+
+    M
+    = ∫(0, 2π) ∫(0, a) ∫(0, h) z + 1 dz rdrdθ
+    = ∫(0, 2π) ∫(0, a) (z²/2 + z)|(0, h) rdrdθ
+    = (h²/2 + h) ∫(0, 2π) ∫(0, a) rdrdθ
+    = (h²/2 + h) * a²/2 * 2π
+    = a²π(h²/2 + h)
+
+    Mxy
+    = ∫(0, 2π) ∫(0, a) ∫(0, h) z² + z dz rdrdθ
+    = (h**3/3 + h²/2) ∫(0, 2π) ∫(0, a) rdrdθ
+    = (h**3/3 + h²/2) * a²/2 * 2π
+    = a²π(h**3/3 + h²/2)
+
+    z' = Mxy/M = h(h²/3 + h/2) / h(h/2 + 1) = (2h² + 3h)/(3h + 6)
+
+    Iz
+    = ∫(0, 2π) ∫(0, a) ∫(0, h) r²(z+1) dz rdrdθ
+    = (h²/2 + h) ∫(0, 2π) ∫(0, a) r**3 drdθ
+    = a**4(h²/2 + h)/4 ∫(0, 2π) dθ
+    = a**4π(h²/2 + h)/2
+
+    Rz 
+    = sqrt(Iz/M) = sqrt(a²/2) = a/sqrt(2)
+
+
+85. Density of center of a planet
+    A planet is in the shape of a sphere of radius R and total mass M with spherically
+    symmetric density distribution that increaes linearly as one approaches its center.
+    What is the density at the center of this planet if the density at its edge is taken
+    to by zero?
+
+
+	if center density is cd
+
+	density(ρ) = (R - ρ)/R   * cd
+
+	∫∫∫(D) density(r) dV
+	= cd∫(0, 2π) ∫(0, π) ∫(0, R) ρ²sinφ (R - ρ)/R dρdφdθ
+	= cd/R ∫(0, 2π) ∫(0, π) (Rρ**3sinφ/3 - ρ**4sinφ/4) |(0, R) dφdθ
+	= cdR**3/12 ∫(0, 2π) ∫(0, π) sinφ dφdθ
+	= cdR**3/12 ∫(0, 2π) (-cosφ) | (0, π) dθ
+	= cdπR**3/3 
+	= M
+
+	cd = 3M/(πR**3)
+
+
+xoozi 太晚了证明题写中文了, 不然眼睛花
+
+87. (a) 证明垂直于x轴的平面用柱坐标表示, 形式为r = asecθ
+
+	设垂直于x轴的平面, 距离原点a
+	则有a/r = cosθ
+	r = a/cosθ = asecθ
+
+    (b) 证明垂直于y轴的平面的柱坐标方程为r = bcscθ
+
+        设垂直于y轴的平面, 距离原点b
+	则有b/r = sinθ
+	r = b/sinθ = bcscθ
+
+89. 一曲面若以柱坐标表示, 形式为r = f(z), 它有何对称性
+
+	r 只和z有关, 和θ 无关
+	则曲面关于z轴对称
+
+	xoozi这里官方证法是 写成r = f(θ, z)
+	因为和θ无关, r = f(θ, z) = f(θ + π, z) 故关于z轴对称
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
