@@ -1,0 +1,97 @@
+5. Evluate the integral
+
+	∫(0, 4) ∫(y/2, y/2+1) (2x - y)/2 dxdy
+
+	from Example 1 directly to confirm that its value is 2.
+
+	∫(0, 4) (x²/2 - xy/2) | (y/2, y/2 + 1) dy
+	= 1/2 ∫(0, 4) (x² - xy) | (y/2, y/2 + 1) dy
+	= 1/2 ∫(0, 4) (y/2 + 1)² - (y/2 + 1)y - y²/4 + y²/2) dy
+	= 1/8 ∫(0, 4) y² + 4y + 4 - 2y² - 4y + y² dy
+	= 1/2 ∫(0, 4) dy
+	= 2
+
+7. Use the transformation in Exercise 3 to evalute the integral:
+	∫∫(R) (3x² + 14xy + 8y²) dxdy
+
+   for the region R in the first quadrant bounded by the lines:
+   y = -(3/2)x + 1
+   y = -(3/2)x + 3
+   y = -(1/4)x
+   y = -(1/4)x + 1
+
+   transformation in Exercise 3:
+   u = 3x + 2y  
+   v = x + 4y
+   => x = (2u - v)/5, y = (3v - u)/10
+
+   y = -(3/2)x + 1 => (3v - u)/10 = -3*(2u - v)/10 + 1 => u = 2
+   y = -(3/2)x + 3 => (3v - u)/10 = -3*(2u - v)/10 + 3 => u = 6
+
+   y = -(1/4)x 	   => (3v - u)/10 = -(2u - v)/20       => v = 0
+   y = -(1/4)x + 1 => (3v - u)/10 = -(2u - v)/20 + 1   => v = 4
+
+	    |∂x/∂u    ∂x/∂v|   |2/5    -1/5|
+   J(u, v) =             		    = 1/10
+    	    |∂y/∂u    ∂y/∂v|   |-1/10  3/10|
+
+   ∫∫(R) (3x² + 14xy + 8y²) dxdy
+   = ∫(0, 4) ∫(2, 6) (3(2u - v)²/25 + 14*(2u - v)/5 * (3v - u)/10 + 8(3v - u)²/100) * 1/10 dudv
+   = 1/10 ∫(0, 4) ∫(2, 6)  uvdudv
+   = 1/20 ∫(0, 4)  u²v | (2, 6) dv
+   = 1/20 ∫(0, 4) 32v dv
+   = 16/20 * (v²)|(0, 4)
+   = 64/5
+
+
+9. Let R be the region in the first quadrant of the xy-plane bounded by the hyperbolas xy = 1
+   xy = 9, and the lines y = x , y = 4x
+   Use the transformation x = u/v, y = uv, with u > 0 and v > 0 to rewrite
+	
+	∫∫(R) (sqrt(y/x) + sqrt(xy)) dxdy
+
+   xy = 1  => u/v * uv = u² = 1 ,u > 0 	=> u = 1
+   xy = 9  => u² = 9, u > 0 		=> u = 3
+   y = x   => uv = u/v => v² = 1, v > 0 => v = 1
+   y = 4x  => uv = 4u/v => v² = 4, v > 0=> v = 2
+
+	    |∂x/∂u    ∂x/∂v| |1/v    -u/v²|
+   J(u, v) =		    =		   = u/v + u/v = 2u/v
+   	    |∂y/∂u    ∂y/∂v| |v      u    |
+
+	∫∫(R) (sqrt(y/x) + sqrt(xy)) dxdy
+	= ∫(1, 2) ∫(1, 3) (v + u) * 2u/v dudv
+	= ∫(1, 2) ∫(1, 3) 2u + 2u²/v dudv
+	= ∫(1, 2) (u² + 2/3 u**3/v)|(1, 3) dv
+	= ∫(1, 2) (9 + 18/v - 1 - 2/3v) dv
+	= ∫(1, 2) 8 + 52/3v dv
+	= (8v + 52/3 lnv)|(1, 2)
+	= 16 + 52/3 ln2 - 8 
+	= 8 + 52/3 ln2
+
+
+11. Polar moment of inertia of an elliptical plate
+    A thin plate of constant density covers the region bounded by the ellipse
+    x²/a² + y²/b² = 1, a > 0, b > 0, int the xy-plane, Find the first moment of
+    the plate about the origin
+
+    if x = a*r*cosθ, y = b*r*sinθ
+
+    x²/a² + y²/b² = 1 
+    => r²cos²θ + r²sin²θ = 1
+    => r = 1
+	     |∂x/∂r    ∂x/∂θ| |acosθ    -arsinθ|
+    J(r, θ) = 		     = 			 = abrcos²θ + abrsin²θ = abr
+	     |∂y/∂r    ∂y/∂θ| |bsinθ    brcosθ |
+
+    ∫(0, 2pi) ∫(0, 1) sqrt(a²r²cos²θ + b²r²sin²θ) abr drdθ
+    = ∫(0, 2pi) ∫(0, 1) sqrt(a²cos²θ + b²sin²θ) abr² drdθ
+    = ab/3 ∫(0, 2pi) sqrt(a²cos²θ + b²sin²θ) dθ
+    xoozi此处坑爹, 居然少见的有题目错误, 这里应该是惯性矩, 而不是一阶矩
+    不过11题倒是很有意思, 用r的伸缩来对圆进行变换得到椭圆
+
+    ∫(0, 2pi) ∫(0, 1) (a²r²cos²θ + b²r²sin²θ)*abr drdθ
+
+
+13.
+

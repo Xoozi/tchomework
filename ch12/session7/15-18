@@ -1,0 +1,19 @@
+15. Find the Jacobian J(u, v) for the transformation:
+
+(a) x = u cosv, y = u sinv
+		
+		 |∂x/∂u    ∂x/∂v| |cosv    -usinv|
+	J(u, v) =		 = 		  = ucos²v + usin²v = u
+		 |∂y/∂u    ∂y/∂v| |sinv    ucosv |
+
+(b) x = u sinv, y = u cosv
+
+		 |∂x/∂u    ∂x/∂v| |sinv    ucosv|
+  	J(u, v) = 		 = 		 = -usin²v - ucos²v = -u
+		 |∂y/∂u    ∂y/∂v| |cosv   -usinv|
+
+
+17. Evaluate the appropriate determinant to show that the Jacobian
+    of the transformation from Cartesian ρφθ-space to Cartesian xyz-space is ρ²sinρ
+
+    这题在草稿纸上推过

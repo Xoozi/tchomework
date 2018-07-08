@@ -1,0 +1,59 @@
+
+19. 这题太无聊
+
+21. Evaluate
+	∫∫∫ |xyz| dxdydz
+
+    Over the solid ellipsoid
+
+    	x²/a² + y²/b² + z²/c² <= 1
+
+	x = au
+	y = bv
+	z = cw
+
+	region:
+
+	u² + v² + w² <= 1
+
+		    |∂x/∂u  ∂x/∂v  ∂x/∂w|  |a  0  0|
+	J(u, v, w) =|∂y/∂u  ∂y/∂v  ∂y/∂w| =|0  b  0| = abc
+	            |∂z/∂u  ∂z/∂v  ∂z/∂w|  |0  0  c|
+
+	= ∫∫∫ a²b²c² |uvw| dudvdw
+	= a²b²c² ∫∫∫ |uvw| dudvdw
+
+		if u = ρsinφcosθ, v = ρsinφsinθ, w = ρcosφ
+	= a²b²c² ∫(0, 2pi) ∫(0, pi) ∫(0, 1) |ρ**3sin²φcosφsinθcosθ| ρ²sinφ drdφdθ
+
+
+23. 半椭圆球体的质心
+    假设已知半椭圆球体的质心位于其对称轴从底到顶的3/8处. 
+    证明半椭圆球体
+    x²/a² + y²/b² + z²/c² <= 1, z >= 0的质心仍位于z轴从底到顶3/8处
+
+    x = au
+    y = bv
+    z = cw
+
+    J(u, v, w) = abc
+
+    region:
+
+    u² + v² + w² <= 1, w >= 0
+
+    M 
+    = ∫∫∫ abc dudvdw
+    = (2abc pi)/3
+   
+    Mxy
+    = ∫∫∫ cw abc dudvdw
+    = abc² ∫∫∫ w dudvdw
+    = abc² ∫(0, 2pi) ∫(0, pi/2)  ∫(0, 1) ρcosφ ρ²sinφ dρdφdθ
+    = abc² pi/4
+
+    z' = Mxy/M = abc²pi/4 * 3/(2abcpi) = 3/8 c
+
+    xoozi这个题的提示有点误导, 说是,不需要计算积分
+
+    实际上Mxy哪里, 要算一下的
