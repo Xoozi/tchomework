@@ -1,0 +1,20 @@
+Match the vector equations in Exericise 1-8 with graphs(a)-(h)
+
+1. r(t) = ti + (1-t)j, 0 <= t <= 1
+   r(0) = j
+   r(1) = i
+
+   so graph (c)
+
+3. r(t) = (2cost)i + (2sint)j, 0 <= t <= 2π
+
+  (g)
+
+5. r(t) = ti + tj + tk, 0 <= t <= 2
+
+   r(0) = 0i + 0j + 0k
+   r(2) = 2i + 2j + 2k
+   (d)
+
+7. r(t) = (t² - 1)j + 2tk, -1 <= t <= 1
+   (f)

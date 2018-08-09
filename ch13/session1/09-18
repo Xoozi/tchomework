@@ -1,0 +1,67 @@
+Evaluating Line Integrals over Space Curves
+
+9. Evaluate ∫C(x + y) ds where C is the straight-line segment 
+	r(t) = ti + (1 - t)j, from(0, 1, 0) to (1, 0, 0)
+
+	(0, 1, 0) -- t = 0
+	(1, 0, 0) -- t = 1
+
+	|v(t)| = sqrt(2)
+
+	∫C(x + y) ds = sqrt(2) ∫(0, 1) (t + 1 - t) dt = sqrt(2)
+
+11. Evaluate ∫C(xy + y + z) ds along the curve r(t) = 2ti + tj + (2 - 2t)k,
+
+	0 <= t <= 1
+
+	v(t) = 2i + j - 2k
+	|v(t)| = sqrt(9) = 3
+
+	∫C(xy + y + z)ds = 3 ∫(0, 1) (2t² - t + 2) dt = 3*(2t³/3 - t²/2 + 2t)|(0, 1)
+		= 3*(2/3 - 1/2 + 2) = 2 - 3/2 + 6 = 8 - 3/2
+
+
+13. Find the line integral of f(x, y, z) = x + y + z over the straight-ling segment
+from (1, 2, 3) to (0, -1, 1)
+
+	start = i + 2j + 3k
+	end   = 0i - j + k
+	direct= -1i - 3j - 2k
+
+	r(t) = (1-t)i + (2-3t)j + (3-2t)k
+	v(t) = -i - 3j - 2k
+	|v(t)| = sqrt(1 + 9 + 4) = sqrt(14)
+
+	∫C(x + y + z) ds = sqrt(14) ∫(0, 1) (1-t + 2-3t + 3-2t)dt = 6sqrt(14)∫(0, 1) (1 - t)dt
+	= 6sqrt(14) (t - t²/2)|(0, 1) = 3sqrt(14)
+
+15. Integrate f(x, y, z) = x + sqrt(y) - z² over the path from (0, 0, 0) to (1, 1, 1)
+	C1: r(t) = ti + t²j, 0 <= t <= 1
+	C2: r(t) = i + j + tk, 0 <= t <= 1
+
+	
+	C1:
+	v(t) = i + 2tj
+	|v(t)| = sqrt(1 + 4t²)
+	∫C1 (x + sqrt(y) - z²) ds = 2*∫(0, 1) sqrt(1+4t²)*t dt = 2 * (1 + 4t²)**(3/2)|(0, 1) = 
+	2*5**(3/2)
+
+	C2:
+	v(t) = k
+	|v(t)| = 1
+	∫C2 (x + sqrt(y) - z²) ds = ∫(0, 1) (1 + 1 - t²) dt = (2t - t³/3)|(0, 1) = 5/3
+
+17. Integrate f(x, y, z) = (x + y + z)/(x² + y² + z²) over the path 
+	r(t) = ti + tj + tk, 0 < a <= t <= b
+
+	v(t) = i + j + k
+	|v(t)| = sqrt(3)
+
+	∫C f(x, y, z) ds = ∫(a, b) sqrt(3) (t + t + t)/(t² + t² + t²) dt
+	= sqrt(3) ∫(a, b) t/t² dt
+	= sqrt(3) ∫(a, b) 1/t dt
+	= sqrt(3) ln(t)|(a, b)
+	= sqrt(3)(ln(b) - ln(a))
+
+
+
