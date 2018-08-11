@@ -1,0 +1,25 @@
+Line Integral over plane Curve
+
+19. f(x, y) = x³/y, C: y = x²/2, 0 <= x <= 2
+
+	r(x) = xi + x²/2j
+	v(x) = i + xj
+	|v(x)| = sqrt(1 + x²)
+
+	∫C f(x, y) ds = ∫(0, 2) f(x, x²/2) sqrt(1 + x²) dx
+	= ∫(0, 2) 2x sqrt(1 + x²) dx
+	= (1 + x²)**(3/2)|(0, 2)
+	= (5**(3/2) - 1)
+
+
+21. f(x, y) = x + y, C: x² + y² = 4, in the first quadrant from (2, 0) to (0, 2)
+
+	C: 
+	r(θ) = 2cosθi + 2sinθj, 0 <= θ <= π/2
+	v(θ) = -2sinθi + 2cosθj
+	|v(θ)| = 2
+
+	∫C f(x, y) ds = 4 ∫(0, π/2) cosθ + sinθ dθ = 4 (sinθ - cosθ)|(0, π/2) = 8
+
+
+
