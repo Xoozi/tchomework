@@ -1,0 +1,114 @@
+Find the work done by force F from (0, 0, 0) to (1, 1, 1) over each of the following path:
+
+	(a) The straight-line path C1: r(t) = ti + tj + tk,  0 <= t <= 1
+
+	(b) The curved path C2: r(t) = ti + t²j + t⁴k,   0 <= t <= 1
+
+	(c) The path C3 U C4 consisting of the line segment from (0, 0, 0) to (1, 1, 0)
+	followed by the segment from (1, 1, 0) to (1, 1, 1)
+
+
+7. F = 3yi + 2xj + 4zk
+
+	(a) r(t) = ti + tj + tk
+	    dr/dt = i + j + k
+	    F = 3ti + 2tj + 4tk
+	    F·dr/dt = 9t
+	    W = ∫(0, 1) 9t dt = 9/2
+	
+	(b) r(t) = ti + t²j + t⁴k
+	    dr/dt = i + 2tj + 4t³k
+	    F = 3t²i + 2tj + 4t⁴k
+	    F·dr/dt = 7t² + 16t**7
+	    W = ∫(0, 1) 7t² + 16t**7 dt = (7t³/3 + 2t**8)|(0, 1) = 7/3 + 2
+
+	(c) r1(t) = ti + tj
+	    dr1/dt = i + j
+	    F = 3ti + 2tj
+	    F·dr1/dt = 5t
+	    W1 = ∫(0, 1) 5t dt = 5/2
+
+	    r2(t) = tk 这里我想错了, 应该r2(t) = i + j + tk
+	    dr2/dt = k
+	    F = 4tk
+	    F·dr1/dt = 4t
+	    W2 = ∫(0, 1) 4t dt = 2
+	    
+	    W = W1 + W2 = 5/2 + 2
+
+
+9. F = sqrt(z)i - 2xj + sqrt(y)k
+
+	(a) r(t) = ti + tj + tk
+	    dr/dt = i + j + k
+	    F = sqrt(t)i - 2tj + sqrt(t)k
+	    F·dr/dt = 2sqrt(t) - 2t
+	    W = ∫(0, 1) 2sqrt(t) - 2t dt = 1/3
+
+	(b) r(t) = ti + t²j + t⁴k
+	    dr/dt = i + 2tj + 4t³k
+	    F = t²i - 2tj + tk
+	    F·dr/dt = 4t⁴ - 3t²
+	    W = ∫(0, 1) 4t⁴ - 3t² dt = (4t**5/5 - t³)|(0, 1) = -1/5
+
+	(c) r1(t) = ti + tj
+	    dr1/dt = i + j
+	    F = -2tj + sqrt(t)k
+	    F·dr1/dt = -2t
+	    W1 = ∫(0, 1) -2t dt = -1
+
+	    r2(t) = i + j + tk
+	    dr2/dt = k
+	    F = sqrt(t)i - 2j + k
+	    F·dr2/dt = 1
+	    W2 = 1
+
+	    W = W1 + W2 = 0
+
+
+11. F = (3x² - 3x)i + 3zj + k
+
+	(a) r(t) = ti + tj + tk
+	    dr/dt= i + j + k
+	    F = (3t² - 3t)i + 3tj + k
+	    F·dr/dt = 3t² - 3t + t3 + 1 = 3t² + 1
+	    W = ∫(0, 1) 3t² + 1 dt = (t³ + t)|(0, 1) = 2
+
+	(b) r(t) = ti + t²j + t⁴k
+	    dr/dt = i + 2tj + 4t³k
+	    F = (3t² - 3t)i + (3t⁴)j + k
+	    F·dr/dt = 3t² - 3t + 6t**5 + 4t³
+	    W = ∫(0, 1) 3t² - 3t + 6t**5 + 4t³ dt = (t³ - 3/2t² + t**6 + t**4)|(0, 1) = 3 - 3/2 = 3/2
+
+	(c) r1(t) = ti + tj
+	    dr1/dt = i + j
+	    F = (3t² - 3t)i + k
+	    F·dr1/dt = 3t² - 3t
+	    W1 = ∫(0, 1) 3t² - 3t dt = (t³ - 3/2 t²)|(0, 1) = 1- 3/2 = -1/2
+
+	    r2(t) = i + j + tk
+	    dr2/dt = k
+	    F = 2tj + k
+	    F·dr2/dt = 1
+	    W2 = ∫(0, 1) dt = 1
+
+	    W = W1 + W2 = 1/2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

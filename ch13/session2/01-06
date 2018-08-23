@@ -1,0 +1,23 @@
+Find the gradient field of the functions
+
+1. f(x, y, z) = (x² + y² + z²)**(-1/2)
+
+	∇f = (∂f/∂x)i + (∂f/∂y)j + (∂f/∂z)k
+	   = (-x(x²+y²+z²)**(-3/2))i + (-y(x²+y²+z²)**(-3/2))j + (-z(x²+y²+z²)**(-3/2))k
+
+3. g(x, y, z) = e**z - ln(x² + y²)
+
+	∇g = (∂g/∂x)i + (∂g/∂y)j + (∂g/∂z)k
+	   = (-2x/(x² + y²))i + (-2y/(x² + y²))j + (e**z)k
+
+
+5. Give a formula F = M(x, y)i + N(x, y)j for the vector field in the plane
+that has the property that F points toward the origin with magnitude inversely
+proportional to the square of the distance from (x, y) to the origin
+
+	square of the distance = x² + y²
+	so magnitude = 1/(x² + y²)
+	direction = (-x/sqrt(x²+y²))i + (-y/sqrt(x²+y²))j
+	F = (-x/sqrt(x²+y²)³)i + (-y/sqrt(x²+y²)³)j
+
+	xoozi 这里略有不严谨, 模长和距离的平方成反比, 应该是 mag = k/(x² + y²), k > 0

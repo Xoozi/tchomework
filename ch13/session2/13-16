@@ -1,0 +1,27 @@
+Find the work done by F over the curve in the direction of increasing t
+
+
+13. F = (xy)i + (y)j + (-yz)k
+    r(t) = (t)i + (t²)j + (t)k,  0 <= t <= 1
+
+    dr/dt = i + (2t)j + k
+    F = (t³)i + (t²)j + (-t³)k
+
+    F·dr/dt = t³ + 2t³ - t³ = 2t³
+
+    W = ∫(0, 1) 2t³ dt = (1/2 t**4)|(0, 1) = 1/2
+
+
+15. F = (z)i + (x)j + (y)k
+    r(t) = (sin t)i + (cos t)j + (t)k,  0 <= t <= 2π
+
+    dr/dt = (cos t)i + (-sin t)j + k
+    F = (t)i + (sin t)j + (cos t)k
+
+    F·dr/dt = cos t - sin²t + cos t = 2cos t - sin²t
+
+    W = ∫(0, 2π) cos t - sin²t dt = ∫(0, 2π) cos t - (1 - cos2t)/2 dt
+      = 1/2 ∫(0, 2π) 2cos t - 1 + cos 2t dt
+      = 1/2 (2sin t - t + 1/2 sin 2t)|(0, 2π)
+      = 1/2 (0 - 2π + 0)
+      = -π
