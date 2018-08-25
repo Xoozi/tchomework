@@ -1,0 +1,108 @@
+Circulation and Flux
+In 25-28, find the circulation and flux of the field F around and across the closed semicircular path
+that consists of the semicircular arch r1(t) = (a cos t)i + (a sin t)j, 0 <= t <= π, 
+followed by the line segment r2(t) = ti, -a <= t <= a
+
+
+	r1(t) = (a cos t)i + (a sin t)j
+	dr1/dt = (-a sin t)i + (a cos t)j
+	T1 = (-sin t)i + (cos t)j
+	N1 = T1 X k = (cos t)i + (sin t)j
+
+	r2(t) = (t)i
+	dr2/dt = i
+	T2 = i
+	N2 = T1 X k = -j
+
+25. F = (x)i + (y)j
+
+	F1 = (a cos t)i + (a sin t)j
+	F1·T1 = (-a sint cos t) + a sin t cost = 0
+	F1·N1 = a cos²t + a sin²t = a
+
+	circulation1 = ∫(0, π) F1·T1 dt = 0
+	flux1 = ∫(0, π) F1·N1 dt = aπ
+
+	F2 = (t)i
+	F2·T2 = t
+	F2·N2 = 0
+
+	circulation2 = ∫(-a, a) F2·T2 dt = t²/2 | (-a, a) = a²/2 - a²/2 = 0
+	flux2 = ∫(-a, a) F2·N2 dt = 0
+
+	circulation = circulation1 + circulation2 = 0
+	flux = flux1 + flux2 = aπ
+
+
+	xoozi 这里有个问题, 我算得T1 和T2这里不应归一化
+	
+	于是结果是flux = a²π
+
+27. F = (-y)i + (x)j
+
+	F1 = (-a sin t)i + (a cos t)j
+	F1·T1 = -a²sin²t + a²cos²t = a²
+	F1·N1 = -a²sin t cos t + a²sin t cos t = 0
+
+	circulation1 = a²π
+	flux1 = 0
+
+	F2 = (t)j
+	F2·T2 = 0
+	F2·N2 = -t
+
+	circulation2 = 0
+	flux2 = ∫(-a, a) -t dt = -t²/2 | (-a, a) = -a²/2 + a²/2 = 0
+
+	circulation = circulation1 + circulation2 = a²π
+	flux = flux1 + flux2 = 0
+
+
+
+
+
+
+29 Flow integrals Find the flow of the velocity field F = (x + y)i - (x² + y²)j
+along each of the following paths from (1, 0) to (-1, 0) in the xy-plane
+
+	(a). The upper half of the circle x² + y² = 1
+
+		r(t) = (cos t)i + (sin t)j,  0 <= t <= π
+		dr/dt = (-sin t)i + (cos t)j
+		F = (cos t + sin t)i - j
+
+		F·dr/dt = -sint cost - sin²t - cost
+
+		flow = ∫(0, π) F·dr/dt dt = ∫(0, π) (-sint cost - sin²t - cost) dt
+		     = ∫(0, π) (-sin2t/2 + (cos2t - 1)/2 - cost) dt
+		     = 1/2 ∫(0, π) (-sin2t + cos2t - 1 - cos t) dt
+		     = 1/2 (cos2t/2 - sin2t/2 - t - sin t)|(0, π)
+		     = 1/2 (0 - 0 - π - 0)
+		     = -π/2
+
+	(b). The line segment from (1, 0) to (-1, 0)
+
+		r(t) = (1 - 2t)i, 0 <= t <= 1
+		dr/dt = -2i
+		F = (1 - 2t)i - (1 - 4t + 4t²)j
+		F·dr/dt = -2 + 4t
+
+		flow = ∫(0, 1) F·dr/dt dt = ∫(0, 1) -2 + 4t dt = (-2t + 2t²)|(0, 1) = 0
+	
+	(c). The line segment from (1, 0) to (0, -1) followd by the line segment from (0, -1) to (-1,0)
+
+		r1(t) = (1 - t)i + (-t)j
+		dr1/dt = -i - j
+		F1 = (1-2t)i - (1 - 2t + 2t²)j
+		F1·dr1/dt = 2t - 1 + 1 - 2t + 2t² = 2t²
+
+		flow1 = ∫(0, 1) F1·dr1/dt dt = ∫(0, 1) 2t² dt = 2/3 t³ |(0, 1) = 2/3
+
+		r2(t) = (-t)i + (-1 + t)j
+		dr2/dt = -i + j
+		F2 = -i - (t² + 1 - 2t + t²)j = -i - (1 - 2t + 2t²)j
+		F2·dr2/dt = 1 - 1 + 2t - 2t² = -2t² + 2t
+
+		flow2 = ∫(0, 1) F2·dr2/dt dt = (-2/3 t³ + t²)|(0, 1) = -2/3 + 1 = 1/3
+
+		flow = flow1 + flow2 = 1
