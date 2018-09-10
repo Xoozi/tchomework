@@ -1,0 +1,28 @@
+Which fields in Exercises 1-6 are conservative, and which are not?
+
+1. F = (yz)i + (xz)j + (xy)k
+
+	M = yz, N = xz, P = xy
+
+	∂N/∂z = x = ∂P/∂y
+	∂M/∂y = z = ∂N/∂x
+	∂P/∂x = y = ∂M/∂z
+
+	so it's conservative
+
+3. F = (y)i + (x + z)j + (-y)k
+
+	M = y, N = x + z, P = -y
+
+	∂N/∂z = 1 != ∂P/∂y
+
+	so it is not conservative
+
+5. F = (z + y)i + (z)j + (y + x)k
+
+	M = z + y, N = z, P = y + x
+
+	∂N/∂z = 1 = ∂P/∂y
+	∂M/∂y = 1 != ∂N/∂x
+
+	so it is not conservative

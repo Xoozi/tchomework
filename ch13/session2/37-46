@@ -1,0 +1,80 @@
+
+Flow Integrals in Space
+
+in 37-40, F is the velocity field of a fluid flowing throught a region in space. Find 
+the flow along the given curve in the direction of increasing t
+
+37. F = (-4xy)i + (8y)j + 2k
+   r(t) = (t)i + (t²)j + k,  0 <= t <= 2
+
+   dr/dt = i + (2t)j
+   F = (-4t³)i + (8t²)j + 2k
+   F·dr/dt = -4t³ + 16t³ = 12t³
+
+   flow = ∫(0, 2) 12t³ dt = (3t**4)|(0, 2) = 48
+
+
+39. F = (x - z)i + (x)k
+    r(t) = (cost)i + (sint)k,  0 <= t <= π
+    
+    dr/dt = (-sint)i + (cost)k
+    F = (cost - sint)i + (cost)k
+    F·dr/dt = -cost*sint + sin²t + cos²t = 1 - cost*sint = 1 - sin2t/2
+
+    flow = ∫(0, π) 1 - sin2t/2 dt = (t + cos2t/4)|(0, π) = π
+
+    
+
+41. Circulation 
+    Find the circulation of F = (2x)i + (2z)j + (2y)k, around the closed path consisting of 
+    the following three curves traversed in the direction o increasing t:
+
+    C1: r1(t) = (cost)i + (sint)j + tk, 0 <= t <= π/2
+    dr1/dt = (-sint)i + (cost)j + k
+    F = (2cost)i + (2t)j + (2sint)k
+    F·dr1/dt = -2sintcost + 2tcost + 2sint = -sin2t + 2tcost + 2sint
+
+    flow1 = ∫(0, π/2) (-sin2t + 2tcost + 2sint) dt
+          = (cos2t/2 + 2tsint)|(0, π/2)
+	  = π - 1
+
+
+    C2: r2(t) = j + (π/2)(1 - t)k,   0 <= t <= 1
+    dr2/dt = (-π/2)k
+    F = (π - πt)j + 2k
+    F·dr2/dt = -π
+
+    flow2 = ∫(0, 1) -π dt = -π
+
+    C3: r3(t) = (t)i + (1-t)j,  0 <= t <= 1
+    dr3/dt = i - j
+    F = (2t)i + (2 - 2t)k
+    F·dr3/dt = 2t - 2 + 2t = 4t - 2
+
+    flow3 = ∫(0, 1) 4t - 2 dt = (2t² - 2t)|(0, 1) = 2 - 2 = 0
+
+    flow = flow1 + flow2 + flow3 = -1
+
+
+
+43. Flow along a curve
+    The field F = (xy)i + (y)j - (yz)k, is the velocity field of a flow in space. Find the flow 
+    from (0, 0, 0) to (1, 1, 1) along the curve of intersection of the cylinder y = x² and the plane 
+    z = x
+
+    r(t) = (t)i + (t²)j + (t)k
+
+    dr/dt = i + (2t)j + k
+
+    F = (t³)i + (t²)j - (t³)k
+
+    F·drdt = t³ + 2t³ - t³ = 2t³
+
+    flow = ∫(0, 1) 2t³ dt = (t**4/2)|(0, 1) = 1/2
+
+
+45. Work and area
+    Suppose that f(t) is differentiable and positive for a <= t <= b. Let C be the path 
+    r(t) = (t)i + f(t)j,  a <= t <= b, and F = yi,  Is there any relation between the value 
+    of the work integral ∫C F·dr and the area of the region bounded by the t-axis,
+    the graph of f, and the lines t = a and t = b? Give resons for your answer.
