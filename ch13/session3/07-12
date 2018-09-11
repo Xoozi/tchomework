@@ -1,0 +1,96 @@
+Find a potential function f for the field F.
+
+7. F = (2x)i + (3y)j + (4z)k
+
+	M: 2x = ∂f/∂x
+	N: 3y = ∂f/∂y
+	P: 4z = ∂f/∂z
+
+	M 两边对x积分
+	f = x² + g(y, z)
+
+	然后两边对y求导
+	∂g/∂y = ∂f/∂y
+
+	对照N, ∂g/∂y = 3y
+	两边对y积分
+	g(y, z) = 3/2 y² + h(z)
+
+	f = x² + 3/2 y² + h(z)
+
+	两边对z求导
+
+	∂f/∂z = ∂h/∂z = 4z
+
+	=> h(z) = 2z² + C
+
+	=> f = x² + 3/2 y² + 2z² + C
+
+
+9. F = e**(y + 2z)(i + xj + 2xk)
+
+	M: e**(y + 2z)   = ∂f/∂x
+	N: xe**(y + 2z)	 = ∂f/∂y
+	P: 2xe**(y + 2z) = ∂f/∂z
+
+	M 两边对x积分
+	xe**(y + 2z) + g(y, z) = f
+
+	然后两边对y求导
+	xe**(y + 2z) + ∂g/∂y = ∂f/∂y
+
+	对照N, ∂g/∂y = 0, 故它其实是g(z)
+
+	xe**(y + 2z) + g(z) = f
+	两边对z求导
+	2xe**(y + 2z) + ∂g/∂z = ∂f/∂z
+
+	对照P, ∂g/∂z = 0
+
+	故f = xe**(y + 2z) + C
+
+
+
+11. F = (lnx + sec²(x + y))i + (sec²(x + y) + y/(y² + z²))i + (z/(y² + z²))k
+
+	M: lnx + sec²(x + y) 		= ∂f/∂x
+	N: sec²(x + y) + y/(y² + z²)	= ∂f/∂y
+	P: z/(y² + z²)			= ∂f/∂z
+
+	M 两边对x积分
+	xlnx - x  + tan(x + y) + g(y, z)	= f	(1)
+
+	然后两边对y求导
+
+	sec²(x + y) + ∂g/∂y		= ∂f/∂y
+
+	对照N, ∂g/∂y = y/(y² + z²)
+
+	两边对y积分
+	g(y, z) = ln(y² + z²)/2 + h(z)	
+
+	代入(1)
+
+	f = xlnx - x + tan(x + y) + ln(y² + z²)/2 + h(z)
+
+	两边对z求导
+
+	∂f/∂z = y/(y² + z²) + ∂h/∂z
+
+	对照P  ∂h/∂z = 0
+
+	=> h(z) = C
+
+	故f = xlnx - x + tan(x + y) + ln(y² + z²)/2 + C
+	
+
+
+
+
+
+
+
+
+
+
+	
