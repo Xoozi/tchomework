@@ -1,0 +1,94 @@
+Show that the differential forms in the integrals are exact. Then evaluate the integrals
+
+13. ∫((0, 0, 0), (2, 3, -6))  2x dx + 2y dy + 2z dz
+
+	F = (2x)i + (2y)j + (2z)k
+	M = 2x
+	N = 2y
+	P = 2z
+
+	∂N/∂z = 0 = ∂P/∂y
+	∂M/∂y = 0 = ∂N/∂x
+	∂P/∂x = 0 = ∂M/∂z
+
+	so differential forms is exact
+
+	= ∫(0, 2) 2x dx + ∫(0, 3) 2y dy + ∫(0, -6) 2z dz
+	= 4 + 9 + 36
+	= 49
+
+
+15. ∫((0, 0, 0), (1, 2, 3)) 2xy dx + (x² - z²)dy - 2yz dz
+
+	F = (2xy)i + (x² - z²)j + (-2yz)k
+	M = 2xy
+	N = x² - z²
+	P = -2yz
+
+	∂N/∂z = -2z = ∂P/∂y
+	∂M/∂y = 2x = ∂N/∂x
+	∂P/∂x = 0 = ∂M/∂z
+
+	so differential forms is exact
+
+	if F = ∇f
+
+	M = 2xy 	= ∂f/∂x
+	N = x² - z² 	= ∂f/∂y
+	P = -2yz 	= ∂f/∂z
+
+	M:
+	yx² + g(y, z) = f
+	=>
+	x² + ∂g/∂y = ∂f/∂y = x² - z²
+
+	=> ∂g/∂y = -z²
+	=> g(y, z) = -z²y + h(z)
+	=> yx² - z²y + h(z) = f
+	=> -2yz + ∂h/∂z = ∂f/∂z
+	=> h(z) = C
+
+	=> f = yx² - z²y + C
+
+	= f(1, 2, 3) - f(0, 0, 0)
+	= (2 - 18) - 0
+	= -16
+
+
+17. ∫((1, 0, 0), (0, 1, 1) sin y cos x dx + cos y sin x dy + dz
+
+
+	F = (sin y cos x)i + (cos y sin x)j + k
+
+	M = sin y cos x
+	N = cos y sin x
+	P = 1
+
+	∂N/∂z = 0 = ∂P/∂y
+	∂M/∂y = cos y cos x = ∂N/∂x 
+	∂P/∂x = 0 = ∂M/∂z
+
+	so differential forms is exact
+
+	if F = ∇f
+
+	M = sin y cos x = ∂f/∂x
+	N = cos y sin x = ∂f/∂y
+	P = 1           = ∂f/∂z
+
+	M:
+	sin y sin x + g(y, z) = f
+
+	=>
+	cos y sin x + ∂g/∂y = ∂f/∂y = cos y sin x
+
+	=> ∂g/∂y = 0, it is g(z)
+
+	sin y sin x + g(z) = f
+
+	=>∂g/∂z = ∂f/∂z = 1
+	=> g = z + C
+
+	=> f = sin y sin x + z + C
+
+	= f(0, 1, 1) - f(1, 0, 0) = 1 - 0 = 1
