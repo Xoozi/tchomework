@@ -92,3 +92,117 @@ Show that the differential forms in the integrals are exact. Then evaluate the i
 	=> f = sin y sin x + z + C
 
 	= f(0, 1, 1) - f(1, 0, 0) = 1 - 0 = 1
+
+
+19.  ∫((1, 1, 1), (1, 2, 3)) 3x² dx + z²/y dy + 2z ln y dz
+
+	F = (3x²)i + (z²/y)j + (2z ln y)k
+
+	M = 3x²
+	N = z²/y
+	P = 2z ln y
+
+	∂N/∂z = 2z/y = ∂P/∂y
+	∂M/∂y = 0 = ∂N/∂x
+	∂P/∂x = 0 = ∂M/∂z
+
+	so differential form is exact
+
+	if F = ∇f
+
+	M = 3x² 	= ∂f/∂x
+	N = z²/y	= ∂f/∂y
+	P = 2z ln y	= ∂f/∂z
+
+
+	M: 
+	x³ + g(y, z) 	= f
+
+	=> ∂g/∂y 	= ∂f/∂y = z²/y
+	=> g(y, z)	= z² ln y + h(z)
+	=> x³ + z² lny + h(z) = f
+	=>2z ln y + ∂h/∂z = ∂f/∂z
+	=>∂h/∂z = 0
+	=>h(Z) = C
+
+	so f = x³ + z²ln y + C
+
+	= f(1, 2, 3) - f(1, 1, 1)
+	= 1 + 9ln2 - 1
+	= 9 ln 2
+
+
+21. ∫((1, 1, 1),  (2, 2, 2)) 1/y dx + (1/z - x/y²)dy - y/z² dz
+
+
+	F = (1/y)i + (1/z - x/y²)j + (-y/z²)k
+
+	M = 1/y
+	N = 1/z - x/y²
+	P = -y/z²
+
+	∂N/∂z = -1/z² = ∂P/∂y
+	∂M/∂y = -1/y² = ∂N/∂x
+	∂P/∂x = 0     = ∂M/∂z
+
+	so differential form is exact
+
+	if F = ∇f
+
+	M = 1/y		= ∂f/∂x
+	N = 1/z - x/y²	= ∂f/∂y
+	P = -y/z²	= ∂f/∂z
+
+	M: x/y + g(y, z)= f
+	=>-x/y² + ∂g/∂y = ∂f/∂y = -x/y² + 1/z
+
+	=> ∂g/∂y = 1/z
+	=> g(y, z) = y/z + h(z)
+	=> x/y + y/z + h(z) = f
+	=> -y/z² + ∂h/∂z = ∂f/∂z
+
+	=> ∂h/∂z = 0
+	=> h(z) = C
+
+	=> f = x/y + y/z + C
+
+	= f(2, 2, 2) - f(1, 1, 1)
+	= 0
+
+
+
+23. Revisiting Example 4,  Evalute the integral
+
+	∫((1, 1, 1),  (2, 3, -1)) y dx + x dy + 4 dz
+
+	r(t) = (1 + t)i + (1 + 2t)j + (1 - 2t)k
+
+
+	F = (1 + 2t)i + (1 + t)j + 4k
+
+
+	dr/dt = i + 2j - 2k
+
+	F · dr/dt = 1 + 2t + 2 + 2t - 8 = 4t - 5
+
+	= ∫(0, 1) F·dr/dt dt 
+	= ∫(0, 1) 4t - 5 dt
+	= (2t² - 5t)|(0, 1)
+	= 2 - 5
+	= -3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
