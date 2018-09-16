@@ -1,0 +1,22 @@
+Find a potential function for F
+
+27. F = (2x/y)i + ((1 - x²)/y²)j
+
+
+	if F = ∇f
+
+	M = 2x/y	= ∂f/∂x
+	N = (1 - x²)/y² = ∂f/∂y
+
+	M: 
+	x²/y + g(y) = f
+
+	-x²/y² + dg/dy = ∂f/∂y
+
+	=>
+	dg/dy = 1/y²
+	g = -1/y + C
+
+	=> f = (x² - 1)/y + C
+
+

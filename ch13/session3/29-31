@@ -1,0 +1,49 @@
+Work along different paths 
+
+Find the work done by F = (x² + y)i + (y² + x)j + (z e**z)k
+over the following paths from (1, 0, 0) to (1, 0, 1)
+
+a. The line segment
+b. The helix ...
+c. .....
+
+	M = x² + y
+	N = y² + x
+	P = z e**z
+
+	∂N/∂z = 0 = ∂P/∂y
+	∂M/∂y = 1 = ∂N/∂x
+	∂P/∂x = 0 = ∂M/∂z
+
+	so it path independ
+
+	if F = ∇f
+
+	M = x² + y 	= ∂f/∂x
+	N = y² + x	= ∂f/∂y
+	P = z e**z	= ∂f/∂z
+
+	M:
+		x³/3 + yx + g(y, z) = f
+
+	=>
+		x + ∂g/∂y = ∂f/∂y = y² + x
+	=>
+		∂g/∂y = y²
+	=>
+		g(y, z) = y³/3 + h(z)
+
+	=>
+		x³/3 + yx + y³/3 + h(z) = f
+
+	=>
+		∂h/∂z = ∂f/∂z = z e**z
+	=>
+		h(z) = (z - 1)e**z + C
+
+	=> f = x³/3 + yx + y³/3 + (z - 1)e**z + C
+
+	=> work = f(1, 0, 1) - f(1, 0, 0) = 1/3 - (1/3 - 1) = 1
+
+
+31也是这种无聊的, 不做了

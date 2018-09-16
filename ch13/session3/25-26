@@ -1,0 +1,17 @@
+Show that the values of the integrals in Exercise 25-26 do not depend on the path
+taken form A to B
+
+25. ∫(A, B) z² dx + 2y dy + 2xz dz
+
+	F = (z²)i + (2y)j + (2xz)k
+
+	M = z²
+	N = 2y
+	P = 2xz
+
+	∂N/∂z = 0 = ∂P/∂y
+	∂M/∂y = 0 = ∂N/∂x
+	∂P/∂x = 2z = ∂M/∂z
+
+	so F = ∇f
+

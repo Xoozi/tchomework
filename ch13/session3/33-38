@@ -1,0 +1,61 @@
+33. a. Exact differential form
+       How are the constant a, b, and c related if the following differential form is exact
+
+      (ay² + 2czx)dx + (y(bx + cz))dy + (ay² + cx²) dz
+
+      M = ay² + 2czx
+      N = y(bx + cz)
+      P = ay² + cx²
+
+      ∂N/∂z = yc = ∂P/∂y = 2ay
+
+      => c = 2a
+
+      ∂M/∂y = 2ay = ∂N/∂x = by
+      => 2a = b
+
+      ∂M/∂z = 2cx = ∂P/∂x = 2cx
+
+
+      => c = 2a = b
+
+    b. Gradient field
+       For what values of b and c will
+       F = (y² + 2czx)i + y(bx + cz)j + (y² + cx²)k
+       be a gradient field
+
+       a = 1 
+       c = b = 2a = 2
+
+       F = (y² + 4zx)i + (2yx + 2yz)j + (y² + 2x²)k
+
+
+
+35. Path of least work
+    You have been asked to find the path along which a force field F
+    will perform the least work in moving a particle between two location.
+    A quick calculation on your part shows F to be conservative. How sould you 
+    repsond? Give reasons for your answer.
+
+    Path is independed, all path do the same work
+
+
+
+37. Work by a constant force
+    Show that the work done by a constant force field F = ai + bj + ck in moving a particle along any
+    path from A to B is W = F·AB
+
+
+	F = ai + bj + ck
+	M = a
+	N = b
+	P = c
+
+	∂N/∂z = 0 = ∂P/∂y
+	∂M/∂y = 0 = ∂N/∂x
+	∂P/∂x = 0 = ∂M/∂z
+
+	and work done by F, form A to B on the line segment is F·AB	
+
+	so work done by F is path independed = F·AB
+
