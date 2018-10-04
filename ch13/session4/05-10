@@ -1,0 +1,44 @@
+Counterclockwise Circulation and Outward Flux
+
+5. F = (x - y)i + (y - x)j
+
+    C: square bounded by x = 0, x = 1, y = 0, y = 1
+
+    M = x - y, ∂M/∂x = 1, ∂M/∂y = -1
+    N = y - x, ∂N/∂x = -1, ∂N/∂y = 1
+
+    Circulation = ∮ Mdx + Ndy = ∬(∂N/∂x - ∂M/∂y) dxdy = 0
+    Flux        = ∮ Mdy - Ndx = ∬(∂M/∂x + ∂N/∂y) dxdy = ∬ 2 dxdy = 2
+
+
+7. F = (y² - x²)i + (x² + y²)j
+    
+    C: The triangle bounded by y = 0, x = 3, and y = x
+
+    M = y² - x²,    ∂M/∂x = -2x,    ∂M/∂y = 2y
+    N = x² + y²,    ∂N/∂x = 2x,     ∂N/∂y = 2y
+
+    Circulation = ∮ Mdx + Ndy = ∬(∂N/∂x - ∂M/∂y) dxdy = ∬ 2x - 2y dxdy = ∫(0, 3) ∫(0, x) 2x - 2y dy dx
+    = ∫(0, 3) [2xy - y²]|(0, x) dx = ∫(0, 3) x² dx =  (x**3/3)|(0, 3) = 9
+
+    Flux        = ∮ Mdy - Ndx = ∬(∂M/∂x + ∂N/∂y) dxdy = 2∬(y - x) dxdy = 2∫(0, 3) ∫(0, x) (y - x) dy dx
+    = 2∫(0, 3) [y²/2 - xy]|(0, x) dx = -∫(0, 3) x² dx = -(x**3/3)|(0, 3) = -9
+
+
+9. F = (x + e**x sin y)i + (x + e**x cos y)j
+    
+    C: The right-hand loop of the lemniscate r² = cos 2t
+
+    M = x + e**x sin y, ∂M/∂x = 1 + e**x sin y, ∂M/∂y = e**x cos y
+    N = x + e**x cos y, ∂N/∂x = 1 + e**x cos y, ∂N/∂y = - e**x sin y
+
+    双扭线右侧在第一象限面积为 ∫(0, pi/4) ∫(0, sqrt(cos2t)) r dr dt
+    = 1/2 ∫(0, pi/4) r²|(0, sqrt(cos2t)) dt
+    = 1/2 ∫(0, pi/4) cos2t dt
+    = 1/4 (sin 2t)|(0, pi/4)
+    = 1/4
+    右侧面积为1/2
+
+    Circulation = ∮ Mdx + Ndy = ∬ (∂N/∂x - ∂M/∂y) dxdy = ∬(1 + e**x cos y - e**x cosy) dxdy = ∬R 1 dA = 1/2
+
+    Flux        = ∮ Mdy - Ndx = ∬ (∂M/∂x + ∂N/∂y) dxdy = ∬(1 + e**x sin y - e**x sin y) dxdy = ∬R 1 dA = 1/2
