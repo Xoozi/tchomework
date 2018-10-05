@@ -1,0 +1,15 @@
+Find the work done by F in moving a particle once counterclockwise
+around the given curve
+
+15. F = 2xy**3i + 4x²y²j
+
+C: The boundary of the triangular region in the first quadrant 
+    enclosed by the x-axis, the line x = 1 ,and the curve y = x**3
+
+
+    M = 2xy**3, ∂M/∂y = 6xy²
+    N = 4x²y²,  ∂N/∂x = 8xy²
+
+
+    work = ∮ Mdx + Ndy = ∬ (∂N/∂x - ∂M/∂y) dxdy = ∬ 2xy² dxdy = ∫(0, 1) ∫(0, x**3) 2xy² dydx
+    = ∫(0, 1) [2/3 xy**3]|(0, x**3) dx = ∫(0, 1) 2/3 x**10 dx = 2/33

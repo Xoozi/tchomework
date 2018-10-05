@@ -1,0 +1,31 @@
+17. ∮ (y² dx + x² dy)
+   C: The triangle bounded by x = 0, x + y = 1, y = 0
+
+   M = y², ∂M/∂y = 2y
+   N = x², ∂N/∂x = 2x
+   ∮ Mdx + Ndy = ∬ (∂N/∂x - ∂M/∂y) dxdy = ∫(0, 1) ∫(0, 1 - x) (2x - 2y) dy dx
+   = ∫(0, 1) [2xy - y²]|(0, 1-x) dx = ∫(0, 1) 2x(1-x) - (1 - 2x + x²) dx
+   = ∫(0, 1) -1 + 4x - 3x² dx = [-x + 2x² - x**3]|(0, 1) = -1 + 2 - 1 = 0
+
+
+19. ∮ (6y + x)dx + (y + 2x)dy
+    C: The circle (x - 2)² + (y - 3)² = 4
+
+    if v = x - 2, u = y - 3
+
+    x = v + 2, y = u + 3
+
+    dv = dx, du = dy
+
+    ori = ∮(6u + v + 20)dv + (u + 2v + 7)du
+        
+
+    if 
+    M = 6u + v + 20, ∂M/∂u = 6
+    N = u + 2v + 7,  ∂N/∂v = 2
+        
+        = ∬ (∂N/∂v - ∂M/∂u) dvdu
+        = ∬ -4 dvdu
+        = -16pi
+
+
