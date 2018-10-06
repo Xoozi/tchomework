@@ -1,0 +1,15 @@
+Let C be the boundary of a region on which Green's Theorem holds. Use Green's Theorem to calculate
+
+a. ∮ f(x)dx + g(y)dy
+
+    M(x, y) = f(x), ∂M/∂y = 0
+    N(x, y) = g(y), ∂N/∂x = 0
+
+    = ∬ ∂N/∂x - ∂M/∂y dxdy = 0
+
+b. ∮ ky dx + hx dy   (k and h constants)
+
+    M(x, y) = ky, ∂M/∂y = k
+    N(x, y) = hx, ∂N/∂x = h
+
+    = ∬ ∂N/∂x - ∂M/∂y dxdy = ∬ (h - k) dxdy = (h - k) * area of R

@@ -1,0 +1,28 @@
+Area as a line integral
+Show that if R is a region in the plane bounded by a piecewise-smooth simple closed curve C, then
+
+Area of R = ∮ xdy = -∮ ydx
+
+    if ∮ xdy = - ∮ ydx
+
+    then
+        ∮ xdy + ydx = 0
+
+    if 
+    M = y,
+    N = x
+
+        ∮ Mdx + Ndy = ∬ ∂N/∂x - ∂M/∂y dxdy = ∬ 1 - 1 dxdy = 0
+
+
+        xoozi 这个题技巧性提升得有点陡啊< 另外, 这也是公开课里说的面积计的工作原理吧
+
+        1) if M = x, N = 0
+
+            ∮ Mdy - Ndx =  ∮ xdy = ∬ ∂M/∂x + ∂N/∂y dxdy = ∬ 1 dxdy = Area of R
+
+        2) if N = y, M = 0
+
+            ∮ Mdy - Ndx = ∮ -ydx = ∬ ∂M/∂x + ∂N/∂y dxdy = ∬ 1 dxdy = Area of R
+
+

@@ -1,0 +1,8 @@
+What is special about the integral
+
+    ∮ 4x**3y dx + x**4 dy
+
+    M = 4x**3y, ∂M/∂x = 12yx², ∂M/∂y = 4x**3
+    N = x**4,   ∂N/∂x = 4x**3, ∂N/∂y = 0
+
+    = ∬(∂N/∂x - ∂M/∂y) dxdy = ∬ 0 dxdy = 0
