@@ -1,0 +1,18 @@
+Green's Theorem and Laplace's equation
+Assuming that all the necessary derivatives exist and are continuous,
+show that if f(x, y) satisfies the Laplace equation
+    
+    ∂²f/∂x² + ∂²f/∂y² = 0
+
+then
+
+    ∮ ∂f/∂y dx - ∂f/∂x dy = 0
+
+for all closed curves C to which Green's Theorem apples.
+
+if
+    M = ∂f/∂y,  ∂M/∂y = ∂²f/∂y²
+    N = -∂f/∂x, ∂N/∂x = -∂²f/∂x²
+
+
+    ∮ Mdx + Ndy = ∬ ∂N/∂x - ∂M/∂y dxdy = ∬ -∂²f/∂x² - ∂²f/∂y² dxdy = 0

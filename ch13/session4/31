@@ -1,0 +1,21 @@
+Area and the centroid
+
+Let A be the area and x' the x-coordinate of the centroid of a region R
+that is bounded by a piecewisesmooth simple closed curve C in the xy-plane.
+Show that:
+
+1/2 ∮ x² dy = -∮ xy dx = 1/3 ∮ x²dy - xy dx = Ax'
+
+
+if F = Mi + Nj
+
+M = x², ∂M/∂x = 2x
+N = xy, ∂N/∂y = x
+
+(1)
+1/2 ∮ x² dy = -∮ xy dx
+
+=> 1/2 ∮ x²dy = 1/3 ∮ x² dy - xy dx = 1/3 ∬ 3x dxdy = ∬ x dxdy = My
+
+x' = My/∬ 1 dxdy
+=> My = Ax'

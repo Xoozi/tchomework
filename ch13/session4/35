@@ -1,0 +1,72 @@
+Regions with many holes
+
+Green's Theorem holds for a region R with any finite number of holes
+as long as the bounding curves are smooth, simple, and closed and we
+integrate over each component of the boundary in the direction that
+keeps R on our immediate left as we go along
+
+
+a. Let f(x, y) = ln(x² + y²) and let C be the circle x² + y² = a²
+Evaluate the flux integral
+
+    ∇f = (2x/(x² + y²))i + (2y/(x² + y²))j
+
+    M = 2x/(x² + y²), ∂M/∂x = (2y² - 2x²)/(x² + y²)²
+    N = 2y/(x² + y²), ∂N/∂y = (2x² - 2y²)/(x² + y²)²
+
+    ∮ ∇f dot n ds = ∮ Mdy - Ndx = ∬ ∂M/∂x + ∂N/∂y dxdy = 0
+
+    xoozi 这题有个陷阱, ln(x² + y²)在(0, 0)是没有定义的, 不适用格林定理
+
+    可以这样 
+    曲线轨迹 r(t) = (a cos t)i + (a sin t)j
+
+    x = a cos t,    dx = -a sin t dt
+    y = a sin t,    dy = a  cos t dt
+    M = 2/a cos t
+    N = 2/a sin t
+
+    ∮ ∇f dot n ds = ∮ Mdy - Ndx = ∫(0, 2pi) (2/a cos t)(a cos t) dt - (2/a sin t)(-a sin t)dt
+    = ∫(0, 2pi) 2 dt
+    = 4pi
+
+
+
+b. Let K be an arbitary smooth simple closed curve in the plane
+that does not pass thround (0, 0), Use Green's Theorem to show
+that:
+
+    ∮ ∇f dot n ds
+
+has two possible values, depending on whether (0, 0) lies inside
+K or outside K.
+
+    xoozi 这里的中心就是(0, 0)点
+
+    如果(0, 0)点在K以外, 那么格林定理适用
+
+    ∮ ∇f dot n ds = ∮ Mdy - Ndx = ∬ ∂M/∂x + ∂N/∂y dxdy = 0
+
+    如果(0, 0)点在K以内, 那么格林定理不适用, 应当直接计算线积分 = 4pi
+
+    xoozi 其实这里我没看懂为什么对于一般曲线K也是4pi
+
+    最后看懂了,
+    原理就是, 建立一个以(0, 0)为圆心尽可能小的圆C, C是包含在K内的
+
+    根据题设, 每段曲线做线积分时需要保证沿积分方向前进时R总是在我们的左侧
+
+    K的方向为逆时针, 根据a.的结果, ∮C Mdy - Ndx = -4pi
+
+    于是∮C Mdy - Ndx + ∮K Mdy - Ndx = ∬ ∂M/∂x + ∂N/∂y dxdy = 0
+
+    于是 -4pi + ∮K Mdy -Ndx = 0
+    ∮K Mdy - Ndx = 0
+
+
+    结论
+    (0, 0)在K以外
+        ∮ ∇f dot n ds = 0
+    (0, 0)在K以内
+        ∮ ∇f dot n ds = 4pi
+
