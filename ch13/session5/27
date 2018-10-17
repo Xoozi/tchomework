@@ -1,0 +1,20 @@
+Find the flux of the filed F(x, y, z) = (z²)i + (x)j + (-3z)k
+outward through the surface cut from the parabolic cylinder 
+z = 4 - y² by the planes x = 0, x = 1, and z = 0
+
+	g(x, y, z) = y² + z = 4
+
+	∇g = (2y)j + k
+	p = k
+
+	∇g / |∇g · p| = (2y)j + k
+
+
+	Flux
+	= ∬ 2xy - 3z dxdy
+	= ∬ 2xy - 12 + 3y² dydx
+	= ∫(0, 1) ∫(-2, 2) 2xy - 12 + 3y² dydx
+	= ∫(0, 1) [xy² - 12y + y**3] | (-2, 2) dx
+	= ∫(0, 1) (4x - 24 + 8 - (4x + 24 - 8)) dx
+	= ∫(0, 1) -32 dx
+	= -32

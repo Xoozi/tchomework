@@ -1,0 +1,10 @@
+Find the flux of the field F across the portion of the given surface in the
+specified direction.
+
+19. F(x, y, z) = -i + 2j + 3k
+
+    S: rectangular surface z = 0, 0 <= x <= 2,  0 <= y <= 3, direction k
+
+    F · k = 3
+
+    flux = ∬ F·k dA = 3*6 = 18
