@@ -1,0 +1,36 @@
+Find the outward flux of the field F = (2xy)i + (2yz)j +(2xz)k
+across the surface of the cube cut form the first octant by the xlane x = a, y = a, z = a
+
+
+	S1 	x = 0
+		n = -i
+		F · n = -2xy = 0
+
+		flux = ∬ -2xy dA = 0
+
+	S2	x = a
+		n = i
+		F · n = 2xy = 2ay
+
+		flux = a∬ 2y dydz 
+		= a ∫(0, a) y²|(0, a) dz
+		= a**3 ∫(0, a) dz
+		= a**4
+
+
+	S3	y = 0
+		n = -j
+
+		F · n = -2yz = 0
+
+		flux = 0
+
+	S4	y = a
+		n - j
+		F · n = 2yz = 2az
+
+		flux = a ∬ 2z dzdx = a**4
+
+
+	so flux = 3 * a**4
+

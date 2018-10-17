@@ -1,0 +1,78 @@
+Moments and Masses
+
+
+33. Find the centroid of the portion of the sphere x² + y² + z² = a² that lies in the first octant.
+
+	f = x² + y² + z² - a²
+
+	∇f = (2x)i + (2y)j + (2z)k
+	|∇f| = sqrt(4x² + 4y² + 4z²) = 2a
+
+	p = k
+	M = ∬ dσ = ∬ a/z dxdy = a ∬ (a² - x² - y²)**(-1/2) dxdy
+	= a ∫(0, pi/2) ∫(0, a) (a² - r²)**(-1/2) r drdθ
+	= -a ∫(0, pi/2) [(a² - r²)**(1/2))|( 0, a) dθ
+	= a² ∫(0, pi/2) dθ
+	= a²pi/2
+
+	
+	Myz:
+		p = i
+		|∇f · p| = 2x
+	= ∬ xdσ 
+	= ∬ x |∇f|/|∇f · p| dA 
+	= a ∬ dA
+	= a**3 pi/4
+
+
+	Mxy:
+		p = k
+		|∇f · p| = 2z
+	= ∬ z dσ
+	= a∬ dA
+	= a**3 pi/4
+
+
+	Mxz:
+	= a**3 pi/4
+
+
+	x' = Myz/M = a/2
+	y' = Mxz/M = a/2
+	z' = Mxy/M = a/2
+
+
+	xoozi, 这个结论其实很有意思, 1/4薄球壳的形心和同半径立方体的形心一样
+
+
+35. Find the center of mass and the moment of inertia and radius of gyration about the z-axis
+of a thin shell of constant desity δ cut from the cone x² + y² - z² = 0
+by the planes z = 1, and z = 2
+
+	∇f = (2x)i + (2y)j + (-2z)k
+	p = k
+	|∇f| = sqrt(4x² + 4y ² + 4z²) = 2sqrt(2x² + 2y²)
+	|∇f · p| = 2z = 2sqrt(x² + y²)
+
+	dσ = |∇f| / |∇f · p| dA = sqrt(2) dA
+
+	M = ∬ δ dσ = sqrt(2)δ ∫(0, 2pi) ∫(1, 2) r dr dθ
+	= sqrt(2)δ/2 ∫(0, 2pi) (r²) | (1, 2) dθ
+	= sqrt(2)3δ/2 ∫(0, 2pi) dθ
+	= 3pi sqrt(2)δ
+
+
+	Iz = sqrt(2)δ∬ (x² + y²) dA
+	= sqrt(2)δ∬ r**3 drdθ
+	= sqrt(2)δ∬(0, 2pi) ∫(1, 2)r**3 drdθ
+	= sqrt(2)δ/4∬(0, 2pi) r**4 | (1, 2) dθ
+	= sqrt(2)δ15/4∬(0, 2pi) dθ
+	= sqrt(2)δ15pi/2
+
+	Rz = sqrt(Iz/M) = sqrt(5/2)
+
+37. 
+
+	radius = Iz/M = 17/3
+
+

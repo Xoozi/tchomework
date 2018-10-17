@@ -1,0 +1,39 @@
+Let S be the portion of the cylinder y = e**x in the first octant that
+projects parallel to the x-axis onto the rectangle Ryz : 1 <= y <= 2,
+0 <= z <= 1 tin the yz-plane. Let n be the unit vector normal to S that points away
+from the yz-plane. Find the flux of the filed F(x, y, z) = (-2)i + (2y)j + (z)k 
+across S in the direction of n.
+
+	g(x, y, z) = y - e**x = 0
+
+	∇g = (-e**x)i + j
+	p = i
+
+	∇g · p = -e**x
+	|∇g · p| = e**x
+
+	∇g / |∇g · p| = -i + (e**(-x))j
+
+	F · ∇g/|∇g · p| = -2 + 2ye**(-x) 
+		y = e**x =>
+	= -1
+
+	flux = ∬ F · ∇ dA = -1 
+
+
+	xoozi 这里就涉及到一个选法向量方向的问题
+
+	用∇g求方向两, 其实可以得到两个方向, 哪个方向对呢, 因为题目规定了是远离yz平面方向
+	所以上面我们选错了, 应该是
+
+	∇g = (e**x)i - j
+	p = i
+
+	∇g · p = e**x
+	∇g / |∇g · p| = i + (-e**(-x))j
+
+	F · (∇g / |∇g · p|) = -2 - 2ye**(-x)
+		y = e**x
+	= -4
+
+	flux = ∬ -4 dA = -4
