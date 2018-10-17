@@ -1,0 +1,109 @@
+Surface Area
+
+1. Find the area of the surface cut from the paraboloid x**2 + y**2 - z = 0, by the plane z = 2
+
+	f = x**2 + y**2 - z
+
+	∇f = (2x)i + (2y)j - k
+	p = k
+
+
+	|∇f| = sqrt(4x**2 + 4y**2 + 1)
+	|∇f · p| = 1
+
+	dσ = |∇f|/|∇f · p| dA = sqrt(4x**2 + 4y**2 + 1) dA
+
+	surface area = ∬ dσ 
+	= ∬ sqrt(4r**2+1) r drdθ
+	= ∫(0, 2pi) ∫(0, sqrt(2)) sqrt(4r**2 + 1) r dr dθ
+	= 1/12 ∫(0, 2pi) [(4r**2 + 1)**(3/2)] | (0, sqrt(2)) dθ
+	= 13/6 ∫(0, 2pi) dθ
+	= 13pi/3
+	
+
+
+3. Find the area of the region cut from the plane x + 2y + 2z = 5, by the cylinder 
+whose walls are x = y**2 and x = 2 - y**2
+
+	f = x + 2y + 2z
+
+	∇f = i + 2j + 2k
+	p = k
+
+	|∇f| = sqrt(9) = 3
+	|∇f · p| = 2
+
+	dσ = 3/2 dA
+
+	surface area = ∬ dσ
+	= 3/2 ∬ dxdy
+	= 3/2 ∫(-1, 1) ∫(y**2, 2 - y**2) dx dy
+	= 3 ∫(-1, 1) (1 - y**2) dy
+	= (3y - y**3) | (-1, 1)
+	= (3 - 1 - (-3 - (-1)))
+	= (2 - (-2))
+	= 4
+
+5. Find the area of the surface x**2 - 2y - 2z = 0 that lies above the triangle bounded by 
+the lines x = 2, y = 0, and y = 3x in the xy-plane
+
+
+	f = x**2 - 2y - 2z
+
+	∇f = (2x)i - (2)j - (2)k
+	p = k
+
+	|∇f| = 2sqrt(x**2 + 2)
+	|∇f · p| = 2
+
+	dσ = sqrt(x**2 + 2) dA
+
+	surface area = ∬ dσ
+	= ∫(0, 2) ∫(0, 3x) sqrt(x**2 + 2) dydx
+	= ∫(0, 2) 3xsqrt(x**2 + 2) dx
+	= [(x**2 + 2)**(3/2)] | (0, 2)
+	= 6sqrt(6) - 2sqrt(2)
+
+
+7. Find the area of the ellipse cut from the plane z = cx, by the cylinder x**2 + y**2 = 1
+
+
+	f = -cx + z = 0
+
+	∇f = (-c)i + k
+
+	p = k
+
+	|∇f| = sqrt(c**2 + 1)
+	|∇f · p| = 1
+
+	dσ = sqrt(c**2 + 1) dA
+
+	surface are = ∫∫ dσ
+	= sqrt(c**2 + 1) ∬ dA
+	= sqrt(c**2 + 1) pi
+
+
+9. Find the are of the portion of the paraboloid x = 4 - y**2 - z**2 that
+lies above the ring 1 <= y**2 + z**2 <= 4 in the yz-plane
+
+
+	f = x + y**2 + z**2 = 4
+
+	∇f = i + (2y)j + (2z)k
+	p = i
+
+	|∇f| = sqrt(1 + 4y**2 + 4z**2)
+	|∇f · p| = 1
+
+	dσ = sqrt(1 + 4r**2) dA
+
+	surface are = ∬ dσ
+	= ∫(0, 2pi) ∫(1, 2) sqrt(1 + 4r**2) r dr dθ
+	= 1/12 ∫(0, 2pi) [ (1 + 4r**2)**(3/2) ] | (1, 2) dθ
+	= 1/12 ∫(0, 2pi) 
+	= (17**(3/2) - 5**(3/2))*pi/6
+
+
+
+
