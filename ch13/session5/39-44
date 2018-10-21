@@ -1,0 +1,54 @@
+Find the area of the surface in 39-44
+
+
+39. The surface cut from the bottom of the paraboloid z = x² + y² by the plane z = 3
+
+	A = ∬ sqrt(4x² + 4y² + 1) dxdy
+	  = ∬ sqrt(4r² + 1) r drdθ
+	  = 1/12 ∫(0, 2pi) (4r² + 1)**(3/2) | (0, sqrt(3)) dθ
+	  = (13**(3/2) - 1)/12 ∫(0, 2pi) dθ
+	  = (13**(3/2) - 1)pi/6
+
+	  xoozi 这里, 注意, r不是[0, 3] 而是[0, sqrt(3)]
+
+
+
+41. The portion of the cone z = sqrt(x² + y²) that lies over the region
+between the circle x² + y² = 1 and the ellipse 9x² + 4y² = 36 in the xy-plane
+
+	f = sqrt(x² + y²)
+
+	fx = x/sqrt(x² + y²)
+	fy = y/sqrt(x² + y²)
+
+	A = ∬ sqrt(fx² + fy² + 1) dxdy
+	  = ∬ dxdy
+	  
+	  = 6pi - p
+	  = 5pi
+
+
+43. The surface in the first octant cut from the sylinder y = (2/3)z**(3/2) by the
+plane x = 1 and y = 16/3
+
+	z = (9y²/4)**(1/3)
+
+	f = (9y²/4)**(1/3)
+
+	fx = 0
+	fy = 9/4 * 2y * (9y²/4)**(-2/3) = 9y/2 * (9y²/4)**(-2/3)
+
+	xoozi 这题我理解错了
+
+ 	应把y看成f(x, z)
+
+	y = f(x, z) = (2/3) z**(3/2)
+
+	fx = 0
+	fz = z**(1/2)
+
+	A = ∬ sqrt(z  + 1) dxdz
+	  = ∫(0, 4) ∫(0, 1) sqrt(z + 1) dxdz
+	  = ∫(0 ,4) sqrt(z + 1) dz
+          = 2/3 [(z + 1)**(3/2)] | (0, 4)
+	  = 2/3 (5sqrt(5) - 1)
